@@ -8,15 +8,15 @@ If we were to draw an analogy, we could liken RAG to an exam where we're permitt
 
 ## Content
 
-- [General Information on RAG](#general-information-on-rag)
-- [Recommended Reading](#recommended-reading)
-- [RAG Use Cases](#rag-use-cases)
-- [Frameworks that Facilitate RAG](#frameworks-that-facilitate-rag)
-- [Embedding & Vector databases](#embedding--vector-databases)
-- [RAG papers](#rag-papers)
+- [ℹ️ General Information on RAG](#general-information-on-rag)
+- [📖 Recommended Reading](#recommended-reading)
+- [💼 RAG Use Cases](#rag-use-cases)
+- [🧰 Frameworks that Facilitate RAG](#frameworks-that-facilitate-rag)
+- [💾 Embedding & Vector databases](#embedding--vector-databases)
+- [📚 RAG papers](#rag-papers)
 
 
-## General Information on RAG
+##ℹ️ General Information on RAG
 
 In traditional RAG approaches, we typically employ a basic architecture capable of retrieving a number of documents to enrich the context of a prompt for an LLM. This is generally achieved by retrieving documents that correspond to the input provided to the LLM prompt. For example, when we inquire about suitable materials for renovating a room in our apartment, the LLM may possess extensive information on room renovation and associated materials. However, a foundational LLM may lack specific knowledge about our room, necessitating the gathering of additional context by referring to a blueprint of our room. Therefore, an RAG architecture might be employed to take our input regarding renovating our room and swiftly conduct a similarity search to match documents related to our question about renovation. If there is a match on documents related to our prompt, they will be used as additional context for the LLM to provide answers regarding renovation and materials specific to our room.
 
@@ -29,23 +29,23 @@ However, there is no guarantee that the similarity search will match documents b
 - Performing a [RAG Fusion](https://arxiv.org/abs/2402.03367).
 - Using [function/tool calling](https://python.langchain.com/docs/modules/model_io/chat/function_calling/) during inference.
 
-## Recommended Reading
+##📖 Recommended Reading
 
 ...
 
-## RAG Use Cases
+##💼 RAG Use Cases
 
 ...
 
-## Frameworks that Facilitate RAG
+##🧰 Frameworks that Facilitate RAG
 
 - [LangChain](https://python.langchain.com/docs/modules/data_connection/) - An all-purpose framework for working with LLMs.
 - [LlamaIndex](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/) - Framework for connecting custom data sources to LLMs.
 
-## RAG Embedding & Vector Databases
+##💾 RAG Embedding & Vector Databases
 
 ...
 
-## RAG papers
+##📚 RAG papers
 
 - [Lewis, Patrick, et al. "Retrieval-augmented generation for knowledge-intensive nlp tasks." Advances in Neural Information Processing Systems 33 (2020): 9459-9474.](https://arxiv.org/pdf/2005.11401.pdf) - Introduced RAG.
