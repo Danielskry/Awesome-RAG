@@ -1,6 +1,6 @@
 # 😎 Awesome Retrieval Augmented Generation (RAG) [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
-This repository contains a curated Awesome List and general information on the topic of RAG for Large Language Models (LLMs).
+This repository contains a curated [Awesome List](https://github.com/sindresorhus/awesome) and general information on the topic of RAG for Large Language Models (LLMs).
 
 Retrieval-Augmented Generation (RAG) is an architectural approach aimed at providing additional context to Large Language Models (LLMs). It is commonly employed to complement foundational pre-trained LLMs with information that is either up-to-date, sensitive, or supplementary and specific. This approach enhances the model's ability to generate more accurate and contextually relevant outputs by integrating external facts and knowledge.
 
@@ -22,12 +22,12 @@ In traditional RAG approaches, we typically employ a basic architecture capable 
 
 However, there is no guarantee that the similarity search will match documents based on the input, or that the LLM will be able to utilize the additional context autonomously. Therefore, we may sometimes need to adopt more advanced approaches for RAG that surpass mere naivety, such as integrating corrective measures, executing actions, and implementing iterative steps with the LLM before providing an answer. These elements can all be components of a more intricate RAG architecture, which may include:
 
-- Implement a [Corrective RAG](https://arxiv.org/pdf/2401.15884.pdf) (CRAG) approach.
-- Employ [Retrieval-Augmented Fine-Tuning](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674) (RAFT) for additional enhancement.
-- Incorporate [Reason and Action (ReAct)](https://research.google/blog/react-synergizing-reasoning-and-acting-in-language-models/) into the response generation process.
-- Develop a [Self Reflective RAG](https://selfrag.github.io/).
-- Perform [RAG Fusion](https://arxiv.org/abs/2402.03367).
-- Use [function/tool calling](https://python.langchain.com/docs/modules/model_io/chat/function_calling/) during inference.
+- Implementing a [Corrective RAG](https://arxiv.org/pdf/2401.15884.pdf) (CRAG) approach.
+- Employing [Retrieval-Augmented Fine-Tuning](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674) (RAFT) for additional enhancement.
+- Incorporating [Reason and Action (ReAct)](https://research.google/blog/react-synergizing-reasoning-and-acting-in-language-models/) into the response generation process.
+- Developing a [Self Reflective RAG](https://selfrag.github.io/).
+- Performing a [RAG Fusion](https://arxiv.org/abs/2402.03367).
+- Using [function/tool calling](https://python.langchain.com/docs/modules/model_io/chat/function_calling/) during inference.
 
 ## Recommended Reading
 
