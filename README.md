@@ -12,7 +12,7 @@ If we were to draw an analogy, we could liken RAG to an exam where we're permitt
 - [📖 Recommended Reading](#recommended-reading)
 - [💼 RAG Use Cases](#rag-use-cases)
 - [🧰 Frameworks that Facilitate RAG](#frameworks-that-facilitate-rag)
-- [💾 Embedding & Vector databases](#embedding--vector-databases)
+- [💾 Embedding & Vector databases](#embedding-&-vector-databases)
 - [📚 RAG papers](#rag-papers)
 
 
@@ -46,6 +46,6 @@ However, there is no guarantee that the similarity search will match documents b
 
 ...
 
-##📚 RAG papers
+## 📚 RAG papers
 
 - [Lewis, Patrick, et al. "Retrieval-augmented generation for knowledge-intensive nlp tasks." Advances in Neural Information Processing Systems 33 (2020): 9459-9474.](https://arxiv.org/pdf/2005.11401.pdf) - Introduced RAG.
