@@ -49,3 +49,5 @@ However, there is no guarantee that the similarity search will match documents b
 ## 📚 RAG papers
 
 - [Lewis, Patrick, et al. "Retrieval-augmented generation for knowledge-intensive nlp tasks." Advances in Neural Information Processing Systems 33 (2020): 9459-9474.](https://arxiv.org/pdf/2005.11401.pdf) - Paper that introduced RAG.
+
+- [Gao, Yunfan, et al. "Retrieval-augmented generation for large language models: A survey." arXiv preprint arXiv:2312.10997 (2023)](https://arxiv.org/abs/2312.10997) - A survey of RAG for LLMs.
