@@ -28,6 +28,7 @@ However, there is no guarantee that the similarity search will match documents b
 - Developing a [Self Reflective RAG](https://selfrag.github.io/).
 - Performing a [RAG Fusion](https://arxiv.org/abs/2402.03367).
 - Using [function/tool calling](https://python.langchain.com/docs/modules/model_io/chat/function_calling/) during inference.
+- A dynamic RAG implementation, [Temporal Augmented Retrieval](https://adam-rida.medium.com/temporal-augmented-retrieval-tar-dynamic-rag-ad737506dfcc) (TAR)
 
 ## 📖 Recommended Reading
 
@@ -44,7 +45,16 @@ However, there is no guarantee that the similarity search will match documents b
 
 ## 💾 RAG Embedding & Vector Databases
 
-...
+**Vector databases:**
+- [Chroma DB](https://www.trychroma.com/) - AI-native open-source embedding database
+- [Pinecone](https://www.pinecone.io/) - Serverless vector database
+
+**Relational databases:**
+- [Pgvector](https://github.com/pgvector/pgvector) - Open-source vector similarity search for Postgres.
+
+**NoSQL databases:**
+- [Elasticsearch](https://www.elastic.co/elasticsearch/vector-database) - Vector search for Elasticsearch.
+- [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-vector-search) - Integrates operational database and vector search.
 
 ## 📚 RAG papers
 
