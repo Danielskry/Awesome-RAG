@@ -1,6 +1,6 @@
 # 😎 Awesome Retrieval Augmented Generation (RAG) [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
-This repository contains a curated [Awesome List](https://github.com/sindresorhus/awesome) and general information on the topic of RAG for Generative AI, focusing particularly on Large Language Models (LLMs).
+This repository contains a curated [Awesome List](https://github.com/sindresorhus/awesome) and general information on Retrieval-Augmented Generation (RAG) applications in Generative AI.
 
 Retrieval-Augmented Generation (RAG) is an architectural approach aimed at providing additional context to Large Language Models (LLMs). It is commonly employed to complement foundational pre-trained LLMs with information that is either up-to-date, sensitive, or supplementary and specific. This approach enhances the model's ability to generate more accurate and contextually relevant outputs by integrating external facts and knowledge.
 
