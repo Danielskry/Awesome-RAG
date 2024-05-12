@@ -28,7 +28,7 @@ However, there is no guarantee that the similarity search will match documents b
 - Developing a [Self Reflective RAG](https://selfrag.github.io/).
 - Performing a [RAG Fusion](https://arxiv.org/abs/2402.03367).
 - Using [function/tool calling](https://python.langchain.com/docs/modules/model_io/chat/function_calling/) during inference.
-- A dynamic RAG implementation, [Temporal Augmented Retrieval](https://adam-rida.medium.com/temporal-augmented-retrieval-tar-dynamic-rag-ad737506dfcc) (TAR)
+- [Temporal Augmented Retrieval](https://adam-rida.medium.com/temporal-augmented-retrieval-tar-dynamic-rag-ad737506dfcc) (TAR)
 
 ## 📖 Recommended Reading
 
