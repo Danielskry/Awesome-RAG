@@ -12,7 +12,8 @@ If we were to draw an analogy, we could liken RAG to an exam where we're permitt
 - [📖 Recommended Reading](#-recommended-reading)
 - [💼 RAG Use Cases](#-rag-use-cases)
 - [🧰 Frameworks that Facilitate RAG](#-frameworks-that-facilitate-rag)
-- [💾 Embedding & Vector databases](#-rag-embedding--vector-databases)
+- [📄 Embeddings](#-embeddings)
+- [💾 Databases](#-databases)
 - [📚 RAG papers](#-rag-papers)
 
 
@@ -43,18 +44,38 @@ However, there is no guarantee that the similarity search will match documents b
 - [LangChain](https://python.langchain.com/docs/modules/data_connection/) - An all-purpose framework for working with LLMs.
 - [LlamaIndex](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/) - Framework for connecting custom data sources to LLMs.
 
-## 💾 RAG Embedding & Vector Databases
+## 📄 Embeddings
 
-**Vector databases:**
-- [Chroma DB](https://www.trychroma.com/) - AI-native open-source embedding database
-- [Pinecone](https://www.pinecone.io/) - Serverless vector database
+## 💾 Databases
+The list below features several database systems suitable for Retrieval Augmented Generation (RAG) applications. They cover a range of RAG use cases, aiding in the efficient storage and retrieval of vectors to generate responses or recommendations.
 
-**Relational databases:**
-- [Pgvector](https://github.com/pgvector/pgvector) - Open-source vector similarity search for Postgres.
+**Distributed Data Processing and Serving Engines:**
+- [Apache Cassandra](https://cassandra.apache.org/doc/latest/cassandra/vector-search/concepts.html): Distributed NoSQL database management system.
+- [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-vector-search): Globally distributed, multi-model database service with integrated vector search.
+- [Vespa](https://vespa.ai/): Open-source big data processing and serving engine designed for real-time applications.
 
-**NoSQL databases:**
-- [Elasticsearch](https://www.elastic.co/elasticsearch/vector-database) - Vector search for Elasticsearch.
-- [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-vector-search) - Integrates operational database and vector search.
+**Search Engines with Vector Capabilities:**
+- [Elasticsearch](https://www.elastic.co/elasticsearch): Provides vector search capabilities along with traditional search functionalities.
+- [OpenSearch](https://github.com/opensearch-project/OpenSearch): Distributed search and analytics engine, forked from Elasticsearch.
+
+**Vector Databases:**
+- [Chroma DB](https://github.com/chroma-core/chroma): An AI-native open-source embedding database.
+- [Milvus](https://github.com/milvus-io/milvus): An open-source vector database for AI-powered applications.
+- [Pinecone](https://www.pinecone.io/): A serverless vector database, optimized for machine learning workflows.
+
+**Relational Database Extensions:**
+- [Pgvector](https://github.com/pgvector/pgvector): An open-source extension for vector similarity search in PostgreSQL.
+
+**Other Database Systems:**
+- [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/vector-database): Globally distributed, multi-model database service with integrated vector search.
+- [Couchbase](https://www.couchbase.com/products/vector-search/): A distributed NoSQL cloud database.
+- [Lantern](https://lantern.dev/): A privacy-aware personal search engine.
+- [LlamaIndex](https://docs.llamaindex.ai/en/stable/module_guides/storing/vector_stores/): Employs a straightforward in-memory vector store for rapid experimentation.
+- [Neo4j](https://neo4j.com/docs/cypher-manual/current/indexes/semantic-indexes/vector-indexes/): Graph database management system.
+- [Qdrant](https://github.com/neo4j/neo4j): An open-source vector database designed for similarity search.
+- [Redis Stack](https://redis.io/docs/latest/develop/interact/search-and-query/): An in-memory data structure store used as a database, cache, and message broker.
+- [SurrealDB](https://github.com/surrealdb/surrealdb): A scalable multi-model database optimized for time-series data.
+- [Weaviate](https://github.com/weaviate/weaviate): A open-source cloud-native vector search engine.
 
 ## 📚 RAG papers
 
