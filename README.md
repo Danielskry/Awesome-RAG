@@ -43,6 +43,7 @@ However, there is no guarantee that the similarity search will match documents b
 
 - [LangChain](https://python.langchain.com/docs/modules/data_connection/) - An all-purpose framework for working with LLMs.
 - [LlamaIndex](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/) - Framework for connecting custom data sources to LLMs.
+- [Cognita](https://github.com/truefoundry/cognita) - Open-source RAG framework for building modular and production ready applications.
 
 ## 📄 Embeddings
 
