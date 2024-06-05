@@ -42,6 +42,7 @@ However, there is no guarantee that the similarity search will match documents b
 ## 🧰 Frameworks that Facilitate RAG
 
 - [LangChain](https://python.langchain.com/docs/modules/data_connection/) - An all-purpose framework for working with LLMs.
+- [Semantic Kernel](https://github.com/microsoft/semantic-kernel) - An SDK from Microsoft for developing Generative AI applications.
 - [LlamaIndex](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/) - Framework for connecting custom data sources to LLMs.
 - [Cognita](https://github.com/truefoundry/cognita) - Open-source RAG framework for building modular and production ready applications.
 
