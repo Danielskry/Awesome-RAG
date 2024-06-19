@@ -51,7 +51,7 @@ However, there is no guarantee that the similarity search will match documents b
 
 ## 📊 Metrics
 
-- [Eucledian Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
+- [Euclidean Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
   - Measures the straight line distance between two vectors in Euclidean space.
   - Lower values indicate closer vectors.
   - Effective for dense and continuous feature vectors.
