@@ -13,6 +13,7 @@ If we were to draw an analogy, we could liken RAG to an exam where we're permitt
 - [💼 RAG Use Cases](#-rag-use-cases)
 - [🧰 Frameworks that Facilitate RAG](#-frameworks-that-facilitate-rag)
 - [📄 Embeddings](#-embeddings)
+- [📊 Metrics](#-metrics)
 - [💾 Databases](#-databases)
 - [📚 RAG papers](#-rag-papers)
 
@@ -48,6 +49,43 @@ However, there is no guarantee that the similarity search will match documents b
 
 ## 📄 Embeddings
 
+## 📊 Metrics
+
+- [Eucledian Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
+  - Measures the straight line distance between two vectors in Euclidean space.
+  - Lower values indicate closer vectors.
+  - Effective for dense and continuous feature vectors.
+  - Often used in clustering algorithms like K-means.
+- [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
+  - Measures the cosine of the angle between two vectors in a multi dimensional space
+  - Values range from -1 to 1, where 1 means the vectors are identical, 0 means they are orthogonal, and -1 means they are diametrically opposed.
+  - Commonly used in text and document similarity, such as when the direction of the vectors is more important than their magnitude.
+- [Dot Product](https://en.wikipedia.org/wiki/Dot_product)
+  - Measures the magnitude of projection of one vector onto another.
+  - Higher values indicate greater similarity.
+  - Simple and efficient, often used in combination with other methods.
+- [Manhattan Distance (L1 Norm)](https://medium.com/swlh/different-types-of-distances-used-in-machine-learning-ec7087616442)
+  - Measures the sum of absolute differences between the vector components.
+  - Useful for grid-like data structures and when the differences are uniformly distributed.
+- [Minkowski Distance](https://en.wikipedia.org/wiki/Minkowski_distance)
+  - Generalized distance metric, including both Euclidean and Manhattan distances.
+  - Particularly effective for numerical datasets when comparing the similarity in magnitude among multiple data point vectors.
+- [Jaccard Similarity](https://en.wikipedia.org/wiki/Jaccard_index)
+  - Measures the similarity between two sets by comparing the size of the intersection and the union of the sets.
+  - Values range from 0 to 1, where 1 indicates identical sets.
+  - Commonly used for binary or categorical data.
+- [Hamming Distance](https://en.wikipedia.org/wiki/Hamming_distance)
+  - Measures the number of positions at which the corresponding elements are different.
+  - Used for binary strings or categorical data.
+- [Mahalanobis Distance](https://en.wikipedia.org/wiki/Mahalanobis_distance)
+  - Measures the distance between a point and a distribution.
+  - Takes into account the correlations of the data set.
+  - Valuable when the data has correlations.
+- [Pearson Correlation Coefficient](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)
+  - Measures the linear correlation between two sets of data.
+  - Values range from -1 to 1, where 1 indicates perfect positive correlation, -1 indicates perfect negative correlation, and 0 indicates no correlation.
+  - Useful for understanding the linear relationship between variables.
+
 ## 💾 Databases
 The list below features several database systems suitable for Retrieval Augmented Generation (RAG) applications. They cover a range of RAG use cases, aiding in the efficient storage and retrieval of vectors to generate responses or recommendations.
 
@@ -64,6 +102,7 @@ The list below features several database systems suitable for Retrieval Augmente
 - [Chroma DB](https://github.com/chroma-core/chroma): An AI-native open-source embedding database.
 - [Milvus](https://github.com/milvus-io/milvus): An open-source vector database for AI-powered applications.
 - [Pinecone](https://www.pinecone.io/): A serverless vector database, optimized for machine learning workflows.
+- [Oracle AI Vector Search](https://www.oracle.com/database/ai-vector-search/#retrieval-augmented-generation): Integrates vector search capabilities within Oracle Database for semantic querying based on vector embeddings.
 
 **Relational Database Extensions:**
 - [Pgvector](https://github.com/pgvector/pgvector): An open-source extension for vector similarity search in PostgreSQL.
@@ -78,6 +117,9 @@ The list below features several database systems suitable for Retrieval Augmente
 - [Redis Stack](https://redis.io/docs/latest/develop/interact/search-and-query/): An in-memory data structure store used as a database, cache, and message broker.
 - [SurrealDB](https://github.com/surrealdb/surrealdb): A scalable multi-model database optimized for time-series data.
 - [Weaviate](https://github.com/weaviate/weaviate): A open-source cloud-native vector search engine.
+
+**Vector Search Libraries and Tools:**
+- [FAISS](https://github.com/facebookresearch/faiss): A library for efficient similarity search and clustering of dense vectors, designed to handle large-scale datasets and optimized for fast retrieval of nearest neighbors.
 
 ## 📚 RAG papers
 
