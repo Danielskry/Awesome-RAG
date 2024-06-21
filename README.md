@@ -24,18 +24,18 @@ In traditional RAG approaches, we typically employ a basic architecture capable 
 
 ## 🎯 Approaches
 
-There is no guarantee that a naive similarity search will match documents based on the input, or that an LLM will be able to utilize the additional context autonomously. Therefore, we may sometimes need to adopt a more advanced approach for RAG that goes beyond simple methods. This could include integrating corrective measures, executing actions, adding guardrails, and implementing iterative steps with the LLM before providing an answer. These elements can all be components of a more intricate RAG architecture, which can include:
+RAG implementations vary in complexity, from simple document retrieval to advanced techniques integrating iterative feedback loops and domain-specific enhancements. Approaches include:
 
-- Applying [data cleaning techniques](https://medium.com/intel-tech/four-data-cleaning-techniques-to-improve-large-language-model-llm-performance-77bee9003625) to improve LLM performance.
-- Implementing a [Corrective RAG](https://arxiv.org/pdf/2401.15884.pdf) (CRAG) approach.
-- Employing [Retrieval-Augmented Fine-Tuning](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674) (RAFT) for additional enhancement.
-- Incorporating [Reason and Action (ReAct)](https://research.google/blog/react-synergizing-reasoning-and-acting-in-language-models/) into the response generation process.
-- Developing a [Self Reflective RAG](https://selfrag.github.io/).
-- Performing a [RAG Fusion](https://arxiv.org/abs/2402.03367) by combining reciprocal rank fusion (RRF) and RAG.
-- Using [function/tool calling](https://python.langchain.com/docs/modules/model_io/chat/function_calling/) during inference.
-- Add a temporal aspect with [Temporal Augmented Retrieval](https://adam-rida.medium.com/temporal-augmented-retrieval-tar-dynamic-rag-ad737506dfcc) (TAR).
-- Enhance decision making with [Plan-then-RAG](https://arxiv.org/abs/2406.12430) (PlanRAG).
-- Labeling an input, documents or response with classes using [tagging](https://python.langchain.com/v0.1/docs/use_cases/tagging/).
+
+- [Data cleaning techniques](https://medium.com/intel-tech/four-data-cleaning-techniques-to-improve-large-language-model-llm-performance-77bee9003625): Pre-processing steps to refine input data and improve model performance.
+- [Corrective RAG](https://arxiv.org/pdf/2401.15884.pdf) (CRAG): Methods to correct or refine the retrieved information before integration into LLM responses.
+- [Retrieval-Augmented Fine-Tuning](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674) (RAFT): Techniques to fine-tune LLMs specifically for enhanced retrieval and generation tasks.
+- [Reason and Action (ReAct)](https://research.google/blog/react-synergizing-reasoning-and-acting-in-language-models/) (ReAct): Integration of reasoning capabilities to guide LLM responses based on retrieved context.
+- [Self Reflective RAG](https://selfrag.github.io/): Models that dynamically adjust retrieval strategies based on model performance feedback.
+- [RAG Fusion](https://arxiv.org/abs/2402.03367): Techniques combining multiple retrieval methods for improved context integration.
+- [Temporal Augmented Retrieval](https://adam-rida.medium.com/temporal-augmented-retrieval-tar-dynamic-rag-ad737506dfcc) (TAR): Considering time-sensitive data in retrieval processes.
+- [Plan-then-RAG](https://arxiv.org/abs/2406.12430) (PlanRAG): Strategies involving planning stages before executing RAG for complex tasks.
+- [Tagging and Labeling](https://python.langchain.com/v0.1/docs/use_cases/tagging/): Adding semantic tags or labels to retrieved data to enhance relevance.
 
 ## 💼 RAG Use Cases
 
@@ -51,21 +51,21 @@ There is no guarantee that a naive similarity search will match documents based 
 ## 🛠️ Techniques
 
 ### Chunking
-- **Fixed-size chunking**
+- **[Fixed-size chunking](https://medium.com/@anuragmishra_27746/five-levels-of-chunking-strategies-in-rag-notes-from-gregs-video-7b735895694d)**
   - Dividing text into consistent-sized segments for efficient processing.
   - Splits texts into chunks based on size and overlap.
   - Example: [Split by character](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/character_text_splitter/) (LangChain).
   - Example: [SentenceSplitter](https://docs.llamaindex.ai/en/stable/api_reference/node_parsers/sentence_splitter/) (LlamaIndex).
-- **Recursive chunking**
+- **[Recursive chunking](https://medium.com/@AbhiramiVS/chunking-methods-all-to-know-about-it-65c10aa7b24e)**
   - Hierarchical segmentation using recursive algorithms for complex document structures.
   - Example: [Recursively split by character](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/recursive_text_splitter/) (LangChain).
-- **Document-based chunking**
+- **[Document-based chunking](https://medium.com/@david.richards.tech/document-chunking-for-rag-ai-applications-04363d48fbf7)**
   - Segmenting documents based on metadata or formatting cues for targeted analysis.
   - Example: [MarkdownHeaderTextSplitter](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/markdown_header_metadata/) (LangChain).
   - Example: Handle image and text embeddings with models like [OpenCLIP](https://github.com/mlfoundations/open_clip).
-- **Semantic chunking**
+- **[Semantic chunking](https://www.youtube.com/watch?v=8OJC21T2SL4&t=1933s)**
   - Extracting meaningful sections based on semantic relevance rather than arbitrary boundaries.
-- **"Ask LLM" chunking**
+- **[Agentic chunking](https://youtu.be/8OJC21T2SL4?si=8VnYaGUaBmtZhCsg&t=2882)**
   - Interactive chunking methods where LLMs guide segmentation based on user queries. 
 
 ### Embeddings
@@ -77,38 +77,32 @@ There is no guarantee that a naive similarity search will match documents based 
 ## 📊 Metrics
 
 - [Euclidean Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
-  - Measures the straight line distance between two vectors in Euclidean space.
-  - Lower values indicate closer vectors.
+  - Measure of distance between vectors in Euclidean space.
   - Effective for dense and continuous feature vectors.
   - Often used in clustering algorithms like K-means.
 - [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
-  - Measures the cosine of the angle between two vectors in a multi dimensional space
-  - Values range from -1 to 1, where 1 means the vectors are identical, 0 means they are orthogonal, and -1 means they are diametrically opposed.
+  - Measure of similarity between vectors in a multi-dimensional space.
   - Commonly used in text and document similarity, such as when the direction of the vectors is more important than their magnitude.
 - [Dot Product](https://en.wikipedia.org/wiki/Dot_product)
-  - Measures the magnitude of projection of one vector onto another.
-  - Higher values indicate greater similarity.
+  - Measure of projection between vectors indicating similarity.
   - Simple and efficient, often used in combination with other methods.
 - [Manhattan Distance (L1 Norm)](https://medium.com/swlh/different-types-of-distances-used-in-machine-learning-ec7087616442)
-  - Measures the sum of absolute differences between the vector components.
+  - Sum of absolute differences between vector components.
   - Useful for grid-like data structures and when the differences are uniformly distributed.
 - [Minkowski Distance](https://en.wikipedia.org/wiki/Minkowski_distance)
-  - Generalized distance metric, including both Euclidean and Manhattan distances.
+  - Generalized metric combining Euclidean and Manhattan distances.
   - Particularly effective for numerical datasets when comparing the similarity in magnitude among multiple data point vectors.
 - [Jaccard Similarity](https://en.wikipedia.org/wiki/Jaccard_index)
-  - Measures the similarity between two sets by comparing the size of the intersection and the union of the sets.
-  - Values range from 0 to 1, where 1 indicates identical sets.
+  - Measure of overlap between sets.
   - Commonly used for binary or categorical data.
 - [Hamming Distance](https://en.wikipedia.org/wiki/Hamming_distance)
-  - Measures the number of positions at which the corresponding elements are different.
+  - Measure of difference between binary data sequences.
   - Used for binary strings or categorical data.
 - [Mahalanobis Distance](https://en.wikipedia.org/wiki/Mahalanobis_distance)
-  - Measures the distance between a point and a distribution.
-  - Takes into account the correlations of the data set.
+  - Measure considering correlations in data distribution.
   - Valuable when the data has correlations.
 - [Pearson Correlation Coefficient](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)
-  - Measures the linear correlation between two sets of data.
-  - Values range from -1 to 1, where 1 indicates perfect positive correlation, -1 indicates perfect negative correlation, and 0 indicates no correlation.
+  - Measure of linear correlation between two variables.
   - Useful for understanding the linear relationship between variables.
 
 ## 💾 Databases
