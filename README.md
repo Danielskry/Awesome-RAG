@@ -72,6 +72,8 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 
 ## 📊 Metrics
 
+### Search metrics
+
 These metrics play a crucial role in evaluating how effectively RAG systems match and integrate external documents or data sources to enhance the context and accuracy of generated outputs.
 
 - [Euclidean Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
@@ -102,6 +104,11 @@ These metrics play a crucial role in evaluating how effectively RAG systems matc
 - [Pearson Correlation Coefficient](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)
   - Measure of linear correlation between two variables.
   - Useful for understanding the linear relationship between variables.
+ 
+### Evaluation metrics
+These metrics assess the quality and relevance of generated answers, evaluating how accurate, contextually appropriate, and reliable they are for the intended applications.
+
+...
 
 ## 💾 Databases
 The list below features several database systems suitable for Retrieval Augmented Generation (RAG) applications. They cover a range of RAG use cases, aiding in the efficient storage and retrieval of vectors to generate responses or recommendations.
