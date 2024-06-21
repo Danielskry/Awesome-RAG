@@ -51,32 +51,27 @@ There is no guarantee that a naive similarity search will match documents based 
 ## 🛠️ Techniques
 
 ### Chunking
-- Fixed-size chunking
-  - Easier to implement but ignores text structure.
-  - Splits texts into chunks based on chunk size and chunk overlap.
-  - Example [Split by character](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/character_text_splitter/) (LangChain).
-  - Example [SentenceSplitter](https://docs.llamaindex.ai/en/stable/api_reference/node_parsers/sentence_splitter/) (LlamaIndex).
-- Recursive chunking
-  - Recursive chunking divides text hierarchically using separators.
-  - If the chunks are not the desired size, the method recursively splits the text with different separators until the desired size is achieved.
-  - Example [Recursively split by character](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/recursive_text_splitter/) (LangChain).
-- Document based chunking
-  - Example [MarkdownHeaderTextSplitter](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/markdown_header_metadata/) (Langchain) for documents with Markdown formatting.
-  - Example [CodeTextSplitter](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/code_splitter/) (Langchain) for segmenting code.
-  - Avoid disrupting table structure by formatting content with HTML <table> tags or CSV format.
-  - Summarize tables, generate embeddings, and use for semantic search.
-  - Handle image and text embeddings with models like [CLIP](https://github.com/openai/CLIP) and [OpenCLIP](https://github.com/mlfoundations/open_clip).
-  - Use multi-modal models for image summaries and embeddings.
-- Semantic chunking
-  - ...
-- "Ask LLM" chunking
-  - ...
+- **Fixed-size chunking**
+  - Dividing text into consistent-sized segments for efficient processing.
+  - Splits texts into chunks based on size and overlap.
+  - Example: [Split by character](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/character_text_splitter/) (LangChain).
+  - Example: [SentenceSplitter](https://docs.llamaindex.ai/en/stable/api_reference/node_parsers/sentence_splitter/) (LlamaIndex).
+- **Recursive chunking**
+  - Hierarchical segmentation using recursive algorithms for complex document structures.
+  - Example: [Recursively split by character](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/recursive_text_splitter/) (LangChain).
+- **Document-based chunking**
+  - Segmenting documents based on metadata or formatting cues for targeted analysis.
+  - Example: [MarkdownHeaderTextSplitter](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/markdown_header_metadata/) (LangChain).
+  - Example: Handle image and text embeddings with models like [OpenCLIP](https://github.com/mlfoundations/open_clip).
+- **Semantic chunking**
+  - Extracting meaningful sections based on semantic relevance rather than arbitrary boundaries.
+- **"Ask LLM" chunking**
+  - Interactive chunking methods where LLMs guide segmentation based on user queries. 
 
 ### Embeddings
 - Select embedding model
-  - [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard) on Hugging Face.
-  - Public vs. Private Embedding Model
-  - fine-tuned/custom embeddings
+  - **[MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)**: Explore Hugging Face's benchmark for evaluating model embeddings.
+  - **Custom Embeddings**: Develop tailored embeddings for specific domains or tasks to enhance model performance.
 
 
 ## 📊 Metrics
