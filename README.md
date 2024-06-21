@@ -62,7 +62,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - **[Semantic chunking](https://www.youtube.com/watch?v=8OJC21T2SL4&t=1933s)**
   - Extracting meaningful sections based on semantic relevance rather than arbitrary boundaries.
 - **[Agentic chunking](https://youtu.be/8OJC21T2SL4?si=8VnYaGUaBmtZhCsg&t=2882)**
-  - Interactive chunking methods where LLMs guide segmentation based on user queries. 
+  - Interactive chunking methods where LLMs guide segmentation. 
 
 ### Embeddings
 - Select embedding model
