@@ -74,7 +74,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 
 ### Search metrics
 
-These metrics play a crucial role in evaluating how effectively RAG systems match and integrate external documents or data sources to enhance the context and accuracy of generated outputs.
+These metrics can be used in evaluating how effectively RAG systems match and integrate external documents or data sources.
 
 - [Euclidean Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
   - Measure of distance between vectors in Euclidean space.
@@ -106,7 +106,7 @@ These metrics play a crucial role in evaluating how effectively RAG systems matc
   - Useful for understanding the linear relationship between variables.
  
 ### Evaluation metrics
-These metrics assess the quality and relevance of generated answers, evaluating how accurate, contextually appropriate, and reliable they are for the intended applications.
+These metrics assess the quality and relevance of generated answers, evaluating how accurate, contextually appropriate, and reliable they are.
 
 ...
 
