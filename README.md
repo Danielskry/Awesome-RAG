@@ -26,8 +26,8 @@ In traditional RAG approaches, we typically employ a basic architecture capable 
 
 There is no guarantee that a naive similarity search will match documents based on the input, or that an LLM will be able to utilize the additional context autonomously. Therefore, we may sometimes need to adopt a more advanced approach for RAG that goes beyond simple methods. This could include integrating corrective measures, executing actions, adding guardrails, and implementing iterative steps with the LLM before providing an answer. These elements can all be components of a more intricate RAG architecture, which can include:
 
-- Apply [data cleaning techniques](https://medium.com/intel-tech/four-data-cleaning-techniques-to-improve-large-language-model-llm-performance-77bee9003625) to improve LLM performance.
-- Implement a [Corrective RAG](https://arxiv.org/pdf/2401.15884.pdf) (CRAG) approach.
+- Applying [data cleaning techniques](https://medium.com/intel-tech/four-data-cleaning-techniques-to-improve-large-language-model-llm-performance-77bee9003625) to improve LLM performance.
+- Implementing a [Corrective RAG](https://arxiv.org/pdf/2401.15884.pdf) (CRAG) approach.
 - Employing [Retrieval-Augmented Fine-Tuning](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674) (RAFT) for additional enhancement.
 - Incorporating [Reason and Action (ReAct)](https://research.google/blog/react-synergizing-reasoning-and-acting-in-language-models/) into the response generation process.
 - Developing a [Self Reflective RAG](https://selfrag.github.io/).
@@ -35,7 +35,7 @@ There is no guarantee that a naive similarity search will match documents based 
 - Using [function/tool calling](https://python.langchain.com/docs/modules/model_io/chat/function_calling/) during inference.
 - Add a temporal aspect with [Temporal Augmented Retrieval](https://adam-rida.medium.com/temporal-augmented-retrieval-tar-dynamic-rag-ad737506dfcc) (TAR).
 - Enhance decision making with [Plan-then-RAG](https://arxiv.org/abs/2406.12430) (PlanRAG).
-- Labeling an input or documents with classes using [tagging](https://python.langchain.com/v0.1/docs/use_cases/tagging/).
+- Labeling an input, documents or response with classes using [tagging](https://python.langchain.com/v0.1/docs/use_cases/tagging/).
 
 ## 💼 RAG Use Cases
 
@@ -49,6 +49,35 @@ There is no guarantee that a naive similarity search will match documents based 
 - [Cognita](https://github.com/truefoundry/cognita) - Open-source RAG framework for building modular and production ready applications.
 
 ## 🛠️ Techniques
+
+### Chunking
+- Fixed-size chunking
+  - Easier to implement but ignores text structure.
+  - Splits texts into chunks based on chunk size and chunk overlap.
+  - Example [Split by character](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/character_text_splitter/) (LangChain).
+  - Example [SentenceSplitter](https://docs.llamaindex.ai/en/stable/api_reference/node_parsers/sentence_splitter/) (LlamaIndex).
+- Recursive chunking
+  - Recursive chunking divides text hierarchically using separators.
+  - If the chunks are not the desired size, the method recursively splits the text with different separators until the desired size is achieved.
+  - Example [Recursively split by character](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/recursive_text_splitter/) (LangChain).
+- Document based chunking
+  - Example [MarkdownHeaderTextSplitter](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/markdown_header_metadata/) (Langchain) for documents with Markdown formatting.
+  - Example [CodeTextSplitter](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/code_splitter/) (Langchain) for segmenting code.
+  - Avoid disrupting table structure by formatting content with HTML <table> tags or CSV format.
+  - Summarize tables, generate embeddings, and use for semantic search.
+  - Handle image and text embeddings with models like [CLIP](https://github.com/openai/CLIP) and [OpenCLIP](https://github.com/mlfoundations/open_clip).
+  - Use multi-modal models for image summaries and embeddings.
+- Semantic chunking
+  - ...
+- "Ask LLM" chunking
+  - ...
+
+### Embeddings
+- Select embedding model
+  - [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard) on Hugging Face.
+  - Public vs. Private Embedding Model
+  - fine-tuned/custom embeddings
+
 
 ## 📊 Metrics
 
@@ -90,25 +119,25 @@ There is no guarantee that a naive similarity search will match documents based 
 ## 💾 Databases
 The list below features several database systems suitable for Retrieval Augmented Generation (RAG) applications. They cover a range of RAG use cases, aiding in the efficient storage and retrieval of vectors to generate responses or recommendations.
 
-**Distributed Data Processing and Serving Engines:**
+### Distributed Data Processing and Serving Engines:
 - [Apache Cassandra](https://cassandra.apache.org/doc/latest/cassandra/vector-search/concepts.html): Distributed NoSQL database management system.
 - [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-vector-search): Globally distributed, multi-model database service with integrated vector search.
 - [Vespa](https://vespa.ai/): Open-source big data processing and serving engine designed for real-time applications.
 
-**Search Engines with Vector Capabilities:**
+### Search Engines with Vector Capabilities:
 - [Elasticsearch](https://www.elastic.co/elasticsearch): Provides vector search capabilities along with traditional search functionalities.
 - [OpenSearch](https://github.com/opensearch-project/OpenSearch): Distributed search and analytics engine, forked from Elasticsearch.
 
-**Vector Databases:**
+### Vector Databases:
 - [Chroma DB](https://github.com/chroma-core/chroma): An AI-native open-source embedding database.
 - [Milvus](https://github.com/milvus-io/milvus): An open-source vector database for AI-powered applications.
 - [Pinecone](https://www.pinecone.io/): A serverless vector database, optimized for machine learning workflows.
 - [Oracle AI Vector Search](https://www.oracle.com/database/ai-vector-search/#retrieval-augmented-generation): Integrates vector search capabilities within Oracle Database for semantic querying based on vector embeddings.
 
-**Relational Database Extensions:**
+### Relational Database Extensions:
 - [Pgvector](https://github.com/pgvector/pgvector): An open-source extension for vector similarity search in PostgreSQL.
 
-**Other Database Systems:**
+### Other Database Systems:
 - [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/vector-database): Globally distributed, multi-model database service with integrated vector search.
 - [Couchbase](https://www.couchbase.com/products/vector-search/): A distributed NoSQL cloud database.
 - [Lantern](https://lantern.dev/): A privacy-aware personal search engine.
@@ -119,7 +148,7 @@ The list below features several database systems suitable for Retrieval Augmente
 - [SurrealDB](https://github.com/surrealdb/surrealdb): A scalable multi-model database optimized for time-series data.
 - [Weaviate](https://github.com/weaviate/weaviate): A open-source cloud-native vector search engine.
 
-**Vector Search Libraries and Tools:**
+### Vector Search Libraries and Tools:
 - [FAISS](https://github.com/facebookresearch/faiss): A library for efficient similarity search and clustering of dense vectors, designed to handle large-scale datasets and optimized for fast retrieval of nearest neighbors.
 
 ## 📚 RAG papers
