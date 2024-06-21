@@ -9,10 +9,10 @@ If we were to draw an analogy, we could liken RAG to an exam where we're permitt
 ## Content
 
 - [ℹ️ General Information on RAG](#ℹ%EF%B8%8F-general-information-on-rag)
-- [📖 Recommended Reading](#-recommended-reading)
+- [🎯 Approaches](#-approaches)
 - [💼 RAG Use Cases](#-rag-use-cases)
 - [🧰 Frameworks that Facilitate RAG](#-frameworks-that-facilitate-rag)
-- [📄 Embeddings](#-embeddings)
+- [🛠️ Techniques](#-techniques)
 - [📊 Metrics](#-metrics)
 - [💾 Databases](#-databases)
 - [📚 RAG papers](#-rag-papers)
@@ -22,20 +22,20 @@ If we were to draw an analogy, we could liken RAG to an exam where we're permitt
 
 In traditional RAG approaches, we typically employ a basic architecture capable of retrieving a number of documents to enrich the context of a prompt for an LLM. This is generally achieved by retrieving documents that correspond to the input provided to the LLM prompt. For example, if we inquire about suitable materials for renovating a room in our apartment, the LLM may possess extensive information on room renovation, tools and associated materials. However, a foundational LLM may lack specific knowledge about our room, necessitating the gathering of additional context by referring to a blueprint of our room. Therefore, an RAG architecture might be employed to take our input regarding renovating our room and swiftly conduct a similarity search to match documents related to our question about renovation. If there is a match on documents related to our prompt, they will be used as additional context for the LLM to provide answers regarding renovation and materials specific to our room.
 
-However, there is no guarantee that the similarity search will match documents based on the input, or that the LLM will be able to utilize the additional context autonomously. We may therefore, sometimes, need to adopt more advanced approaches for RAG that surpass mere naivety, such as integrating corrective measures, executing actions, and implementing iterative steps with the LLM before providing an answer. These elements can all be components of a more intricate RAG architecture, which may include:
+## 🎯 Approaches
 
-- Implementing a [Corrective RAG](https://arxiv.org/pdf/2401.15884.pdf) (CRAG) approach.
+There is no guarantee that a naive similarity search will match documents based on the input, or that an LLM will be able to utilize the additional context autonomously. Therefore, we may sometimes need to adopt a more advanced approach for RAG that goes beyond simple methods. This could include integrating corrective measures, executing actions, adding guardrails, and implementing iterative steps with the LLM before providing an answer. These elements can all be components of a more intricate RAG architecture, which can include:
+
+- Apply [data cleaning techniques](https://medium.com/intel-tech/four-data-cleaning-techniques-to-improve-large-language-model-llm-performance-77bee9003625) to improve LLM performance.
+- Implement a [Corrective RAG](https://arxiv.org/pdf/2401.15884.pdf) (CRAG) approach.
 - Employing [Retrieval-Augmented Fine-Tuning](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674) (RAFT) for additional enhancement.
 - Incorporating [Reason and Action (ReAct)](https://research.google/blog/react-synergizing-reasoning-and-acting-in-language-models/) into the response generation process.
 - Developing a [Self Reflective RAG](https://selfrag.github.io/).
-- Performing a [RAG Fusion](https://arxiv.org/abs/2402.03367).
+- Performing a [RAG Fusion](https://arxiv.org/abs/2402.03367) by combining reciprocal rank fusion (RRF) and RAG.
 - Using [function/tool calling](https://python.langchain.com/docs/modules/model_io/chat/function_calling/) during inference.
-- [Temporal Augmented Retrieval](https://adam-rida.medium.com/temporal-augmented-retrieval-tar-dynamic-rag-ad737506dfcc) (TAR)
-- Enhance decision making with [Plan-then-RAG (PlanRAG)](https://arxiv.org/abs/2406.12430)
-
-## 📖 Recommended Reading
-
-...
+- Add a temporal aspect with [Temporal Augmented Retrieval](https://adam-rida.medium.com/temporal-augmented-retrieval-tar-dynamic-rag-ad737506dfcc) (TAR).
+- Enhance decision making with [Plan-then-RAG](https://arxiv.org/abs/2406.12430) (PlanRAG).
+- Labeling an input or documents with classes using [tagging](https://python.langchain.com/v0.1/docs/use_cases/tagging/).
 
 ## 💼 RAG Use Cases
 
@@ -48,7 +48,7 @@ However, there is no guarantee that the similarity search will match documents b
 - [LlamaIndex](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/) - Framework for connecting custom data sources to LLMs.
 - [Cognita](https://github.com/truefoundry/cognita) - Open-source RAG framework for building modular and production ready applications.
 
-## 📄 Embeddings
+## 🛠️ Techniques
 
 ## 📊 Metrics
 
