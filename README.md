@@ -13,7 +13,6 @@ Retrieval-Augmented Generation (RAG) is a technique in Generative AI where addit
 - [🛠️ Techniques](#-techniques)
 - [📊 Metrics](#-metrics)
 - [💾 Databases](#-databases)
-- [📚 RAG papers](#-rag-papers)
 
 
 ## ℹ️ General Information on RAG
@@ -40,6 +39,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 
 ## 🧰 Frameworks that Facilitate RAG
 
+- [Haystack](https://github.com/deepset-ai/haystack) - LLM orchestration framework to build customizable, production-ready LLM applications.
 - [LangChain](https://python.langchain.com/docs/modules/data_connection/) - An all-purpose framework for working with LLMs.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) - An SDK from Microsoft for developing Generative AI applications.
 - [LlamaIndex](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/) - Framework for connecting custom data sources to LLMs.
@@ -145,9 +145,3 @@ The list below features several database systems suitable for Retrieval Augmente
 
 ### Vector Search Libraries and Tools:
 - [FAISS](https://github.com/facebookresearch/faiss): A library for efficient similarity search and clustering of dense vectors, designed to handle large-scale datasets and optimized for fast retrieval of nearest neighbors.
-
-## 📚 RAG papers
-
-- [Lewis, Patrick, et al. "Retrieval-augmented generation for knowledge-intensive nlp tasks." Advances in Neural Information Processing Systems 33 (2020): 9459-9474.](https://arxiv.org/pdf/2005.11401.pdf) - Paper that introduced RAG.
-
-- [Gao, Yunfan, et al. "Retrieval-augmented generation for large language models: A survey." arXiv preprint arXiv:2312.10997 (2023)](https://arxiv.org/abs/2312.10997) - A survey of RAG for LLMs.
