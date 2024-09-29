@@ -8,7 +8,6 @@ Retrieval-Augmented Generation (RAG) is a technique in Generative AI where addit
 
 - [ℹ️ General Information on RAG](#ℹ%EF%B8%8F-general-information-on-rag)
 - [🎯 Approaches](#-approaches)
-- [💼 RAG Use Cases](#-rag-use-cases)
 - [🧰 Frameworks that Facilitate RAG](#-frameworks-that-facilitate-rag)
 - [🛠️ Techniques](#-techniques)
 - [📊 Metrics](#-metrics)
@@ -18,6 +17,15 @@ Retrieval-Augmented Generation (RAG) is a technique in Generative AI where addit
 ## ℹ️ General Information on RAG
 In traditional RAG approaches, a basic framework is employed to retrieve documents that enrich the context of an LLM prompt. For instance, when querying about materials for renovating a house, the LLM may possess general knowledge about renovation but lacks specific details about the particular house. Implementing an RAG architecture allows for quick searching and retrieval of relevant documents, such as blueprints, to offer more customized responses. This ensures that the LLM incorporates specific information to the renovation needs, thereby enhancing the accuracy of its responses.
 
+**A typical RAG implementation follows these key steps:**
+1. **Divide the knowledge base:** Break the document corpus into smaller, manageable chunks.
+2. **Create embeddings:** Apply an embedding model to transform these text chunks into vector embeddings, capturing their semantic meaning.
+3. **Store in a vector database:** Save the embeddings in a vector database, enabling fast retrieval based on semantic similarity.
+4. **Handle user queries:** Convert the user's query into an embedding using the same model that was applied to the text chunks.
+5. **Retrieve relevant data:** Search the vector database for embeddings that closely match the query’s embedding based on semantic similarity.
+6. **Enhance the prompt:** Incorporate the most relevant text chunks into the LLM’s prompt to provide valuable context for generating a response.
+7. **Generate a response:** The LLM leverages the augmented prompt to deliver a response that is accurate and tailored to the user’s query.
+
 ## 🎯 Approaches
 
 RAG implementations vary in complexity, from simple document retrieval to advanced techniques integrating iterative feedback loops and domain-specific enhancements. Approaches may include:
@@ -25,17 +33,12 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Data cleaning techniques](https://medium.com/intel-tech/four-data-cleaning-techniques-to-improve-large-language-model-llm-performance-77bee9003625): Pre-processing steps to refine input data and improve model performance.
 - [Corrective RAG](https://arxiv.org/pdf/2401.15884.pdf) (CRAG): Methods to correct or refine the retrieved information before integration into LLM responses.
 - [Retrieval-Augmented Fine-Tuning](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674) (RAFT): Techniques to fine-tune LLMs specifically for enhanced retrieval and generation tasks.
-- [Reason and Action (ReAct)](https://research.google/blog/react-synergizing-reasoning-and-acting-in-language-models/) (ReAct): Integration of reasoning capabilities to guide LLM responses based on retrieved context.
 - [Self Reflective RAG](https://selfrag.github.io/): Models that dynamically adjust retrieval strategies based on model performance feedback.
 - [RAG Fusion](https://arxiv.org/abs/2402.03367): Techniques combining multiple retrieval methods for improved context integration.
 - [Temporal Augmented Retrieval](https://adam-rida.medium.com/temporal-augmented-retrieval-tar-dynamic-rag-ad737506dfcc) (TAR): Considering time-sensitive data in retrieval processes.
 - [Plan-then-RAG](https://arxiv.org/abs/2406.12430) (PlanRAG): Strategies involving planning stages before executing RAG for complex tasks.
-- [Tagging and Labeling](https://python.langchain.com/v0.1/docs/use_cases/tagging/): Adding semantic tags or labels to retrieved data to enhance relevance.
 - [GraphRAG](https://github.com/microsoft/graphrag): A structured approach using knowledge graphs for enhanced context integration and reasoning.
-
-## 💼 RAG Use Cases
-
-...
+- [FLARE](https://medium.com/etoai/better-rag-with-active-retrieval-augmented-generation-flare-3b66646e2a9f) - An approach that incorporates active retrieval-augmented generation to improve response quality.
 
 ## 🧰 Frameworks that Facilitate RAG
 
@@ -46,6 +49,15 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Cognita](https://github.com/truefoundry/cognita) - Open-source RAG framework for building modular and production ready applications.
 
 ## 🛠️ Techniques
+### Prompts
+- **Prompting strategies**
+  - [Tagging and Labeling](https://python.langchain.com/v0.1/docs/use_cases/tagging/): Adding semantic tags or labels to retrieved data to enhance relevance.
+  - [Reason and Action (ReAct)](https://research.google/blog/react-synergizing-reasoning-and-acting-in-language-models/) (ReAct): Integration of reasoning capabilities to guide LLM responses based on retrieved context.  
+  - [Chain of Thought (CoT)](https://www.promptingguide.ai/techniques/cot): Encouraging the model to think through problems step by step before providing an answer.
+  - [Chain of Verification (CoVe)](https://sourajit16-02-93.medium.com/chain-of-verification-cove-understanding-implementation-e7338c7f4cb5): Prompting the model to verify each step of its reasoning for accuracy.
+  - [Self-Consistency](https://www.promptingguide.ai/techniques/consistency): Generating multiple reasoning paths and selecting the most consistent answer.
+  - [Zero-Shot Prompting](https://www.promptingguide.ai/techniques/zeroshot): Designing prompts that guide the model without any examples.
+  - [Few-Shot Prompting](https://python.langchain.com/docs/how_to/few_shot_examples/): Providing a few examples in the prompt to demonstrate the desired response format.
 
 ### Chunking
 - **[Fixed-size chunking](https://medium.com/@anuragmishra_27746/five-levels-of-chunking-strategies-in-rag-notes-from-gregs-video-7b735895694d)**
@@ -66,41 +78,42 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
   - Interactive chunking methods where LLMs guide segmentation. 
 
 ### Embeddings
-- Select embedding model
-  - **[MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)**: Explore Hugging Face's benchmark for evaluating model embeddings.
-  - **Custom Embeddings**: Develop tailored embeddings for specific domains or tasks to enhance model performance.
+- **Select embedding model**
+  - **[MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)**: Explore [Hugging Face's](https://github.com/huggingface) benchmark for evaluating model embeddings.
+  - **Custom Embeddings**: Develop tailored embeddings for specific domains or tasks to enhance model performance. Custom embeddings can capture domain-specific terminology and nuances. Techniques include fine-tuning pre-trained models on your own dataset or training embeddings from scratch using frameworks like TensorFlow or PyTorch.
 
 
 ## 📊 Metrics
 
 ### Search metrics
 
-These metrics can be used to evaluate how effectively RAG systems match and integrate external documents or data sources. Alternatively, you may develop your own custom metrics for matching documents or data sources based on your specific domain or niche. Custom metrics can capture domain-specific nuances and improve the relevance and accuracy of your RAG system.
+These metrics are used to measure the similarity between embeddings, which is crucial for evaluating how effectively RAG systems retrieve and integrate external documents or data sources. By selecting appropriate similarity metrics, you can optimize the performance and accuracy of your RAG system. Alternatively, you may develop custom metrics tailored to your specific domain or niche to capture domain-specific nuances and improve relevance.
 
-- [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
+- **[Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity)**
   - Measures the cosine of the angle between two vectors in a multi-dimensional space.
   - Highly effective for comparing text embeddings where the direction of the vectors represents semantic information.
   - Commonly used in RAG systems to measure semantic similarity between query embeddings and document embeddings.
 
-- [Dot Product](https://en.wikipedia.org/wiki/Dot_product)
+- **[Dot Product](https://en.wikipedia.org/wiki/Dot_product)**
   - Calculates the sum of the products of corresponding entries of two sequences of numbers.
   - Equivalent to cosine similarity when vectors are normalized.
   - Simple and efficient, often used with hardware acceleration for large-scale computations.
 
-- [Euclidean Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
+- **[Euclidean Distance](https://en.wikipedia.org/wiki/Euclidean_distance)**
   - Computes the straight-line distance between two points in Euclidean space.
   - Can be used with embeddings but may lose effectiveness in high-dimensional spaces due to the "curse of dimensionality."
   - Often used in clustering algorithms like K-means after dimensionality reduction.
 
-- [Jaccard Similarity](https://en.wikipedia.org/wiki/Jaccard_index)
+- **[Jaccard Similarity](https://en.wikipedia.org/wiki/Jaccard_index)**
   - Measures the similarity between two finite sets as the size of the intersection divided by the size of the union of the sets.
   - Useful when comparing sets of tokens, such as in bag-of-words models or n-gram comparisons.
   - Less applicable to continuous embeddings produced by LLMs.
  
-**Note:** Cosine Similarity and Dot Product are generally seen as the most effective metrics for measuring similarity between high-dimensional embeddings. Euclidean Distance and Jaccard Similarity can be useful in certain contexts but have limitations due to high dimensionality and the nature of embeddings. Selecting the appropriate metric is crucial for optimizing the performance and accuracy of your RAG system.
+> **Note:** Cosine Similarity and Dot Product are generally seen as the most effective metrics for measuring similarity between high-dimensional embeddings. Euclidean Distance and Jaccard Similarity can be useful in certain contexts but have limitations due to high dimensionality and the nature of embeddings. Selecting the appropriate metric is crucial for optimizing the performance and accuracy of your RAG system.
  
 ### Evaluation metrics
-These metrics assess the quality and relevance of generated answers, evaluating how accurate, contextually appropriate, and reliable they are.
+
+These metrics assess the quality and relevance of the generated answers from your RAG system, evaluating how accurate, contextually appropriate, and reliable they are. By applying these evaluation metrics, you can gain insights into the performance of your system and identify areas for improvement.
 
 ...
 
