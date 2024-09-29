@@ -75,36 +75,29 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 
 ### Search metrics
 
-These metrics can be used in evaluating how effectively RAG systems match and integrate external documents or data sources.
+These metrics can be used to evaluate how effectively RAG systems match and integrate external documents or data sources. Alternatively, you may develop your own custom metrics for matching documents or data sources based on your specific domain or niche. Custom metrics can capture domain-specific nuances and improve the relevance and accuracy of your RAG system.
+
+- [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
+  - Measures the cosine of the angle between two vectors in a multi-dimensional space.
+  - Highly effective for comparing text embeddings where the direction of the vectors represents semantic information.
+  - Commonly used in RAG systems to measure semantic similarity between query embeddings and document embeddings.
+
+- [Dot Product](https://en.wikipedia.org/wiki/Dot_product)
+  - Calculates the sum of the products of corresponding entries of two sequences of numbers.
+ - Equivalent to cosine similarity when vectors are normalized.
+ - Simple and efficient, often used with hardware acceleration for large-scale computations.
 
 - [Euclidean Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
-  - Measure of distance between vectors in Euclidean space.
-  - Effective for dense and continuous feature vectors.
-  - Often used in clustering algorithms like K-means.
-- [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity)
-  - Measure of similarity between vectors in a multi-dimensional space.
-  - Commonly used in text and document similarity, such as when the direction of the vectors is more important than their magnitude.
-- [Dot Product](https://en.wikipedia.org/wiki/Dot_product)
-  - Measure of projection between vectors indicating similarity.
-  - Simple and efficient, often used in combination with other methods.
-- [Manhattan Distance (L1 Norm)](https://medium.com/swlh/different-types-of-distances-used-in-machine-learning-ec7087616442)
-  - Sum of absolute differences between vector components.
-  - Useful for grid-like data structures and when the differences are uniformly distributed.
-- [Minkowski Distance](https://en.wikipedia.org/wiki/Minkowski_distance)
-  - Generalized metric combining Euclidean and Manhattan distances.
-  - Particularly effective for numerical datasets when comparing the similarity in magnitude among multiple data point vectors.
+  - Computes the straight-line distance between two points in Euclidean space.
+  - Can be used with embeddings but may lose effectiveness in high-dimensional spaces due to the "curse of dimensionality."
+  - Often used in clustering algorithms like K-means after dimensionality reduction.
+
 - [Jaccard Similarity](https://en.wikipedia.org/wiki/Jaccard_index)
-  - Measure of overlap between sets.
-  - Commonly used for binary or categorical data.
-- [Hamming Distance](https://en.wikipedia.org/wiki/Hamming_distance)
-  - Measure of difference between binary data sequences.
-  - Used for binary strings or categorical data.
-- [Mahalanobis Distance](https://en.wikipedia.org/wiki/Mahalanobis_distance)
-  - Measure considering correlations in data distribution.
-  - Valuable when the data has correlations.
-- [Pearson Correlation Coefficient](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)
-  - Measure of linear correlation between two variables.
-  - Useful for understanding the linear relationship between variables.
+  - Measures the similarity between two finite sets as the size of the intersection divided by the size of the union of the sets.
+  - Useful when comparing sets of tokens, such as in bag-of-words models or n-gram comparisons.
+  - Less applicable to continuous embeddings produced by LLMs.
+ 
+**Note:** Cosine Similarity and Dot Product are generally seen as the most effective metrics for measuring similarity between high-dimensional embeddings. Euclidean Distance and Jaccard Similarity can be useful in certain contexts but have limitations due to high dimensionality and the nature of embeddings. Selecting the appropriate metric is crucial for optimizing the performance and accuracy of your RAG system.
  
 ### Evaluation metrics
 These metrics assess the quality and relevance of generated answers, evaluating how accurate, contextually appropriate, and reliable they are.
