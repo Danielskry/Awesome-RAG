@@ -84,8 +84,8 @@ These metrics can be used to evaluate how effectively RAG systems match and inte
 
 - [Dot Product](https://en.wikipedia.org/wiki/Dot_product)
   - Calculates the sum of the products of corresponding entries of two sequences of numbers.
- - Equivalent to cosine similarity when vectors are normalized.
- - Simple and efficient, often used with hardware acceleration for large-scale computations.
+  - Equivalent to cosine similarity when vectors are normalized.
+  - Simple and efficient, often used with hardware acceleration for large-scale computations.
 
 - [Euclidean Distance](https://en.wikipedia.org/wiki/Euclidean_distance)
   - Computes the straight-line distance between two points in Euclidean space.
