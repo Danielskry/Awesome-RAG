@@ -49,6 +49,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Cognita](https://github.com/truefoundry/cognita) - Open-source RAG framework for building modular and production ready applications.
 
 ## 🛠️ Techniques
+
 ### Prompts
 - **Prompting strategies**
   - [Tagging and Labeling](https://python.langchain.com/v0.1/docs/use_cases/tagging/): Adding semantic tags or labels to retrieved data to enhance relevance.
@@ -101,7 +102,7 @@ These metrics are used to measure the similarity between embeddings, which is cr
 
 - **[Euclidean Distance](https://en.wikipedia.org/wiki/Euclidean_distance)**
   - Computes the straight-line distance between two points in Euclidean space.
-  - Can be used with embeddings but may lose effectiveness in high-dimensional spaces due to the "curse of dimensionality."
+  - Can be used with embeddings but may lose effectiveness in high-dimensional spaces due to the "[curse of dimensionality](https://stats.stackexchange.com/questions/99171/why-is-euclidean-distance-not-a-good-metric-in-high-dimensions)."
   - Often used in clustering algorithms like K-means after dimensionality reduction.
 
 - **[Jaccard Similarity](https://en.wikipedia.org/wiki/Jaccard_index)**
@@ -111,11 +112,27 @@ These metrics are used to measure the similarity between embeddings, which is cr
  
 > **Note:** Cosine Similarity and Dot Product are generally seen as the most effective metrics for measuring similarity between high-dimensional embeddings. Euclidean Distance and Jaccard Similarity can be useful in certain contexts but have limitations due to high dimensionality and the nature of embeddings. Selecting the appropriate metric is crucial for optimizing the performance and accuracy of your RAG system.
  
-### Evaluation metrics
+### Response Evaluation Metrics
+
+#### **Metrics**
 
 These metrics assess the quality and relevance of the generated answers from your RAG system, evaluating how accurate, contextually appropriate, and reliable they are. By applying these evaluation metrics, you can gain insights into the performance of your system and identify areas for improvement.
 
-...
+  - **Automated bechmarking**
+    - ...
+  - **Humans as judges**
+    - ...
+  - **Models as judges**
+    - ...
+
+#### Tools
+
+These tools can assist in evaluating the performance of your RAG system, from tracking user feedback to logging query interactions and comparing multiple evaluation metrics over time.
+
+- **[LangFuse](https://github.com/langfuse/langfuse)**: Open-source tool for tracking LLM metrics, observability, and prompt management.
+- **[LangSmith](https://docs.smith.langchain.com/)**: A platform for building production-grade LLM applications, allows you to closely monitor and evaluate your application.
+- **[Hugging Face Evaluate](https://github.com/huggingface/evaluate)**: Tool for computing metrics like BLEU and ROUGE to assess text quality.
+- **[Weights & Biases](https://wandb.ai/wandb-japan/rag-hands-on/reports/Step-for-developing-and-evaluating-RAG-application-with-W-B--Vmlldzo1NzU4OTAx)**: Tracks experiments, logs metrics, and visualizes performance.
 
 ## 💾 Databases
 The list below features several database systems suitable for Retrieval Augmented Generation (RAG) applications. They cover a range of RAG use cases, aiding in the efficient storage and retrieval of vectors to generate responses or recommendations.
