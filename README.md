@@ -50,8 +50,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 
 ## 🛠️ Techniques
 
-### Prompts
-- **Prompting strategies**
+### Prompting strategies
   - [Tagging and Labeling](https://python.langchain.com/v0.1/docs/use_cases/tagging/): Adding semantic tags or labels to retrieved data to enhance relevance.
   - [Reason and Action (ReAct)](https://research.google/blog/react-synergizing-reasoning-and-acting-in-language-models/) (ReAct): Integration of reasoning capabilities to guide LLM responses based on retrieved context.  
   - [Chain of Thought (CoT)](https://www.promptingguide.ai/techniques/cot): Encouraging the model to think through problems step by step before providing an answer.
@@ -83,6 +82,28 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
   - **[MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)**: Explore [Hugging Face's](https://github.com/huggingface) benchmark for evaluating model embeddings.
   - **Custom Embeddings**: Develop tailored embeddings for specific domains or tasks to enhance model performance. Custom embeddings can capture domain-specific terminology and nuances. Techniques include fine-tuning pre-trained models on your own dataset or training embeddings from scratch using frameworks like TensorFlow or PyTorch.
 
+### Retrieval
+- **Search Methods**
+  - [Vector Store Flat Index](https://weaviate.io/developers/academy/py/vector_index/flat)
+    - Simple and efficient form of retrieval.
+    - Content is vectorized and stored as flat content vectors.
+  - [Hierarchical Index Retrieval](https://pixion.co/blog/rag-strategies-hierarchical-index-retrieval)
+    - Hierarchically narrow data to different levels.
+    - Executes retrievals by hierarchical order.
+  - [Hypothetical Questions](https://pixion.co/blog/rag-strategies-hypothetical-questions-hyde)
+    - Used to increase similarity between database chunks and queries (same with HyDE).
+    - LLM is used to generate specific questions for each text chunk.
+    - Converts these questions into vector embeddings.
+    - During search, matches queries against this index of question vectors.
+  - [Hypothetical Document Embeddings (HyDE)](https://pixion.co/blog/rag-strategies-hypothetical-questions-hyde)
+    - Used to increase similarity between database chunks and queries (same with Hypothetical Questions).
+    - LLM is used to generate a hypothetical response based on the query.
+    - Converts this response into a vector embedding.
+    - Compares the query vector with the hypothetical response vector.
+  - [Small to Big Retrieval](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/gemini/use-cases/retrieval-augmented-generation/small_to_big_rag/small_to_big_rag.ipynb)
+    - Improves retrieval by using smaller chunks for search and larger chunks for context.
+    - Smaller child chunks refers to bigger parent chunks
+- **[Re-ranking](https://developer.nvidia.com/blog/enhancing-rag-pipelines-with-re-ranking/)**: Enhances search results in RAG pipelines by reordering initially retrieved documents, prioritizing those most semantically relevant to the query.
 
 ## 📊 Metrics
 
@@ -110,11 +131,9 @@ These metrics are used to measure the similarity between embeddings, which is cr
   - Useful when comparing sets of tokens, such as in bag-of-words models or n-gram comparisons.
   - Less applicable to continuous embeddings produced by LLMs.
  
-> **Note:** Cosine Similarity and Dot Product are generally seen as the most effective metrics for measuring similarity between high-dimensional embeddings. Euclidean Distance and Jaccard Similarity can be useful in certain contexts but have limitations due to high dimensionality and the nature of embeddings. Selecting the appropriate metric is crucial for optimizing the performance and accuracy of your RAG system.
+> **Note:** Cosine Similarity and Dot Product are generally seen as the most effective metrics for measuring similarity between high-dimensional embeddings.
  
 ### Response Evaluation Metrics
-
-#### **Metrics**
 
 These metrics assess the quality and relevance of the generated answers from your RAG system, evaluating how accurate, contextually appropriate, and reliable they are. By applying these evaluation metrics, you can gain insights into the performance of your system and identify areas for improvement.
 
