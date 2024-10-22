@@ -161,6 +161,9 @@ These tools can assist in evaluating the performance of your RAG system, from tr
 ## 💾 Databases
 The list below features several database systems suitable for Retrieval Augmented Generation (RAG) applications. They cover a range of RAG use cases, aiding in the efficient storage and retrieval of vectors to generate responses or recommendations.
 
+### Benchmarks
+- [Picking a vector database](https://benchmark.vectorview.ai/vectordbs.html)
+
 ### Distributed Data Processing and Serving Engines:
 - [Apache Cassandra](https://cassandra.apache.org/doc/latest/cassandra/vector-search/concepts.html): Distributed NoSQL database management system.
 - [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-vector-search): Globally distributed, multi-model database service with integrated vector search.
