@@ -48,6 +48,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) - An SDK from Microsoft for developing Generative AI applications.
 - [LlamaIndex](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/) - Framework for connecting custom data sources to LLMs.
 - [Cognita](https://github.com/truefoundry/cognita) - Open-source RAG framework for building modular and production ready applications.
+- [Verba](https://github.com/weaviate/Verba) - Open-source application for RAG out of the box.
 
 ## 🛠️ Techniques
 
