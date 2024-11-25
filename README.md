@@ -49,6 +49,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [LlamaIndex](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/) - Framework for connecting custom data sources to LLMs.
 - [Cognita](https://github.com/truefoundry/cognita) - Open-source RAG framework for building modular and production ready applications.
 - [Verba](https://github.com/weaviate/Verba) - Open-source application for RAG out of the box.
+- [Mastra](https://github.com/mastra-ai/mastra) - Typescript framework for building AI applications.
 
 ## 🛠️ Techniques
 
