@@ -147,12 +147,11 @@ These metrics are used to measure the similarity between embeddings, which is cr
 
 These metrics assess the quality and relevance of the generated answers from your RAG system, evaluating how accurate, contextually appropriate, and reliable they are. By applying these evaluation metrics, you can gain insights into the performance of your system and identify areas for improvement.
 
-  - **Automated bechmarking**
-    - ...
-  - **Humans as judges**
-    - ...
-  - **Models as judges**
-    - ...
+- **Automated Benchmarking**: Use tools like [BLEU](https://en.wikipedia.org/wiki/BLEU) or [ROUGE](https://en.wikipedia.org/wiki/ROUGE_(metric)).
+
+- **Human Evaluation**: Assess quality based on human judgment.
+
+- **Model Evaluation**: Compare using pre-trained evaluators.
 
 #### Tools
 
@@ -201,3 +200,7 @@ The list below features several database systems suitable for Retrieval Augmente
 
 ### Vector Search Libraries and Tools:
 - [FAISS](https://github.com/facebookresearch/faiss): A library for efficient similarity search and clustering of dense vectors, designed to handle large-scale datasets and optimized for fast retrieval of nearest neighbors.
+
+-----
+
+This list continues to evolve. Contributions are welcome to make this resource more comprehensive 🙌
