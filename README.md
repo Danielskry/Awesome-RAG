@@ -45,13 +45,16 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 
 ## 🧰 Frameworks that Facilitate RAG
 
-- [Haystack](https://github.com/deepset-ai/haystack) - LLM orchestration framework to build customizable, production-ready LLM applications.
-- [LangChain](https://python.langchain.com/docs/modules/data_connection/) - An all-purpose framework for working with LLMs.
-- [Semantic Kernel](https://github.com/microsoft/semantic-kernel) - An SDK from Microsoft for developing Generative AI applications.
-- [LlamaIndex](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/) - Framework for connecting custom data sources to LLMs.
-- [Cognita](https://github.com/truefoundry/cognita) - Open-source RAG framework for building modular and production ready applications.
-- [Verba](https://github.com/weaviate/Verba) - Open-source application for RAG out of the box.
-- [Mastra](https://github.com/mastra-ai/mastra) - Typescript framework for building AI applications.
+- [Haystack](https://github.com/deepset-ai/haystack): LLM orchestration framework to build customizable, production-ready LLM applications.
+- [LangChain](https://python.langchain.com/docs/modules/data_connection/): An all-purpose framework for working with LLMs.
+- [Semantic Kernel](https://github.com/microsoft/semantic-kernel): An SDK from Microsoft for developing Generative AI applications.
+- [LlamaIndex](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Framework for connecting custom data sources to LLMs.
+- [Dify](https://github.com/langgenius/dify): An open-source LLM app development platform.
+- [Cognita](https://github.com/truefoundry/cognita): Open-source RAG framework for building modular and production ready applications.
+- [Verba](https://github.com/weaviate/Verba): Open-source application for RAG out of the box.
+- [Mastra](https://github.com/mastra-ai/mastra): Typescript framework for building AI applications.
+- [Letta](https://github.com/letta-ai/letta): Open source framework for building stateful LLM applications.
+- [Flowise](https://github.com/FlowiseAI/Flowise): Drag & drop UI to build customized LLM flows.
 
 ## 🛠️ Techniques
 ### Data cleaning
