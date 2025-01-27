@@ -26,8 +26,6 @@ In traditional RAG approaches, a basic framework is employed to retrieve documen
 6. **Enhance the prompt:** Incorporate the most relevant text chunks into the LLM’s prompt to provide valuable context for generating a response.
 7. **Generate a response:** The LLM leverages the augmented prompt to deliver a response that is accurate and tailored to the user’s query.
 
-For further exploration of RAG implementations, visit [RAGHub](https://github.com/Andrew-Jang/RAGHub), a community-driven repository of RAG projects.
-
 ## 🎯 Approaches
 
 RAG implementations vary in complexity, from simple document retrieval to advanced techniques integrating iterative feedback loops and domain-specific enhancements. Approaches may include:
