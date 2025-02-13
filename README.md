@@ -56,7 +56,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Mastra](https://github.com/mastra-ai/mastra): Typescript framework for building AI applications.
 - [Letta](https://github.com/letta-ai/letta): Open source framework for building stateful LLM applications.
 - [Flowise](https://github.com/FlowiseAI/Flowise): Drag & drop UI to build customized LLM flows.
-- [Swiftide](https://github.comb/bosun-ai/swiftide): Rust framework for building modular, streaming LLM applications.
+- [Swiftide](https://github.com/bosun-ai/swiftide): Rust framework for building modular, streaming LLM applications.
 
 ## 🛠️ Techniques
 
