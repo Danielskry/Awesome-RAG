@@ -126,6 +126,11 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
     - Smaller child chunks refers to bigger parent chunks
 - **[Re-ranking](https://developer.nvidia.com/blog/enhancing-rag-pipelines-with-re-ranking/)**: Enhances search results in RAG pipelines by reordering initially retrieved documents, prioritizing those most semantically relevant to the query.
 
+### Response quality & safety
+
+- [Hallucination](https://machinelearningmastery.com/rag-hallucination-detection-techniques/): When an AI model generates incorrect or fabricated information, which can be mitigated through grounding, refined retrieval, and verification techniques.
+- [Guardrails](https://developer.ibm.com/tutorials/awb-how-to-implement-llm-guardrails-for-rag-applications/): Mechanisms to ensure accurate, ethical, and safe responses by applying content moderation, bias mitigation, and fact-checking.
+
 ## 📊 Metrics
 
 ### Search metrics
