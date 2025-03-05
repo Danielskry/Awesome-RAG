@@ -130,6 +130,10 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 
 - [Hallucination](https://machinelearningmastery.com/rag-hallucination-detection-techniques/): When an AI model generates incorrect or fabricated information, which can be mitigated through grounding, refined retrieval, and verification techniques.
 - [Guardrails](https://developer.ibm.com/tutorials/awb-how-to-implement-llm-guardrails-for-rag-applications/): Mechanisms to ensure accurate, ethical, and safe responses by applying content moderation, bias mitigation, and fact-checking.
+- **[Prompt Injection Prevention](https://hiddenlayer.com/innovation-hub/prompt-injection-attacks-on-llms/):**
+  - **Input Validation:** Rigorously validate and sanitize all external inputs to ensure that only intended data is incorporated into the prompt.
+  - **Content Separation:** Clearly distinguish between trusted, static instructions and dynamic user data using templating or placeholders.
+  - **Output Monitoring:** Continuously monitor responses and logs for any anomalies that could indicate prompt manipulation, and adjust guardrails accordingly.
 
 ## 📊 Metrics
 
