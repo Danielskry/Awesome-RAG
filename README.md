@@ -46,6 +46,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 
 ## 🧰 Frameworks that Facilitate RAG
 
+- [Vectara](https://vectara.com): Trusted RAG as a service, available as SaaS, VPC and on-prem
 - [Haystack](https://github.com/deepset-ai/haystack): LLM orchestration framework to build customizable, production-ready LLM applications.
 - [LangChain](https://python.langchain.com/docs/modules/data_connection/): An all-purpose framework for working with LLMs.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel): An SDK from Microsoft for developing Generative AI applications.
@@ -102,6 +103,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - **Select embedding model**
   - **[MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard)**: Explore [Hugging Face's](https://github.com/huggingface) benchmark for evaluating model embeddings.
   - **Custom Embeddings**: Develop tailored embeddings for specific domains or tasks to enhance model performance. Custom embeddings can capture domain-specific terminology and nuances. Techniques include fine-tuning pre-trained models on your own dataset or training embeddings from scratch using frameworks like TensorFlow or PyTorch.
+  - **MOOC**: learn more about building Embedding models in this [short course from DeepLearning.AI](https://www.deeplearning.ai/short-courses/embedding-models-from-architecture-to-implementation/)
 
 ### Retrieval
 
@@ -109,6 +111,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
   - [Vector Store Flat Index](https://weaviate.io/developers/academy/py/vector_index/flat)
     - Simple and efficient form of retrieval.
     - Content is vectorized and stored as flat content vectors.
+  - [Hybrid search](https://www.vectara.com/blog/how-to-implement-hybrid-search-into-your-product-for-better-customer-experiences)
   - [Hierarchical Index Retrieval](https://pixion.co/blog/rag-strategies-hierarchical-index-retrieval)
     - Hierarchically narrow data to different levels.
     - Executes retrievals by hierarchical order.
@@ -125,7 +128,10 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
   - [Small to Big Retrieval](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/gemini/use-cases/retrieval-augmented-generation/small_to_big_rag/small_to_big_rag.ipynb)
     - Improves retrieval by using smaller chunks for search and larger chunks for context.
     - Smaller child chunks refers to bigger parent chunks
-- **[Re-ranking](https://developer.nvidia.com/blog/enhancing-rag-pipelines-with-re-ranking/)**: Enhances search results in RAG pipelines by reordering initially retrieved documents, prioritizing those most semantically relevant to the query.
+- **Re-ranking**
+  - [Overview](https://developer.nvidia.com/blog/enhancing-rag-pipelines-with-re-ranking/)**: Enhances search results in RAG pipelines by reordering initially retrieved documents, prioritizing those most semantically relevant to the query.
+  - [MMR reranker](https://www.vectara.com/blog/get-diverse-results-and-comprehensive-summaries-with-vectaras-mmr-reranker)
+  - [User defined reranking](https://www.vectara.com/blog/rag-with-user-defined-functions-based-reranking)
 
 ### Response quality & safety
 
@@ -202,6 +208,7 @@ Response evaluation in RAG solutions involves assessing the quality of language 
 
 These tools can assist in evaluating the performance of your RAG system, from tracking user feedback to logging query interactions and comparing multiple evaluation metrics over time.
 
+- **[open-rag-eval](https://github.com/vectara/open-rag-eval)**: Open source RAG evaluation framework, using metrics like UMBRELA and AutoNuggetizer.
 - **[LangFuse](https://github.com/langfuse/langfuse)**: Open-source tool for tracking LLM metrics, observability, and prompt management.
 - **[Ragas](https://docs.ragas.io/en/stable/)**: Framework that helps evaluate RAG pipelines.
 - **[LangSmith](https://docs.smith.langchain.com/)**: A platform for building production-grade LLM applications, allows you to closely monitor and evaluate your application.
