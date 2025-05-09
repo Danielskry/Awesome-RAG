@@ -254,10 +254,6 @@ The list below features several database systems suitable for Retrieval Augmente
 
 - [FAISS](https://github.com/facebookresearch/faiss): A library for efficient similarity search and clustering of dense vectors, designed to handle large-scale datasets and optimized for fast retrieval of nearest neighbors.
 
-## 🌟 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=Danielskry/Awesome-RAG&type=Date)](https://www.star-history.com/#Danielskry/Awesome-RAG&Date)
-
 ---
 
 This list continues to evolve. Contributions are welcome to make this resource more comprehensive 🙌
