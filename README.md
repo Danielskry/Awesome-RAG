@@ -15,7 +15,7 @@ Retrieval-Augmented Generation (RAG) is a technique in Generative AI where addit
 
 ## ℹ️ General Information on RAG
 
-In traditional RAG approaches, a basic framework is employed to retrieve documents that enrich the context of an LLM prompt. For instance, when querying about materials for renovating a house, the LLM may possess general knowledge about renovation but lacks specific details about the particular house. Implementing an RAG architecture allows for quick searching and retrieval of relevant documents, such as blueprints, to offer more customized responses. This ensures that the LLM incorporates specific information to the renovation needs, thereby enhancing the accuracy of its responses. You can find a Python [implementation on this here](https://github.com/Danielskry/LangChain-Chroma-RAG-demo-2024).
+In traditional RAG approaches, a basic framework is employed to retrieve documents that enrich the context of an LLM prompt. For instance, when querying about materials for renovating a house, the LLM may possess general knowledge about renovation but lacks specific details about the particular house. Implementing an RAG architecture allows for quick searching and retrieval of relevant documents, such as blueprints, to offer more customized responses. This ensures that the LLM incorporates specific information to the renovation needs, thereby enhancing the accuracy of its responses.
 
 **A typical RAG implementation follows these key steps:**
 
@@ -26,6 +26,8 @@ In traditional RAG approaches, a basic framework is employed to retrieve documen
 5. **Retrieve relevant data:** Search the vector database for embeddings that closely match the query’s embedding based on semantic similarity.
 6. **Enhance the prompt:** Incorporate the most relevant text chunks into the LLM’s prompt to provide valuable context for generating a response.
 7. **Generate a response:** The LLM leverages the augmented prompt to deliver a response that is accurate and tailored to the user’s query.
+
+You can find a complete, basic [implementation of RAG in Python here](https://github.com/Danielskry/LangChain-Chroma-RAG-demo-2024).
 
 ## 🎯 Approaches
 
