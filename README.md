@@ -61,6 +61,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Flowise](https://github.com/FlowiseAI/Flowise): Drag & drop UI to build customized LLM flows.
 - [Swiftide](https://github.com/bosun-ai/swiftide): Rust framework for building modular, streaming LLM applications.
 - [CocoIndex](https://github.com/cocoindex-io/cocoindex): ETL framework to index data for AI, such as RAG; with realtime incremental updates.
+- [AgentDock](https://github.com/AgentDock/AgentDock): Framework for building production AI agents with integrated RAG and unified service access.
   
 ## 🛠️ Techniques
 
