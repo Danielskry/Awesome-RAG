@@ -57,6 +57,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Cognita](https://github.com/truefoundry/cognita): Open-source RAG framework for building modular and production ready applications.
 - [Verba](https://github.com/weaviate/Verba): Open-source application for RAG out of the box.
 - [Mastra](https://github.com/mastra-ai/mastra): Typescript framework for building AI applications.
+- [Neurolink](https://github.com/juspay/neurolink): Multi-provider AI agent framework for building RAG applications. Unifies 12+ LLM providers (OpenAI, Google, Anthropic, AWS, Azure, Groq, etc.) with workflow orchestration. Production-grade framework with streaming, tool calling, caching, and enterprise features. Handles 15M+ requests/month.
 - [Letta](https://github.com/letta-ai/letta): Open source framework for building stateful LLM applications.
 - [Flowise](https://github.com/FlowiseAI/Flowise): Drag & drop UI to build customized LLM flows.
 - [Swiftide](https://github.com/bosun-ai/swiftide): Rust framework for building modular, streaming LLM applications.
