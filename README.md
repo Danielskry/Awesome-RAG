@@ -44,8 +44,10 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Plan-then-RAG](https://arxiv.org/abs/2406.12430) (PlanRAG): Strategies involving planning stages before executing RAG for complex tasks.
 - [GraphRAG](https://github.com/microsoft/graphrag): A structured approach using knowledge graphs for enhanced context integration and reasoning.
 - [FLARE](https://medium.com/etoai/better-rag-with-active-retrieval-augmented-generation-flare-3b66646e2a9f) - An approach that incorporates active retrieval-augmented generation to improve response quality.
-- [Contextual Retrieval](https://www.anthropic.com/news/contextual-retrieval) - Improves retrieval by adding relevant context to document chunks before retrieval, enhancing the relevance of information retrieved from large knowledge bases.
 - [GNN-RAG](https://github.com/cmavro/GNN-RAG): Graph neural retrieval for large language modeling reasoning.
+- [Multimodal RAG](https://developer.nvidia.com/blog/an-easy-introduction-to-multimodal-retrieval-augmented-generation/): Extends RAG to handle multiple modalities such as text, images, and audio.
+- [VideoRAG](https://arxiv.org/abs/2501.05874): Extends RAG to videos using Large Video Language Models (LVLMs) to retrieve and integrate visual and textual content for multimodal generation.
+- [REFRAG](https://arxiv.org/pdf/2509.01092): Optimizes RAG decoding by compressing retrieved context into embeddings before generation, reducing latency while maintaining output quality.
 
 ## 🧰 Frameworks that Facilitate RAG
 
@@ -128,6 +130,15 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
   - [Small to Big Retrieval](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/gemini/use-cases/retrieval-augmented-generation/small_to_big_rag/small_to_big_rag.ipynb)
     - Improves retrieval by using smaller chunks for search and larger chunks for context.
     - Smaller child chunks refers to bigger parent chunks
+  - [Contextual Retrieval](https://www.anthropic.com/engineering/contextual-retrieval)
+    - Enhances RAG retrieval accuracy by preserving document context that is typically lost during chunking.
+    - Each text chunk is enriched with a short, model-generated summary before embedding and indexing, resulting in Contextual Embeddings and Contextual BM25.
+    - This combined approach improves both semantic and lexical matching, reducing retrieval failure rates when paired with reranking.
+  - [Adaptive Retrieval](https://arxiv.org/abs/2403.14403)
+    - Dynamically decide when and how much to retrieve during generation.
+  - [Query Reformulation and Expansion](https://haystack.deepset.ai/cookbook/query-expansion)
+    - Automatically rewrites or expands the query before retrieval to boost recall.
+    - Useful for long or ambiguous user queries.
 - **[Re-ranking](https://developer.nvidia.com/blog/enhancing-rag-pipelines-with-re-ranking/)**: Enhances search results in RAG pipelines by reordering initially retrieved documents, prioritizing those most semantically relevant to the query.
 
 ### Response quality & safety
