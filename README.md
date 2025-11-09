@@ -85,6 +85,8 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
   - [Reason & Act (ReAct) prompting](https://www.promptingguide.ai/techniques/react): Combines reasoning (e.g. CoT) with acting (e.g. tool calling).
 - **Caching**
   - [Prompt Caching](https://medium.com/@1kg/prompt-cache-what-is-prompt-caching-a-comprehensive-guide-e6cbae48e6a3): Optimizes LLMs by storing and reusing precomputed attention states.
+- **Structuring**
+  -  [Token-Oriented Object Notation](https://github.com/toon-format/toon): A compact, deterministic JSON format for LLM prompts.
 
 ### Chunking
 
