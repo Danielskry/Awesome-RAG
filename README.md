@@ -66,6 +66,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [CocoIndex](https://github.com/cocoindex-io/cocoindex): ETL framework to index data for AI, such as RAG; with realtime incremental updates.
 - [Pathway](https://github.com/pathwaycom/pathway/): Performant open-source Python ETL framework with Rust runtime, supporting 300+ data sources.
 - [Pathway AI Pipelines](https://github.com/pathwaycom/llm-app/): A production-ready RAG framework supporting real-time indexing, retrieval, and change tracking across diverse data sources.
+- [Ethora](https://ethora.com/ai-sdk/business-website-crawler-rag/) – SDK and tooling to automatically crawl websites or documents and convert them into structured knowledge bases for retrieval-augmented generation (RAG).
   
 ## 🛠️ Techniques
 
