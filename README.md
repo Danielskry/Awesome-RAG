@@ -12,6 +12,7 @@ Retrieval-Augmented Generation (RAG) is a technique in Generative AI where addit
 - [🛠️ Techniques](#-techniques)
 - [📊 Metrics](#-metrics)
 - [💾 Databases](#-databases)
+- [🌐 Domain-Specific Knowledge APIs](#-domain-specific-knowledge-apis)
 
 ## ℹ️ General Information on RAG
 
@@ -272,6 +273,12 @@ The list below features several database systems suitable for Retrieval Augmente
 ### Vector Search Libraries and Tools:
 
 - [FAISS](https://github.com/facebookresearch/faiss): A library for efficient similarity search and clustering of dense vectors, designed to handle large-scale datasets and optimized for fast retrieval of nearest neighbors.
+
+## 🌐 Domain-Specific Knowledge APIs
+
+These APIs provide structured, domain-specific knowledge that can serve as external data sources for RAG systems, enabling LLMs to generate accurate, grounded responses in specialized fields.
+
+- [Vedika API](https://vedika.io): Vedic astrology knowledge API with 108+ endpoints for birth charts, planetary positions, doshas, dashas, muhurta, and AI-powered interpretations. Supports 22 languages with free sandbox for development. Ideal knowledge source for astrology RAG applications.
 
 ---
 
