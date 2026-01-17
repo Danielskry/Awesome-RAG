@@ -23,9 +23,9 @@ In traditional RAG approaches, a basic framework is employed to retrieve documen
 2. **Create embeddings:** Apply an embedding model to transform these text chunks into vector embeddings, capturing their semantic meaning.
 3. **Store in a vector database:** Save the embeddings in a vector database, enabling fast retrieval based on semantic similarity.
 4. **Handle user queries:** Convert the user's query into an embedding using the same model that was applied to the text chunks.
-5. **Retrieve relevant data:** Search the vector database for embeddings that closely match the query’s embedding based on semantic similarity.
-6. **Enhance the prompt:** Incorporate the most relevant text chunks into the LLM’s prompt to provide valuable context for generating a response.
-7. **Generate a response:** The LLM leverages the augmented prompt to deliver a response that is accurate and tailored to the user’s query.
+5. **Retrieve relevant data:** Search the vector database for embeddings that closely match the query's embedding based on semantic similarity.
+6. **Enhance the prompt:** Incorporate the most relevant text chunks into the LLM's prompt to provide valuable context for generating a response.
+7. **Generate a response:** The LLM leverages the augmented prompt to deliver a response that is accurate and tailored to the user's query.
 
 You can find a complete, basic [implementation of RAG in Python here](https://github.com/Danielskry/LangChain-Chroma-RAG-demo-2024).
 
@@ -34,7 +34,7 @@ You can find a complete, basic [implementation of RAG in Python here](https://gi
 RAG implementations vary in complexity, from simple document retrieval to advanced techniques integrating iterative feedback loops and domain-specific enhancements. Approaches may include:
 
 - [Vision-RAG](https://www.youtube.com/watch?v=npkp4mSweEg): Embeds entire pages as images, allowing vision models to handle reasoning directly without parsing text-RAG.
-- [Cache-Augmented Generation (CAG)](https://medium.com/@ronantech/cache-augmented-generation-cag-in-llms-a-step-by-step-tutorial-6ac35d415eec): Preloads relevant documents into a model’s context and stores the inference state (Key-Value (KV) cache).
+- [Cache-Augmented Generation (CAG)](https://medium.com/@ronantech/cache-augmented-generation-cag-in-llms-a-step-by-step-tutorial-6ac35d415eec): Preloads relevant documents into a model's context and stores the inference state (Key-Value (KV) cache).
 - [Agentic RAG](https://langchain-ai.github.io/langgraph/tutorials/rag/langgraph_agentic_rag/): Also known as retrieval agents, can make decisions on retrieval processes.
 - [Corrective RAG](https://arxiv.org/pdf/2401.15884.pdf) (CRAG): Methods to correct or refine the retrieved information before integration into LLM responses.
 - [Retrieval-Augmented Fine-Tuning](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674) (RAFT): Techniques to fine-tune LLMs specifically for enhanced retrieval and generation tasks.
@@ -53,6 +53,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 ## 🧰 Frameworks that Facilitate RAG
 
 - [Haystack](https://github.com/deepset-ai/haystack): LLM orchestration framework to build customizable, production-ready LLM applications.
+- [IntellyWeave](https://github.com/vericle/intellyweave): Production RAG platform built on Weaviate's Elysia framework, specialized for intelligence analysis. Features multi-agent orchestration, entity-aware retrieval with GLiNER extraction, and hybrid search with entity filtering.
 - [LangChain](https://python.langchain.com/docs/modules/data_connection/): An all-purpose framework for working with LLMs.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel): An SDK from Microsoft for developing Generative AI applications.
 - [LlamaIndex](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Framework for connecting custom data sources to LLMs.
