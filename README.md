@@ -128,7 +128,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Haystack](https://github.com/deepset-ai/haystack): LLM orchestration framework to build customizable, production-ready LLM applications.
 - [LangChain](https://python.langchain.com/docs/modules/data_connection/): An all-purpose framework for working with LLMs.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel): An SDK from Microsoft for developing Generative AI applications.
-- [LlamaIndex](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Framework for connecting custom data sources to LLMs. Features [official Supabase integration](https://supabase.com/docs/guides/ai/integrations/llamaindex) for seamless RAG development.
+- [LlamaIndex](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Framework for connecting custom data sources to LLMs.
 - [Dify](https://github.com/langgenius/dify): An open-source LLM app development platform.
 - [Cognita](https://github.com/truefoundry/cognita): Open-source RAG framework for building modular and production ready applications.
 - [Verba](https://github.com/weaviate/Verba): Open-source application for RAG out of the box.
@@ -139,14 +139,14 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [CocoIndex](https://github.com/cocoindex-io/cocoindex): ETL framework to index data for AI, such as RAG; with realtime incremental updates.
 - [Pathway](https://github.com/pathwaycom/pathway/): Performant open-source Python ETL framework with Rust runtime, supporting 300+ data sources.
 - [Pathway AI Pipelines](https://github.com/pathwaycom/llm-app/): A production-ready RAG framework supporting real-time indexing, retrieval, and change tracking across diverse data sources.
-- [LiteLLM](https://docs.litellm.ai/observability/supabase_integration): Unified interface for multiple LLM providers (OpenAI, Anthropic, Hugging Face, Replicate) with [Supabase integration](https://docs.litellm.ai/observability/supabase_integration) for logging, monitoring, and cost tracking.
+- [LiteLLM](https://docs.litellm.ai/): Unified interface for multiple LLM providers (OpenAI, Anthropic, Hugging Face, Replicate) with logging, monitoring, and cost tracking.
 
 ## 🐍 Python Ecosystem for RAG
 
 Python is the most mature ecosystem for RAG today, with extensive support for
 LLMs, embeddings, vector databases, evaluation, and production tooling.
 
-👉 See the full guide: [Python Ecosystem for RAG](docs/python-ecosystem.md)
+See the full guide: [Python Ecosystem for RAG](docs/python-ecosystem.md)
 
 ## 🛠️ Techniques
 
@@ -291,7 +291,6 @@ Ensuring high-quality, safe, and reliable responses is critical for production R
   - **Output Monitoring**: Continuously monitor responses for anomalies, unexpected behaviors, or security violations
   - **Rate Limiting**: Implement rate limits and abuse detection to prevent systematic attacks
   - **Sandboxing**: Isolate LLM execution environments to limit potential damage from successful injections
-  - **Platform-Specific Security**: For Supabase implementations, leverage [Row Level Security (RLS)](https://supabase.com/docs/guides/auth/row-level-security) policies to restrict access to vector data and implement [Edge Function authentication](https://supabase.com/docs/guides/functions/auth) for secure AI model access
 
 ## 📊 Metrics & Evaluation
 
@@ -394,13 +393,6 @@ Vector databases are critical components of RAG systems, providing efficient sto
 ### Relational Database Extensions:
 
 - [Pgvector](https://github.com/pgvector/pgvector): An open-source extension for vector similarity search in PostgreSQL.
-- [Supabase](https://supabase.com/): Open-source Firebase alternative built on PostgreSQL with native pgvector support, real-time subscriptions, and integrated AI/LLM capabilities. Features include:
-  - **Vector Search**: Native pgvector integration for efficient similarity search
-  - **Real-time RAG**: Real-time document updates and query subscriptions
-  - **Edge Functions**: Serverless functions for embedding generation and LLM integration
-  - **Row Level Security**: Fine-grained access control for secure RAG applications
-  - **LlamaIndex Integration**: [Official integration](https://supabase.com/docs/guides/ai/integrations/llamaindex) for seamless RAG pipeline development
-  - [Supabase AI Integrations](https://supabase.com/features/ai-integrations): Comprehensive AI platform connectivity
 
 ### Other Database Systems:
 
@@ -456,64 +448,12 @@ Building production-grade RAG systems requires addressing several critical aspec
 - **Selective Retrieval**: Use query routing to avoid unnecessary retrieval operations
 - **Model Selection**: Balance cost and performance when choosing embedding and LLM models
 - **Resource Right-sizing**: Optimize infrastructure based on actual usage patterns
-- **Platform-Specific Optimization**: 
-  - For Supabase: Use [LiteLLM integration](https://docs.litellm.ai/observability/supabase_integration) for cost tracking and multi-provider fallback strategies
-  - Leverage Supabase Edge Functions for efficient serverless execution and automatic scaling
-  - Utilize connection pooling to reduce database connection overhead
 
 ## 🔌 Platform-Specific RAG Implementations
 
-### Supabase RAG Architecture
+For detailed implementation guides for specific platforms, see the documentation:
 
-Supabase provides a comprehensive platform for building production-ready RAG systems with integrated AI/LLM capabilities:
-
-#### Core Components
-
-- **PostgreSQL + pgvector**: Native vector similarity search with HNSW indexing for fast retrieval
-- **Real-time Subscriptions**: Live updates to document embeddings and query results
-- **Edge Functions**: Serverless execution for:
-  - Embedding generation using OpenAI, Cohere, or custom models
-  - LLM integration (OpenAI, Anthropic, Hugging Face, Replicate)
-  - Query processing and context augmentation
-  - Response generation and post-processing
-
-#### Integration Patterns
-
-- **LlamaIndex + Supabase**: 
-  - [Official integration guide](https://supabase.com/docs/guides/ai/integrations/llamaindex)
-  - Seamless data ingestion, chunking, and retrieval workflows
-  - Built-in support for document loaders and vector stores
-
-- **LiteLLM + Supabase**:
-  - [Unified LLM provider interface](https://docs.litellm.ai/observability/supabase_integration)
-  - Request logging and cost monitoring
-  - Multi-provider fallback strategies
-
-#### Security & Access Control
-
-- **Row Level Security (RLS)**: Fine-grained access control for vector data
-- **API Authentication**: Secure access to embeddings and LLM endpoints
-- **Data Isolation**: Tenant-specific vector namespaces for multi-tenant applications
-
-#### Production Features
-
-- **Automatic Backups**: Built-in PostgreSQL backup and point-in-time recovery
-- **Connection Pooling**: Optimized database connections for high-concurrency RAG queries
-- **Monitoring & Observability**: Integrated logging and metrics for RAG pipeline performance
-- **Scalability**: Horizontal scaling with read replicas for vector search workloads
-
-#### Example Use Cases
-
-- **Document Q&A Systems**: Real-time question answering over private knowledge bases
-- **AI-Powered Search**: Semantic search with hybrid keyword + vector retrieval
-- **Chatbots with Memory**: Conversational AI with persistent context storage
-- **Content Recommendation**: Similarity-based content discovery and personalization
-
-#### Getting Started
-
-- [Supabase AI Integrations Documentation](https://supabase.com/features/ai-integrations)
-- [Supabase Vector Search Guide](https://supabase.com/docs/guides/database/extensions/pgvector)
-- [Building AI Agents with Supabase](https://www.youtube.com/watch?v=8GH-afNDebI): Complete tutorial
+- [Supabase Integration Guide](docs/supabase-integration.md): Building RAG systems with Supabase, pgvector, and Edge Functions
 
 ## 💡 Best Practices
 
