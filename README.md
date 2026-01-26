@@ -559,17 +559,6 @@ Supabase provides a comprehensive platform for building production-ready RAG sys
 - **Model Updates**: Plan for embedding model upgrades and migration strategies
 - **Documentation**: Maintain clear documentation of architecture, decisions, and operational procedures
 
-### Python-Specific Best Practices
-
-- **Virtual Environments**: Use `venv` or `conda` to manage dependencies and Python versions
-- **Dependency Management**: Use `requirements.txt` or `pyproject.toml` with version pinning
-- **Code Quality**: Use `black` for formatting, `flake8` or `ruff` for linting, and `mypy` for type checking
-- **Testing**: Write unit tests with `pytest`, integration tests for RAG pipelines, and use mocking for external APIs
-- **Logging**: Use structured logging with `structlog` or `loguru` for better observability
-- **Error Handling**: Implement comprehensive error handling with custom exceptions and retry logic
-- **Performance**: Profile code with `cProfile` or `py-spy`, optimize bottlenecks, and use async/await for I/O-bound operations
-- **Security**: Validate inputs with Pydantic, sanitize user queries, and secure API keys using environment variables
-
 ---
 
 This list continues to evolve. Contributions are welcome to make this resource more comprehensive 🙌

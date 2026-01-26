@@ -213,3 +213,14 @@ embeddings = await generate_embeddings_async(texts)
 - [Building RAG Applications with Python](https://github.com/Danielskry/LangChain-Chroma-RAG-demo-2024)
 - [Python for AI/ML Best Practices](https://docs.python-guide.org/writing/structure/)
 - [Async Python for AI Applications](https://docs.python.org/3/library/asyncio.html)
+
+
+### Python-Specific Best Practices
+
+- **Virtual Environments**: Use `venv` or `conda` to manage dependencies and Python versions
+- **Dependency Management**: Use `requirements.txt` or `pyproject.toml` with version pinning
+- **Code Quality**: Use `black` for formatting, `flake8` or `ruff` for linting, and `mypy` for type checking
+- **Testing**: Write unit tests with `pytest`, integration tests for RAG pipelines, and use mocking for external APIs
+- **Logging**: Use structured logging with `structlog` or `loguru` for better observability
+- **Error Handling**: Implement comprehensive error handling with custom exceptions and retry logic
+- **Performance**: Profile code with `cProfile` or `py-spy`, optimize bottlenecks, and use async/await for I/O-bound operations
