@@ -1,6 +1,6 @@
 # 😎 Awesome Retrieval Augmented Generation (RAG) [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
-This repository contains a curated [Awesome List](https://github.com/sindresorhus/awesome) and comprehensive technical information on Retrieval-Augmented Generation (RAG) applications in Generative AI.
+A curated resource map of tools, frameworks, techniques, and learning materials for building Retrieval-Augmented Generation (RAG) systems. This repository catalogs the RAG ecosystem and provides links to authoritative sources, tutorials, and implementations to help you explore and build RAG applications.
 
 ## Overview
 
