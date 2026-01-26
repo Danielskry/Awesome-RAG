@@ -121,7 +121,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Multimodal RAG](https://developer.nvidia.com/blog/an-easy-introduction-to-multimodal-retrieval-augmented-generation/): Extends RAG to handle multiple modalities such as text, images, and audio.
 - [VideoRAG](https://arxiv.org/abs/2501.05874): Extends RAG to videos using Large Video Language Models (LVLMs) to retrieve and integrate visual and textual content for multimodal generation.
 - [REFRAG](https://arxiv.org/pdf/2509.01092): Optimizes RAG decoding by compressing retrieved context into embeddings before generation, reducing latency while maintaining output quality.
-- [InstructRAG](https://github.com/weizhepei/InstructRAG): Instructing RAG via Self-Synthesized Rationales 
+- [InstructRAG](https://github.com/weizhepei/InstructRAG): Enhances RAG systems through instruction-based fine-tuning using self-synthesized rationales to improve retrieval and generation quality. 
 
 ## 🧰 Frameworks that Facilitate RAG
 
@@ -501,4 +501,16 @@ For detailed implementation guides for specific platforms, see the documentation
 
 ---
 
-This list continues to evolve. Contributions are welcome to make this resource more comprehensive 🙌
+## Contributing
+
+This is a community-driven resource and continues to evolve. Contributions are welcome! If you'd like to add resources, fix errors, or improve organization:
+
+1. Fork the repository
+2. Create a branch for your changes
+3. Submit a pull request with a clear description
+
+For new entries, ensure links are working, descriptions are accurate and concise, and content fits the appropriate section.
+
+## License
+
+This project is licensed under the [CC0 1.0 Universal](LICENSE).
