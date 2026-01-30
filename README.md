@@ -33,49 +33,6 @@ A curated resource map of tools, frameworks, techniques, and learning materials 
 
 RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff and inability to access external information. Traditional RAG implementations employ a retrieval pipeline that enriches LLM prompts with contextually relevant documents from a knowledge base. For example, when querying about renovation materials for a specific house, the LLM may have general renovation knowledge but lacks details about that particular property. An RAG system can retrieve relevant documents (e.g., blueprints, material specifications, local building codes) to provide accurate, context-aware responses.
 
-### Core RAG Pipeline
-
-A standard RAG implementation follows these critical steps:
-
-1. **Document Ingestion & Preprocessing**: 
-   - Collect and normalize documents from various sources (PDFs, databases, APIs, web content)
-   - Apply data cleaning, deduplication, and format standardization
-
-2. **Chunking Strategy**: 
-   - Divide documents into semantically meaningful chunks
-   - Balance chunk size to preserve context while enabling precise retrieval
-   - Consider document structure, domain-specific boundaries, and overlap strategies
-
-3. **Embedding Generation**: 
-   - Transform text chunks into high-dimensional vector embeddings using embedding models
-   - Select models optimized for your domain (general-purpose vs. domain-specific)
-   - Ensure embedding consistency across indexing and querying phases
-
-4. **Vector Storage & Indexing**: 
-   - Store embeddings in a vector database optimized for similarity search
-   - Build efficient indexes (HNSW, IVF, etc.) for fast retrieval at scale
-   - Maintain metadata for filtering, hybrid search, and result interpretation
-
-5. **Query Processing**: 
-   - Convert user queries into embeddings using the same model
-   - Apply query expansion, reformulation, or decomposition for complex queries
-   - Support multi-turn conversations with context preservation
-
-6. **Retrieval & Ranking**: 
-   - Perform similarity search to find relevant chunks
-   - Apply re-ranking models to improve precision
-   - Implement hybrid search combining semantic and keyword-based retrieval
-
-7. **Context Augmentation**: 
-   - Construct prompts with retrieved context and clear instructions
-   - Manage context window limits and prioritize most relevant information
-   - Include source attribution for transparency
-
-8. **Generation & Post-processing**: 
-   - Generate responses using the augmented prompt
-   - Apply safety checks, fact verification, and quality filters
-   - Format output with citations and confidence indicators
-
 ### Implementation Resources
 
 #### Python Tutorials & Examples
