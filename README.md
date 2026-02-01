@@ -247,6 +247,10 @@ Processing: A Survey**
   *CocoIndex is an open-source ETL framework to index data for AI, such as RAG; with realtime incremental updates and support custom logic like lego.*  
   [`Website`](https://cocoindex.io/)
 
+- **Agentset**  
+  *Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.*  
+  [`Website`](https://agentset.ai/) [`GitHub`](https://github.com/agentset-ai/agentset)
+
 ## Other Collections
 
 - [Awesome LLM RAG](https://github.com/jxzhangjhu/Awesome-LLM-RAG)
