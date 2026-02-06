@@ -93,6 +93,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Letta](https://github.com/letta-ai/letta): Open source framework for building stateful LLM applications.
 - [Flowise](https://github.com/FlowiseAI/Flowise): Drag & drop UI to build customized LLM flows.
 - [Swiftide](https://github.com/bosun-ai/swiftide): Rust framework for building modular, streaming LLM applications.
+- [RAGStack](https://github.com/HatmanStack/RAGStack-Lambda): Serverless RAG framework for AWS with scale-to-zero architecture — Lambda, Step Functions, S3 Vectors, and Bedrock with no idle costs. Handles multimodal ingestion (OCR, transcription, image captioning) and includes an MCP server and embeddable chat web component.
 - [CocoIndex](https://github.com/cocoindex-io/cocoindex): ETL framework to index data for AI, such as RAG; with realtime incremental updates.
 - [Pathway](https://github.com/pathwaycom/pathway/): Performant open-source Python ETL framework with Rust runtime, supporting 300+ data sources.
 - [Pathway AI Pipelines](https://github.com/pathwaycom/llm-app/): A production-ready RAG framework supporting real-time indexing, retrieval, and change tracking across diverse data sources.
@@ -345,6 +346,7 @@ Vector databases are critical components of RAG systems, providing efficient sto
 - [Chroma DB](https://github.com/chroma-core/chroma): An AI-native open-source embedding database.
 - [Milvus](https://github.com/milvus-io/milvus): An open-source vector database for AI-powered applications.
 - [Pinecone](https://www.pinecone.io/): A serverless vector database, optimized for machine learning workflows.
+- [Amazon S3 Vectors](https://aws.amazon.com/s3/features/vectors/): Managed vector storage built into S3 with scale-to-zero pricing. No provisioned capacity — pay only for storage and queries.
 - [Oracle AI Vector Search](https://www.oracle.com/database/ai-vector-search/#retrieval-augmented-generation): Integrates vector search capabilities within Oracle Database for semantic querying based on vector embeddings.
 
 ### Relational Database Extensions:
