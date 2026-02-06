@@ -66,6 +66,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Vision-RAG](https://www.youtube.com/watch?v=npkp4mSweEg): Embeds entire pages as images, allowing vision models to handle reasoning directly without parsing text-RAG.
 - [Cache-Augmented Generation (CAG)](https://medium.com/@ronantech/cache-augmented-generation-cag-in-llms-a-step-by-step-tutorial-6ac35d415eec): Preloads relevant documents into a model’s context and stores the inference state (Key-Value (KV) cache).
 - [Agentic RAG](https://langchain-ai.github.io/langgraph/tutorials/rag/langgraph_agentic_rag/): Also known as retrieval agents, can make decisions on retrieval processes.
+- [A-RAG](https://github.com/Ayanami0730/arag): Agentic RAG with hierarchical retrieval interfaces (keyword, semantic, chunk-level), enabling LLM agents to autonomously search and retrieve at multiple granularities. ([Paper](https://arxiv.org/abs/2602.03442))
 - [Corrective RAG](https://arxiv.org/pdf/2401.15884.pdf) (CRAG): Methods to correct or refine the retrieved information before integration into LLM responses.
 - [Retrieval-Augmented Fine-Tuning](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/raft-a-new-way-to-teach-llms-to-be-better-at-rag/ba-p/4084674) (RAFT): Techniques to fine-tune LLMs specifically for enhanced retrieval and generation tasks.
 - [Self Reflective RAG](https://selfrag.github.io/): Models that dynamically adjust retrieval strategies based on model performance feedback.
