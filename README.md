@@ -82,6 +82,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 
 ## 🧰 Frameworks that Facilitate RAG
 
+- [BGPT MCP](https://github.com/connerlambden/bgpt-mcp): MCP server for searching scientific papers with structured experimental data extracted from full-text studies. Serves as a retrieval source for RAG pipelines that need evidence-grounded scientific knowledge.
 - [Haystack](https://github.com/deepset-ai/haystack): LLM orchestration framework to build customizable, production-ready LLM applications.
 - [LangChain](https://python.langchain.com/docs/modules/data_connection/): An all-purpose framework for working with LLMs.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel): An SDK from Microsoft for developing Generative AI applications.
