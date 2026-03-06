@@ -97,6 +97,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Pathway](https://github.com/pathwaycom/pathway/): Performant open-source Python ETL framework with Rust runtime, supporting 300+ data sources.
 - [Pathway AI Pipelines](https://github.com/pathwaycom/llm-app/): A production-ready RAG framework supporting real-time indexing, retrieval, and change tracking across diverse data sources.
 - [LiteLLM](https://docs.litellm.ai/): Unified interface for multiple LLM providers (OpenAI, Anthropic, Hugging Face, Replicate) with logging, monitoring, and cost tracking.
+- [RapidFire AI](https://github.com/RapidFireAI/rapidfireai): Rapid AI experimentation framework for RAG and context engineering with hyperparallelized, shard-based execution, real-time interactive control (stop/resume/clone runs), and 16-24x higher experimentation throughput.
 
 ## 🐍 Python Ecosystem for RAG
 
