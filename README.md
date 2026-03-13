@@ -73,7 +73,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Temporal Augmented Retrieval](https://adam-rida.medium.com/temporal-augmented-retrieval-tar-dynamic-rag-ad737506dfcc) (TAR): Considering time-sensitive data in retrieval processes.
 - [Plan-then-RAG](https://arxiv.org/abs/2406.12430) (PlanRAG): Strategies involving planning stages before executing RAG for complex tasks.
 - [GraphRAG](https://github.com/microsoft/graphrag): A structured approach using knowledge graphs for enhanced context integration and reasoning.
-- [Code-Graph-RAG](https://github.com/vitali87/code-graph-rag): A knowledge graph RAG system for multi-language codebase analysis. Uses Tree-sitter AST parsing to build code knowledge graphs in Memgraph, enabling natural language querying and editing of code structure and relationships across 11 programming languages. Functions as an MCP server for AI assistant integration.
+- [Code-Graph-RAG](https://github.com/vitali87/code-graph-rag): A knowledge graph RAG system for multi-language codebase analysis.
 - [FLARE](https://medium.com/etoai/better-rag-with-active-retrieval-augmented-generation-flare-3b66646e2a9f) - An approach that incorporates active retrieval-augmented generation to improve response quality.
 - [GNN-RAG](https://github.com/cmavro/GNN-RAG): Graph neural retrieval for large language modeling reasoning.
 - [Multimodal RAG](https://developer.nvidia.com/blog/an-easy-introduction-to-multimodal-retrieval-augmented-generation/): Extends RAG to handle multiple modalities such as text, images, and audio.
