@@ -63,6 +63,10 @@ RAG systems can be architected using various patterns depending on requirements:
 
 RAG implementations vary in complexity, from simple document retrieval to advanced techniques integrating iterative feedback loops, multi-agent systems, and domain-specific enhancements. Modern approaches include:
 
+- [![VeritasGraph](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bibinprathap/VeritasGraph) Graph RAG pipeline that runs locally with ollama and has full source attribution
+
+
+
 - [Vision-RAG](https://www.youtube.com/watch?v=npkp4mSweEg): Embeds entire pages as images, allowing vision models to handle reasoning directly without parsing text-RAG.
 - [Cache-Augmented Generation (CAG)](https://medium.com/@ronantech/cache-augmented-generation-cag-in-llms-a-step-by-step-tutorial-6ac35d415eec): Preloads relevant documents into a model’s context and stores the inference state (Key-Value (KV) cache).
 - [Agentic RAG](https://langchain-ai.github.io/langgraph/tutorials/rag/langgraph_agentic_rag/): Also known as retrieval agents, can make decisions on retrieval processes.
