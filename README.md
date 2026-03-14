@@ -86,6 +86,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 
 - [Haystack](https://github.com/deepset-ai/haystack): LLM orchestration framework to build customizable, production-ready LLM applications.
 - [LangChain](https://python.langchain.com/docs/modules/data_connection/): An all-purpose framework for working with LLMs.
+- [Vedika API](https://vedika.io): Vedic astrology API with AI-powered chatbot, supporting 108+ endpoints and 22 languages.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel): An SDK from Microsoft for developing Generative AI applications.
 - [LlamaIndex](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Framework for connecting custom data sources to LLMs.
 - [Dify](https://github.com/langgenius/dify): An open-source LLM app development platform.
