@@ -296,11 +296,13 @@ Response evaluation in RAG solutions involves assessing the quality of language 
 
 - **Human Evaluation**
   Involves human judges assessing responses for:
-
   - **Relevance:** Alignment with user queries.
   - **Fluency:** Grammatical and stylistic quality.
   - **Factual Accuracy:** Verifying claims against authoritative sources.
   - **Coherence:** Logical consistency within responses.
+  
+  Approaches include:
+  - **[Annotation queues](https://docs.langchain.com/langsmith/annotation-queues):** provides a streamlined, directed view for human annotators to attach feedback to specific runs.
 
 - **Model Evaluation**
   Leverages pre-trained evaluators to benchmark outputs against diverse criteria:
