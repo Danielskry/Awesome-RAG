@@ -82,7 +82,6 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 
 ## 🧰 Frameworks that Facilitate RAG
 
-- [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
 - [Haystack](https://github.com/deepset-ai/haystack): LLM orchestration framework to build customizable, production-ready LLM applications.
 - [LangChain](https://python.langchain.com/docs/modules/data_connection/): An all-purpose framework for working with LLMs.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel): An SDK from Microsoft for developing Generative AI applications.
@@ -98,6 +97,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Pathway](https://github.com/pathwaycom/pathway/): Performant open-source Python ETL framework with Rust runtime, supporting 300+ data sources.
 - [Pathway AI Pipelines](https://github.com/pathwaycom/llm-app/): A production-ready RAG framework supporting real-time indexing, retrieval, and change tracking across diverse data sources.
 - [LiteLLM](https://docs.litellm.ai/): Unified interface for multiple LLM providers (OpenAI, Anthropic, Hugging Face, Replicate) with logging, monitoring, and cost tracking.
+- [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
 
 ## 🐍 Python Ecosystem for RAG
 
