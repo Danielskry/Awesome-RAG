@@ -81,7 +81,8 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Multimodal RAG](https://developer.nvidia.com/blog/an-easy-introduction-to-multimodal-retrieval-augmented-generation/): Extends RAG to handle multiple modalities such as text, images, and audio.
 - [VideoRAG](https://arxiv.org/abs/2501.05874): Extends RAG to videos using Large Video Language Models (LVLMs) to retrieve and integrate visual and textual content for multimodal generation.
 - [REFRAG](https://arxiv.org/pdf/2509.01092): Optimizes RAG decoding by compressing retrieved context into embeddings before generation, reducing latency while maintaining output quality.
-- [InstructRAG](https://github.com/weizhepei/InstructRAG): Enhances RAG systems through instruction-based fine-tuning using self-synthesized rationales to improve retrieval and generation quality. 
+- [InstructRAG](https://github.com/weizhepei/InstructRAG): Enhances RAG systems through instruction-based fine-tuning using self-synthesized rationales to improve retrieval and generation quality.
+- [RAG Enterprise](https://github.com/I3K-IT/RAG-Enterprise) - 100% local RAG system with one-command setup. Self-hosted, GDPR-compliant, supports 10k+ documents across 29 languages. No cloud dependencies.
 
 ## 🧰 Frameworks that Facilitate RAG
 
@@ -102,6 +103,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Pathway AI Pipelines](https://github.com/pathwaycom/llm-app/): A production-ready RAG framework supporting real-time indexing, retrieval, and change tracking across diverse data sources.
 - [LiteLLM](https://docs.litellm.ai/): Unified interface for multiple LLM providers (OpenAI, Anthropic, Hugging Face, Replicate) with logging, monitoring, and cost tracking.
 - [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
+- [EuLLM](https://github.com/eullm/eullm) - Open-source European alternative to Ollama. Rust-based inference engine with EU-hosted model registry, built-in AI Act compliance audit trail, and one-command model verticalization via Forge.
 
 ## 🐍 Python Ecosystem for RAG
 
