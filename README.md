@@ -3,6 +3,7 @@
 
 A curated resource map of tools, frameworks, techniques, and learning materials for building Retrieval-Augmented Generation (RAG) systems. This repository catalogs the RAG ecosystem and provides links to authoritative sources, tutorials, and implementations to help you explore and build RAG applications.
 
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent system prompts for Claude Code with memory-augmented retrieval and multi-agent coordination. MIT licensed.
 ## Overview
 
 **Retrieval-Augmented Generation (RAG)** is a sophisticated technique in Generative AI that enhances Large Language Models (LLMs) by dynamically retrieving and incorporating relevant context from external knowledge sources during the generation process. Unlike traditional LLMs that rely solely on pre-trained knowledge, RAG systems enable models to access up-to-date, domain-specific, or proprietary information, significantly improving accuracy, reducing hallucinations, and enabling real-time knowledge integration.
