@@ -115,6 +115,7 @@ See the full guide: [Python Ecosystem for RAG](docs/python-ecosystem.md)
 ### Data cleaning
 
 - [Data cleaning techniques](https://medium.com/intel-tech/four-data-cleaning-techniques-to-improve-large-language-model-llm-performance-77bee9003625): Pre-processing steps to refine input data and improve model performance.
+- [Preparing Documents for RAG: A Practical Guide](https://alexchernysh.com/blog/rag-document-preparation): Covers document parsing, chunking strategies, metadata enrichment, and pitfalls to avoid when building production RAG pipelines.
 
 ### Prompting
 
@@ -226,6 +227,9 @@ Embeddings are the foundation of semantic search in RAG systems. The choice of e
   - [Query Reformulation and Expansion](https://haystack.deepset.ai/cookbook/query-expansion)
     - Automatically rewrites or expands the query before retrieval to boost recall.
     - Useful for long or ambiguous user queries.
+  - [Query Transformation Techniques for RAG](https://alexchernysh.com/blog/query-transformation-for-rag)
+    - Practical walkthrough of multi-query expansion, step-back prompting, HyDE, and sub-question decomposition.
+    - Includes latency tradeoff analysis and when each technique is worth the overhead.
 - **[Re-ranking](https://developer.nvidia.com/blog/enhancing-rag-pipelines-with-re-ranking/)**: Enhances search results in RAG pipelines by reordering initially retrieved documents, prioritizing those most semantically relevant to the query.
 
 ### Response Quality & Safety
