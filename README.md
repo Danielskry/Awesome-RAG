@@ -48,6 +48,7 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 - [Production RAG patterns and best practices](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Production-ready RAG optimization strategies
 - [LangChain Production Guide](https://python.langchain.com/docs/production/): Deploying LangChain applications to production
 - [Python Async Best Practices](https://docs.python.org/3/library/asyncio-dev.html): Writing efficient async Python code for AI applications
+- [CCHub](https://github.com/Moresl/cchub) - A desktop control panel for the Claude Code / Codex / Gemini CLI ecosystem. Manage MCP servers, config profiles, agent skills, CLAUDE.md, hooks, and workflow templates from a single Tauri app (Windows / macOS / Linux).
 
 ## 🏗️ Architecture Patterns
 
