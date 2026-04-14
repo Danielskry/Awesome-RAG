@@ -102,6 +102,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Pathway AI Pipelines](https://github.com/pathwaycom/llm-app/): A production-ready RAG framework supporting real-time indexing, retrieval, and change tracking across diverse data sources.
 - [LiteLLM](https://docs.litellm.ai/): Unified interface for multiple LLM providers (OpenAI, Anthropic, Hugging Face, Replicate) with logging, monitoring, and cost tracking.
 - [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
+- [EgoVault](https://github.com/milika/EgoVault): Local-first personal data vault with hybrid 4-lane RAG (FTS5 + semantic + HyDE + sentence-window chunks, RRF fusion). Ingests emails, files, and chat exports; runs fully on-device via llama.cpp with no cloud dependencies.
 
 ## 🐍 Python Ecosystem for RAG
 
