@@ -256,6 +256,10 @@ Ensuring high-quality, safe, and reliable responses is critical for production R
 
 ## 📊 Metrics & Evaluation
 
+- [FutureAGI traceAI](https://github.com/future-agi/traceAI)
+- [FutureAGI ai-evaluation](https://github.com/future-agi/ai-evaluation)
+- [FutureAGI futureagi-sdk](https://github.com/future-agi/futureagi-sdk)
+
 ### Similarity Metrics for Embeddings
 
 These metrics are used to measure the similarity between embeddings, which is crucial for evaluating how effectively RAG systems retrieve and integrate external documents or data sources. By selecting appropriate similarity metrics, you can optimize the performance and accuracy of your RAG system. Alternatively, you may develop custom metrics tailored to your specific domain or niche to capture domain-specific nuances and improve relevance.
