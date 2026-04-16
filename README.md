@@ -83,6 +83,10 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [REFRAG](https://arxiv.org/pdf/2509.01092): Optimizes RAG decoding by compressing retrieved context into embeddings before generation, reducing latency while maintaining output quality.
 - [InstructRAG](https://github.com/weizhepei/InstructRAG): Enhances RAG systems through instruction-based fine-tuning using self-synthesized rationales to improve retrieval and generation quality. 
 
+## 🔍 Tool & Agent Discovery
+
+- [Not Human Search](https://nothumansearch.ai) - Agent-first search engine indexing 1,400+ tools with agentic readiness scores. RAG-friendly with llms.txt, OpenAPI spec, and MCP server for tool discovery.
+
 ## 🧰 Frameworks that Facilitate RAG
 
 - [Haystack](https://github.com/deepset-ai/haystack): LLM orchestration framework to build customizable, production-ready LLM applications.
