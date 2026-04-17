@@ -48,6 +48,8 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 - [Production RAG patterns and best practices](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Production-ready RAG optimization strategies
 - [LangChain Production Guide](https://python.langchain.com/docs/production/): Deploying LangChain applications to production
 - [Python Async Best Practices](https://docs.python.org/3/library/asyncio-dev.html): Writing efficient async Python code for AI applications
+- [Deploying Autonomous AI Agents in Production: A 2-Week Playbook](https://hemangjoshi37a.github.io/hjLabs-AI-Engineering-Notes/02-deploying-autonomous-ai-agents-in-production-2-week-playbook/): Day-by-day RAG deployment guide covering Qdrant binary quantization (40× memory savings), Cohere Rerank, tiered fallbacks, and SLOs from enterprise engagements
+- [The 4 Mistakes That Kill 80% of Enterprise AI Projects](https://hemangjoshi37a.github.io/hjLabs-AI-Engineering-Notes/01-four-mistakes-that-kill-enterprise-ai-projects/): Audit framework for stalled RAG/GenAI projects — eval harnesses with Ragas, observability, strict JSON Schema, human-in-the-loop
 
 ## 🏗️ Architecture Patterns
 
