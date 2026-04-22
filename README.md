@@ -366,6 +366,7 @@ Vector databases are critical components of RAG systems, providing efficient sto
 - [Lantern](https://lantern.dev/): A privacy-aware personal search engine.
 - [LlamaIndex](https://docs.llamaindex.ai/en/stable/module_guides/storing/vector_stores/): Employs a straightforward in-memory vector store for rapid experimentation.
 - [Neo4j](https://neo4j.com/docs/cypher-manual/current/indexes/semantic-indexes/vector-indexes/): Graph database management system.
+- [Omnigraph](https://github.com/ModernRelay/omnigraph): Typed graph database where agents branch and merge like Git. S3-native, Rust, traversal + vector + BM25 in one runtime.
 - [Qdrant](https://github.com/neo4j/neo4j): An open-source vector database designed for similarity search.
 - [Redis Stack](https://redis.io/docs/latest/develop/interact/search-and-query/): An in-memory data structure store used as a database, cache, and message broker.
 - [SurrealDB](https://github.com/surrealdb/surrealdb): A scalable multi-model database optimized for time-series data.
