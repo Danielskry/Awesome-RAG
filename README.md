@@ -102,6 +102,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Pathway AI Pipelines](https://github.com/pathwaycom/llm-app/): A production-ready RAG framework supporting real-time indexing, retrieval, and change tracking across diverse data sources.
 - [LiteLLM](https://docs.litellm.ai/): Unified interface for multiple LLM providers (OpenAI, Anthropic, Hugging Face, Replicate) with logging, monitoring, and cost tracking.
 - [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
+- [supamem](https://github.com/dzmitrys-dev/supamem/): Persistent RAG-based memory for AI coding agents (Claude Code, Cursor, OpenCode); chunking + dense (minilm) + sparse (bm25) with RRF fusion via Qdrant.
 
 ## 🐍 Python Ecosystem for RAG
 
