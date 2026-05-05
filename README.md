@@ -331,6 +331,12 @@ These tools can assist in evaluating the performance of your RAG system, from tr
 - **[Hugging Face Evaluate](https://github.com/huggingface/evaluate)**: Tool for computing metrics like BLEU and ROUGE to assess text quality.
 - **[Weights & Biases](https://wandb.ai/wandb-japan/rag-hands-on/reports/Step-for-developing-and-evaluating-RAG-application-with-W-B--Vmlldzo1NzU4OTAx)**: Tracks experiments, logs metrics, and visualizes performance.
 
+#### Datasets
+
+These public datasets are useful for benchmarking retrievers, rerankers, and end-to-end RAG pipelines.
+
+- **[Korean RAG SSOT Golden 50](https://huggingface.co/datasets/neogenesislab/korean-rag-ssot-golden-50)**: 50 hand-curated Korean retrieval-evaluation tasks across five operational categories (RAG architecture, agent ensembles, SSOT governance, Korean PII/security, fleet operations). Each item carries an `expected_source_type` (human / llm_output / external_citation / tool_log) so retrievers can be scored on provenance fidelity, not just lexical overlap. Recommended metrics include `recall_at_10`, `ndcg_at_10`, `credential_leak_rate`, and `injection_quarantine_recall`. Released under CC-BY-4.0.
+
 ## 💾 Databases
 
 Vector databases are critical components of RAG systems, providing efficient storage and similarity search capabilities for embeddings. The selection of an appropriate database depends on factors such as scale, latency requirements, deployment model (cloud vs. on-premises), and feature needs (hybrid search, filtering, etc.). The list below features database systems suitable for RAG applications:
