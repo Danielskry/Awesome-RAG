@@ -103,7 +103,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [LiteLLM](https://docs.litellm.ai/): Unified interface for multiple LLM providers (OpenAI, Anthropic, Hugging Face, Replicate) with logging, monitoring, and cost tracking.
 - [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
 - [OpenAgent](https://github.com/the-open-agent/openagent): Open-source personal AI assistant platform combining LLMs, RAG knowledge base, and autonomous agent loops with browser-use, shell execution, and MCP tool support.
-- [Thalamus](https://github.com/msbel5/openclaw-thalamus): Cognitive routing layer for multi-agent crews on edge devices. 3-field packet handoff between agents, 9-namespace local vector store, Qwen3-Embedding-0.6B (1024d) on CPU via llama.cpp, optional Hailo NPU HEFs (Whisper/CLIP), FAISS RaBitQ codebook. Designed for Raspberry Pi 5; Node side runs anywhere. MCP server included.
+- [Thalamus](https://github.com/msbel5/openclaw-thalamus): Cognitive routing layer for multi-agent workflows on edge devices with MCP support.
 
 ## 🐍 Python Ecosystem for RAG
 
