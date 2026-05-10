@@ -82,6 +82,7 @@ Python is a dominant language for building RAG systems, offering a rich ecosyste
 - **[Pandas](https://pandas.pydata.org/)**: Data manipulation and analysis library for structured data
 - **[Polars](https://www.pola.rs/)**: Fast DataFrame library implemented in Rust with Python bindings
 - **[DuckDB](https://github.com/duckdb/duckdb)**: In-process analytical database with Python interface
+- **[data load tool](https://github.com/dlt-hub/dlt)**: Open-source Python library for building reliable extract and load data pipelines with automatic schema handling and incremental, stateful loading. Useful for keeping RAG knowledge sources up to date before embedding and indexing.
 
 #### Configuration & Environment
 
