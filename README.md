@@ -255,6 +255,11 @@ Ensuring high-quality, safe, and reliable responses is critical for production R
   - **Rate Limiting**: Implement rate limits and abuse detection to prevent systematic attacks
   - **Sandboxing**: Isolate LLM execution environments to limit potential damage from successful injections
 
+- **Small-Rule Guardrails (preprint + tools)**
+  - **[Preprint](https://doi.org/10.5281/zenodo.20057056)**: Small-Rule Guardrails for Retrieval-Augmented Generation: Prompt Injection and Vector Poisoning Checks. Compact engineering note on inspectable guardrails between retrieval and prompt construction.
+  - **[prompt-injection-shield](https://github.com/MukundaKatta/prompt-injection-shield)**: zero-dep JS scanner for instruction overrides, system-prompt impersonation, tool-call hijack, URL-based exfil, and secret patterns in retrieved text.
+  - **[vector-poison-score](https://github.com/MukundaKatta/vector-poison-score)**: zero-dep JS scorer for retrieved chunks (oversized chunks, secret-exfil patterns, suspicious link clusters).
+
 ## 📊 Metrics & Evaluation
 
 ### Similarity Metrics for Embeddings
