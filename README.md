@@ -48,6 +48,8 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 - [Production RAG patterns and best practices](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Production-ready RAG optimization strategies
 - [LangChain Production Guide](https://python.langchain.com/docs/production/): Deploying LangChain applications to production
 - [Python Async Best Practices](https://docs.python.org/3/library/asyncio-dev.html): Writing efficient async Python code for AI applications
+- [Advanced RAG Patterns (Future AGI, eBook)](https://futureagi.com/ebooks/advanced-rag-patterns/): Architecture patterns for reliable enterprise-scale RAG — hybrid retrieval, vector search optimization, hallucination detection, and addressing common RAG failure modes
+- [The Agentic RAG Playbook (Future AGI, eBook)](https://futureagi.com/ebooks/mastering-agentic-rag/): Production-ready agentic RAG patterns with measurable business outcomes
 
 ## 🏗️ Architecture Patterns
 
