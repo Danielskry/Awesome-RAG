@@ -103,6 +103,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [LiteLLM](https://docs.litellm.ai/): Unified interface for multiple LLM providers (OpenAI, Anthropic, Hugging Face, Replicate) with logging, monitoring, and cost tracking.
 - [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
 - [OpenAgent](https://github.com/the-open-agent/openagent): Open-source personal AI assistant platform combining LLMs, RAG knowledge base, and autonomous agent loops with browser-use, shell execution, and MCP tool support.
+- [TheCrawler](https://github.com/manchittlab/TheCrawler): Open-source TypeScript scraper with LLM-powered structured extraction for RAG ingestion. Returns boilerplate-stripped markdown with heading-aware RAG chunking (h1-h3 boundaries with overlap), JSON-LD parsing, PDF/DOCX text extraction, and structured `errorType` enum for branchable retry logic. Endpoint-agnostic extract() works against any OpenAI-compatible LLM. CLI, npm, REST API, and MCP server.
 
 ## 🐍 Python Ecosystem for RAG
 
