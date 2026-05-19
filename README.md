@@ -404,6 +404,7 @@ Building production-grade RAG systems requires addressing several critical aspec
 
 ### Security & Compliance
 
+- **[Zentric Protocol](https://zentricprotocol.com)** — Deterministic injection detection + PII redaction before every LLM call. One POST, 23ms, CLEARED/BLOCKED verdict. GDPR Art.30 signed audit record. Works with any RAG stack. Free tier: 10k req/month.
 - **Access Control**: Implement authentication, authorization, and audit logging
 - **Data Privacy**: Encrypt data at rest and in transit, support data residency requirements
 - **Content Filtering**: Apply content moderation, PII detection, and compliance checks
