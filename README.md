@@ -103,6 +103,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [LiteLLM](https://docs.litellm.ai/): Unified interface for multiple LLM providers (OpenAI, Anthropic, Hugging Face, Replicate) with logging, monitoring, and cost tracking.
 - [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
 - [OpenAgent](https://github.com/the-open-agent/openagent): Open-source personal AI assistant platform combining LLMs, RAG knowledge base, and autonomous agent loops with browser-use, shell execution, and MCP tool support.
+- [0CompactMem](https://github.com/soolaugust/0CompactMem): Persistent memory layer for AI agents that doubles as a lightweight RAG store. BM25 + FTS5 retrieval, demand-paging on-demand recall, pinnable chunks (mlock semantics), capacity-aware eviction. Single SQLite file, MCP-native, multi-agent shared.
 
 ## 🐍 Python Ecosystem for RAG
 
