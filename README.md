@@ -82,6 +82,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [VideoRAG](https://arxiv.org/abs/2501.05874): Extends RAG to videos using Large Video Language Models (LVLMs) to retrieve and integrate visual and textual content for multimodal generation.
 - [REFRAG](https://arxiv.org/pdf/2509.01092): Optimizes RAG decoding by compressing retrieved context into embeddings before generation, reducing latency while maintaining output quality.
 - [InstructRAG](https://github.com/weizhepei/InstructRAG): Enhances RAG systems through instruction-based fine-tuning using self-synthesized rationales to improve retrieval and generation quality. 
+- [QuCo-RAG](https://arxiv.org/abs/2512.19134): Dynamic RAG that quantifies uncertainty from pre-training corpus statistics (via Infini-gram over 4T tokens) — combines low-frequency entity detection before generation with entity co-occurrence verification during generation to trigger retrieval and reduce hallucinations on multi-hop QA. ([Code](https://github.com/ZhishanQ/QuCo-RAG))
 
 ## 🧰 Frameworks that Facilitate RAG
 
