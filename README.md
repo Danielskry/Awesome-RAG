@@ -236,6 +236,7 @@ Embeddings are the foundation of semantic search in RAG systems. The choice of e
     - Automatically rewrites or expands the query before retrieval to boost recall.
     - Useful for long or ambiguous user queries.
 - **[Re-ranking](https://developer.nvidia.com/blog/enhancing-rag-pipelines-with-re-ranking/)**: Enhances search results in RAG pipelines by reordering initially retrieved documents, prioritizing those most semantically relevant to the query.
+- [RAG-LCC](https://github.com/HarinezumIgel/RAG-LCC): Experimental RAG lab for constrained environments with a classify-then-load workflow, hybrid retrieval, CLI chat and Open WebUI integration. Config-first and detailed debug information.
 
 ### Response Quality & Safety
 
