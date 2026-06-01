@@ -490,3 +490,4 @@ For new entries, ensure links are working, descriptions are accurate and concise
 ## License
 
 This project is licensed under the [CC0 1.0 Universal](LICENSE).
+- [AI Tools Hub](https://cloud1-d4g787x2022795b0b-1435432994.tcloudbaseapp.com/hub.html) - 21 free AI tools, one-time crypto payment, no subscriptions.
