@@ -46,6 +46,7 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 
 #### Production & Best Practices
 
+- [Awesome RAG Production](https://github.com/Yigtwxx/Awesome-RAG-Production): Curated collection of battle-tested tools, reference architectures, and best practices for building, scaling, and monitoring production-grade RAG systems
 - [Production RAG patterns and best practices](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Production-ready RAG optimization strategies
 - [LangChain Production Guide](https://python.langchain.com/docs/production/): Deploying LangChain applications to production
 - [Python Async Best Practices](https://docs.python.org/3/library/asyncio-dev.html): Writing efficient async Python code for AI applications
