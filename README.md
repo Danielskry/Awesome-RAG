@@ -107,6 +107,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
 - [OpenAgent](https://github.com/the-open-agent/openagent): Open-source personal AI assistant platform combining LLMs, RAG knowledge base, and autonomous agent loops with browser-use, shell execution, and MCP tool support.
 - [Local Deep Research](https://github.com/LearningCircuit/local-deep-research): Local-first deep agentic research framework with multi-source retrieval (web, arXiv, PubMed, private documents) and 20+ research strategies.
+- [Vedana](https://github.com/epoch8/vedana): Open-source framework for Semantic RAG that grounds answers in a knowledge graph. The assistant explores the graph step by step with Cypher queries and vector search, so every reasoning step stays traceable and reproducible.
 
 ## 🐍 Python Ecosystem for RAG
 
