@@ -430,8 +430,9 @@ Building production-grade RAG systems requires addressing several critical aspec
 
 ## 🔌 Platform-Specific RAG Implementations
 
-For detailed implementation guides for specific platforms, see the documentation:
+Platform-focused RAG applications and implementation guides:
 
+- [Bilibili RAG](https://github.com/via007/bilibili-rag): Local-first RAG knowledge base that turns Bilibili favorites into searchable, source-traceable conversations with QR login, ASR transcription, ChromaDB vector search, Markdown export, and Docker deployment.
 - [Supabase Integration Guide](docs/supabase-integration.md): Building RAG systems with Supabase, pgvector, and Edge Functions
 
 ## 💡 Best Practices
