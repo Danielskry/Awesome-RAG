@@ -68,7 +68,7 @@ RAG systems can be architected using various patterns depending on requirements:
 RAG implementations vary in complexity, from simple document retrieval to advanced techniques integrating iterative feedback loops, multi-agent systems, and domain-specific enhancements. Modern approaches include:
 
 - [Vision-RAG](https://www.youtube.com/watch?v=npkp4mSweEg): Embeds entire pages as images, allowing vision models to handle reasoning directly without parsing text-RAG.
-- [Cache-Augmented Generation (CAG)](https://medium.com/@ronantech/cache-augmented-generation-cag-in-llms-a-step-by-step-tutorial-6ac35d415eec): Preloads relevant documents into a model’s context and stores the inference state (Key-Value (KV) cache).
+- [Cache-Augmented Generation (CAG)](https://medium.com/@ronantech/cache-augmented-generation-cag-in-llms-a-step-by-step-tutorial-6ac35d415eec): Preloads relevant documents into a model's context and stores the inference state (Key-Value (KV) cache).
 - [Agentic RAG](https://langchain-ai.github.io/langgraph/tutorials/rag/langgraph_agentic_rag/): Also known as retrieval agents, can make decisions on retrieval processes.
 - [A-RAG](https://github.com/Ayanami0730/arag): Agentic RAG with hierarchical retrieval interfaces (keyword, semantic, chunk-level), enabling LLM agents to autonomously search and retrieve at multiple granularities. ([Paper](https://arxiv.org/abs/2602.03442))
 - [Corrective RAG](https://arxiv.org/pdf/2401.15884.pdf) (CRAG): Methods to correct or refine the retrieved information before integration into LLM responses.
@@ -341,6 +341,9 @@ These tools can assist in evaluating the performance of your RAG system, from tr
 - **[LangSmith](https://docs.smith.langchain.com/)**: A platform for building production-grade LLM applications, allows you to closely monitor and evaluate your application.
 - **[Hugging Face Evaluate](https://github.com/huggingface/evaluate)**: Tool for computing metrics like BLEU and ROUGE to assess text quality.
 - **[Weights & Biases](https://wandb.ai/wandb-japan/rag-hands-on/reports/Step-for-developing-and-evaluating-RAG-application-with-W-B--Vmlldzo1NzU4OTAx)**: Tracks experiments, logs metrics, and visualizes performance.
+- **[embeddings-bench](https://github.com/alvabillwu/embeddings-bench)**: Lightweight embedding model benchmark -- compare methods against labeled data with Spearman/Pearson correlation.
+- **[ragbench](https://github.com/alvabillwu/ragbench)**: Lightweight RAG pipeline benchmarking -- synthetic datasets, deterministic retrieval+generation metrics, reproducible scorecards. Framework-agnostic, zero core deps.
+- **[synthqa](https://github.com/alvabillwu/synthqa)**: Generate synthetic QA eval datasets from a corpus with adversarial hard-negative distractors. Fact extraction + templated questions, ragbench-compatible output. Zero deps.
 
 ## 💾 Databases
 
