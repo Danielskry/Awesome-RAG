@@ -331,11 +331,9 @@ Response evaluation in RAG solutions involves assessing the quality of language 
 
 #### Tools
 
-- [Mimir](https://github.com/tcconnally/mimir) - Persistent memory engine for AI agents. 23 MCP tools, structured entities, sqlite-vec semantic search.
-
-
 These tools can assist in evaluating the performance of your RAG system, from tracking user feedback to logging query interactions and comparing multiple evaluation metrics over time.
 
+- **[Perseus Vault](https://github.com/Perseus-Computing-LLC/perseus-vault)**: Local-first, encrypted persistent memory engine for AI agents. 55 MCP tools, structured entities, SQLite + FTS5 hybrid (keyword + vector) search.
 - **[LangFuse](https://github.com/langfuse/langfuse)**: Open-source tool for tracking LLM metrics, observability, and prompt management.
 - **[Opik](https://github.com/comet-ml/opik)**: Open-source platform for LLM observability, evaluations, and prompt optimization.
 - **[Ragas](https://docs.ragas.io/en/stable/)**: Framework that helps evaluate RAG pipelines.
