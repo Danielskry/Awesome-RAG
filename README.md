@@ -389,6 +389,7 @@ Vector databases are critical components of RAG systems, providing efficient sto
 
 ### Vector Search Libraries and Tools:
 
+- [engRAM](https://github.com/MaxFreedomPollard/engRAM): A fully offline, encrypted-at-rest vector memory store for AI agents, providing RAM-resident exact vector search with hybrid vector and keyword retrieval; usable as an MCP server or a Python/CLI library.
 - [FAISS](https://github.com/facebookresearch/faiss): A library for efficient similarity search and clustering of dense vectors, designed to handle large-scale datasets and optimized for fast retrieval of nearest neighbors.
 
 ## 🚀 Production Considerations
