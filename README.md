@@ -81,6 +81,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Plan-then-RAG](https://arxiv.org/abs/2406.12430) (PlanRAG): Strategies involving planning stages before executing RAG for complex tasks.
 - [GraphRAG](https://github.com/microsoft/graphrag): A structured approach using knowledge graphs for enhanced context integration and reasoning.
 - [Code-Graph-RAG](https://github.com/vitali87/code-graph-rag): A knowledge graph RAG system for multi-language codebase analysis.
+- [SQLite Graph Memory](https://github.com/Palo-Alto-AI-Research-Lab/sqlite-graph-memory): Graph RAG on plain SQLite, combining vector retrieval with a hand-curated wikilink graph and a cross-encoder rerank stage, plus a per-turn memory ledger that costs no tokens. Runs server-less and fully offline from a single file.
 - [FLARE](https://medium.com/etoai/better-rag-with-active-retrieval-augmented-generation-flare-3b66646e2a9f) - An approach that incorporates active retrieval-augmented generation to improve response quality.
 - [GNN-RAG](https://github.com/cmavro/GNN-RAG): Graph neural retrieval for large language modeling reasoning.
 - [Multimodal RAG](https://developer.nvidia.com/blog/an-easy-introduction-to-multimodal-retrieval-augmented-generation/): Extends RAG to handle multiple modalities such as text, images, and audio.
