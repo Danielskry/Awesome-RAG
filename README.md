@@ -1,7 +1,9 @@
 # 😎 Awesome Retrieval Augmented Generation (RAG) 
-[![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Danielskry/Awesome-RAG)
+[![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Danielskry/Awesome-RAG) [![Awesome-RAG Agent Plugin](https://img.shields.io/badge/Agent_Plugin-Available-blueviolet)](https://github.com/Danielskry/Awesome-RAG-Agent-Plugin)
 
 A curated resource map of tools, frameworks, techniques, and learning materials for building Retrieval-Augmented Generation (RAG) systems. This repository catalogs the RAG ecosystem and provides links to authoritative sources, tutorials, and implementations to help you explore and build RAG applications.
+
+Also [available as an Agent Plugin](https://github.com/Danielskry/Awesome-RAG-Agent-Plugin) for VS Code, GitHub Copilot CLI, and Claude Code.
 
 ## Overview
 
@@ -42,6 +44,8 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 - [LangChain RAG Tutorial](https://python.langchain.com/docs/use_cases/question_answering/): Comprehensive guide to building RAG applications
 - [LlamaIndex RAG Tutorial](https://docs.llamaindex.ai/en/stable/getting_started/starter_example/): Getting started with LlamaIndex for RAG
 - [Haystack RAG Pipeline](https://docs.haystack.deepset.ai/docs/retrieval-augmented-generation): Building RAG pipelines with Haystack
+- [RAG Techniques](https://github.com/NirDiamant/RAG_Techniques): A comprehensive open-source collection of advanced Retrieval-Augmented Generation techniques as runnable Jupyter notebooks.
+- [RAG Interview System](https://github.com/ather-techie/rag-interview-system): A RAG-powered interview preparation system with 418 curated Q&A pairs (Basic → Advanced) covering 29 RAG architecture patterns.
 
 #### Production & Best Practices
 
@@ -59,6 +63,7 @@ RAG systems can be architected using various patterns depending on requirements:
 - **Agentic RAG**: LLM-driven agents that make retrieval decisions dynamically
 - **Self-RAG**: Models that self-reflect on retrieval quality and adjust strategies
 - **Graph RAG**: Leverages knowledge graphs for structured information retrieval
+- **Reasoning-Based RAG**: Uses multi-step LLM reasoning to plan, navigate, and execute retrieval
 
 ## 🎯 Advanced Approaches
 
@@ -81,7 +86,8 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Multimodal RAG](https://developer.nvidia.com/blog/an-easy-introduction-to-multimodal-retrieval-augmented-generation/): Extends RAG to handle multiple modalities such as text, images, and audio.
 - [VideoRAG](https://arxiv.org/abs/2501.05874): Extends RAG to videos using Large Video Language Models (LVLMs) to retrieve and integrate visual and textual content for multimodal generation.
 - [REFRAG](https://arxiv.org/pdf/2509.01092): Optimizes RAG decoding by compressing retrieved context into embeddings before generation, reducing latency while maintaining output quality.
-- [InstructRAG](https://github.com/weizhepei/InstructRAG): Enhances RAG systems through instruction-based fine-tuning using self-synthesized rationales to improve retrieval and generation quality. 
+- [InstructRAG](https://github.com/weizhepei/InstructRAG): Enhances RAG systems through instruction-based fine-tuning using self-synthesized rationales to improve retrieval and generation quality.
+- [PageIndex](https://github.com/VectifyAI/PageIndex): A vectorless, reasoning-based RAG framework that builds hierarchical document trees and performs retrieval through LLM-guided tree search rather than embeddings and vector similarity. Eliminates chunking and vector databases while providing explainable, context-aware retrieval for complex professional documents.
 
 ## 🧰 Frameworks that Facilitate RAG
 
@@ -103,7 +109,8 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [LiteLLM](https://docs.litellm.ai/): Unified interface for multiple LLM providers (OpenAI, Anthropic, Hugging Face, Replicate) with logging, monitoring, and cost tracking.
 - [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
 - [OpenAgent](https://github.com/the-open-agent/openagent): Open-source personal AI assistant platform combining LLMs, RAG knowledge base, and autonomous agent loops with browser-use, shell execution, and MCP tool support.
-- [AgentsKit](https://github.com/AgentsKit-io/agentskit): Composable JavaScript/TypeScript toolkit for building AI agents with built-in plug-and-play RAG, plus runtime, tools and memory.
+- [AgentsKit](https://github.com/AgentsKit-io/agentskit): Provider-neutral TypeScript toolkit for composable agents, with independently installable RAG, runtime, memory, tools, sandbox, observability, and evaluation packages built on a dependency-free core.
+- [Local Deep Research](https://github.com/LearningCircuit/local-deep-research): Local-first deep agentic research framework with multi-source retrieval (web, arXiv, PubMed, private documents) and 20+ research strategies.
 
 ## 🐍 Python Ecosystem for RAG
 
@@ -172,6 +179,12 @@ Chunking strategy is one of the most critical decisions in RAG system design, di
   - **Pros**: Highly adaptive, understands context, can apply domain knowledge
   - **Cons**: High cost, slower processing, requires LLM API access
   - **Best For**: Specialized domains where standard chunking fails
+
+- **[Adaptive Chunking](https://github.com/ekimetrics/adaptive-chunking)**
+  - **Use Case**: Mixed document collections where different documents benefit from different splitting strategies
+  - **Characteristics**: Scores multiple chunking methods using intrinsic metrics and selects the best method per document
+  - **Pros**: More flexible than one-size-fits-all chunking, preserves structure and semantic coherence, supports custom splitters and metrics
+  - **Cons**: Adds evaluation overhead and implementation complexity compared with fixed-size or recursive chunking
 
 **Chunking Best Practices:**
 - **Overlap Strategy**: Use 10-20% overlap to maintain context across boundaries
@@ -361,6 +374,7 @@ Vector databases are critical components of RAG systems, providing efficient sto
 ### Relational Database Extensions:
 
 - [Pgvector](https://github.com/pgvector/pgvector): An open-source extension for vector similarity search in PostgreSQL.
+- [psql_bm25s](https://github.com/Intelligent-Internet/psql_bm25s): A PostgreSQL extension for BM25-family lexical retrieval, useful for keyword and hybrid retrieval pipelines.
 
 ### Other Database Systems:
 
