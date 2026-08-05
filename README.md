@@ -110,7 +110,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
 - [OpenAgent](https://github.com/the-open-agent/openagent): Open-source personal AI assistant platform combining LLMs, RAG knowledge base, and autonomous agent loops with browser-use, shell execution, and MCP tool support.
 - [Local Deep Research](https://github.com/LearningCircuit/local-deep-research): Local-first deep agentic research framework with multi-source retrieval (web, arXiv, PubMed, private documents) and 20+ research strategies.
-
+- [ragleap-rag](https://github.com/antonyrag/ragleap-core): CPU-only RAG library with a 23MB ONNX reranker (no torch/CUDA), 6 vector backends, 8 embedding providers, and built-in per-call cost tracking with budgets.
 ## 🐍 Python Ecosystem for RAG
 
 Python is the most mature ecosystem for RAG today, with extensive support for
