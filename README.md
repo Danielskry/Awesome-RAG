@@ -46,6 +46,7 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 - [Haystack RAG Pipeline](https://docs.haystack.deepset.ai/docs/retrieval-augmented-generation): Building RAG pipelines with Haystack
 - [RAG Techniques](https://github.com/NirDiamant/RAG_Techniques): A comprehensive open-source collection of advanced Retrieval-Augmented Generation techniques as runnable Jupyter notebooks.
 - [RAG Interview System](https://github.com/ather-techie/rag-interview-system): A RAG-powered interview preparation system with 418 curated Q&A pairs (Basic → Advanced) covering 29 RAG architecture patterns.
+- [Search Semantically](https://github.com/mdhabibi/llm-search-handbook): A free, beginner-to-expert course that builds the search stack from scratch — BM25, embeddings, dense retrieval, vector databases/ANN, re-ranking, hybrid search, evaluation, and RAG — with runnable Jupyter notebooks and a free e-book.
 
 #### Production & Best Practices
 
