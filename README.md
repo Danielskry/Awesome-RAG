@@ -112,6 +112,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Local Deep Research](https://github.com/LearningCircuit/local-deep-research): Local-first deep agentic research framework with multi-source retrieval (web, arXiv, PubMed, private documents) and 20+ research strategies.
 
 ## 🐍 Python Ecosystem for RAG
+- [FlyCrawl](https://flycrawl.net) - High-throughput Web-to-Markdown scraper with heuristic Fit-Markdown noise filtering, reducing up to 90% prompt token overhead for RAG retrieval and vector databases. ([Source](https://github.com/FlyCrawl-ai/flycrawl))
 
 Python is the most mature ecosystem for RAG today, with extensive support for
 LLMs, embeddings, vector databases, evaluation, and production tooling.
