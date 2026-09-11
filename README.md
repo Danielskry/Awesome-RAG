@@ -390,6 +390,7 @@ Vector databases are critical components of RAG systems, providing efficient sto
 ### Vector Search Libraries and Tools:
 
 - [FAISS](https://github.com/facebookresearch/faiss): A library for efficient similarity search and clustering of dense vectors, designed to handle large-scale datasets and optimized for fast retrieval of nearest neighbors.
+- [NanoVector](https://github.com/eminsk/nanovector): A minimalist, ~120KB zero-dependency vector search and episodic memory engine in pure C99 with AVX2/NEON SIMD optimizations for local AI agents and lightweight RAG.
 
 ## 🚀 Production Considerations
 
