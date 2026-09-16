@@ -101,6 +101,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Letta](https://github.com/letta-ai/letta): Open source framework for building stateful LLM applications.
 - [Flowise](https://github.com/FlowiseAI/Flowise): Drag & drop UI to build customized LLM flows.
 - [Kreuzberg](https://github.com/kreuzberg-dev/kreuzberg): Polyglot document intelligence library (Rust core with Python, TypeScript, Go bindings) that extracts text, tables, and metadata from 62+ document formats for RAG ingestion pipelines.
+- [Semark](https://github.com/KingsleyOWO/Semark): Open-source semantic document-processing pipeline for RAG that builds on MinerU and optional local VLM/LLM review to convert forms, flowcharts, tables, and screenshot-heavy manuals into structured Markdown, chunks, source maps, and split documents.
 - [Swiftide](https://github.com/bosun-ai/swiftide): Rust framework for building modular, streaming LLM applications.
 - [CocoIndex](https://github.com/cocoindex-io/cocoindex): ETL framework to index data for AI, such as RAG; with realtime incremental updates.
 - [Pathway](https://github.com/pathwaycom/pathway/): Performant open-source Python ETL framework with Rust runtime, supporting 300+ data sources.
