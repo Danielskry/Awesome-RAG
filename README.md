@@ -101,6 +101,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Letta](https://github.com/letta-ai/letta): Open source framework for building stateful LLM applications.
 - [Flowise](https://github.com/FlowiseAI/Flowise): Drag & drop UI to build customized LLM flows.
 - [Kreuzberg](https://github.com/kreuzberg-dev/kreuzberg): Polyglot document intelligence library (Rust core with Python, TypeScript, Go bindings) that extracts text, tables, and metadata from 62+ document formats for RAG ingestion pipelines.
+- [Markovo](https://github.com/fisher-byte/markovo): Document-to-Markdown conversion service for RAG ingestion — converts PDF, DOCX, PPTX, XLSX and authorized public pages (Google Docs, Notion, GitHub, Hacker News, YouTube) into clean, structured Markdown via Web, API, CLI, or MCP.
 - [Swiftide](https://github.com/bosun-ai/swiftide): Rust framework for building modular, streaming LLM applications.
 - [CocoIndex](https://github.com/cocoindex-io/cocoindex): ETL framework to index data for AI, such as RAG; with realtime incremental updates.
 - [Pathway](https://github.com/pathwaycom/pathway/): Performant open-source Python ETL framework with Rust runtime, supporting 300+ data sources.
