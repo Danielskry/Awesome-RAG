@@ -53,6 +53,10 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 - [LangChain Production Guide](https://python.langchain.com/docs/production/): Deploying LangChain applications to production
 - [Python Async Best Practices](https://docs.python.org/3/library/asyncio-dev.html): Writing efficient async Python code for AI applications
 
+#### General Guides
+
+- [Complete Guide to Retrieval-Augmented Generation](https://aihustleworld.com/2026/09/retrieval-augmented-generation-guide.html): An accessible walkthrough of the full RAG pipeline (retrieval, augmentation, generation), chunking trade-offs, and when RAG beats fine-tuning.
+
 ## 🏗️ Architecture Patterns
 
 RAG systems can be architected using various patterns depending on requirements:
