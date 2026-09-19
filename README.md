@@ -135,6 +135,7 @@ See the full guide: [Python Ecosystem for RAG](docs/python-ecosystem.md)
   - [Reason & Act (ReAct) prompting](https://www.promptingguide.ai/techniques/react): Combines reasoning (e.g. CoT) with acting (e.g. tool calling).
 - **Caching**
   - [Prompt Caching](https://medium.com/@1kg/prompt-cache-what-is-prompt-caching-a-comprehensive-guide-e6cbae48e6a3): Optimizes LLMs by storing and reusing precomputed attention states.
+  - [Prompt Caching vs Semantic Caching](https://www.cacheverifier.com/prompt-caching-vs-semantic-caching): Explains what provider-side prompt caching, semantic caching and KV caching each reuse, and which of them can serve a wrong answer.
 - **Structuring**
   -  [Token-Oriented Object Notation](https://github.com/toon-format/toon): A compact, deterministic JSON format for LLM prompts.
 
