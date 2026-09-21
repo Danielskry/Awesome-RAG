@@ -266,6 +266,7 @@ Ensuring high-quality, safe, and reliable responses is critical for production R
   - **Output Monitoring**: Continuously monitor responses for anomalies, unexpected behaviors, or security violations
   - **Rate Limiting**: Implement rate limits and abuse detection to prevent systematic attacks
   - **Sandboxing**: Isolate LLM execution environments to limit potential damage from successful injections
+  - **[EmbedGuard](https://github.com/neerazz/embedguard)**: Cross-layer detection and provenance attestation for adversarial embedding attacks targeting RAG retrieval corpora. Published in IJCESEN 2026 (DOI 10.22399/ijcesen.4869); MIT-licensed reference implementation includes runtime detection plus cryptographic provenance attestation tying retrieved chunks to their source.
 
 ## 📊 Metrics & Evaluation
 
