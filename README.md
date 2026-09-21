@@ -89,6 +89,10 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [InstructRAG](https://github.com/weizhepei/InstructRAG): Enhances RAG systems through instruction-based fine-tuning using self-synthesized rationales to improve retrieval and generation quality.
 - [PageIndex](https://github.com/VectifyAI/PageIndex): A vectorless, reasoning-based RAG framework that builds hierarchical document trees and performs retrieval through LLM-guided tree search rather than embeddings and vector similarity. Eliminates chunking and vector databases while providing explainable, context-aware retrieval for complex professional documents.
 
+## 🔍 Tool & Agent Discovery
+
+- [Not Human Search](https://nothumansearch.ai) - Agent-first search engine indexing 1,400+ tools with agentic readiness scores. RAG-friendly with llms.txt, OpenAPI spec, and MCP server for tool discovery.
+
 ## 🧰 Frameworks that Facilitate RAG
 
 - [Haystack](https://github.com/deepset-ai/haystack): LLM orchestration framework to build customizable, production-ready LLM applications.
