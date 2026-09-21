@@ -123,6 +123,10 @@ See the full guide: [Python Ecosystem for RAG](docs/python-ecosystem.md)
 
 - [Data cleaning techniques](https://medium.com/intel-tech/four-data-cleaning-techniques-to-improve-large-language-model-llm-performance-77bee9003625): Pre-processing steps to refine input data and improve model performance.
 
+### Source verification & document trust
+
+- [Stipple](https://github.com/Sketchjar/stipple-mcp): Hosted MCP server for document trust in RAG pipelines - forensic document authenticity signals (risk bands with per-signal tamper evidence), grounded field extraction with abstention (`not_found`) instead of hallucinated values, and AI-written-text detection with linguistic tells. Use as a pre-ingestion gate so tampered, synthetic, or untrustworthy sources never enter the index; free anonymous tier, no signup. 12 open-source starter kits: [stipple-kits](https://github.com/Sketchjar/stipple-kits).
+
 ### Prompting
 
 - **Strategies**
@@ -413,6 +417,7 @@ Building production-grade RAG systems requires addressing several critical aspec
 - **Incremental Updates**: Support real-time or near-real-time document indexing without full re-indexing
 - **Version Control**: Track document versions, embedding model versions, and prompt templates
 - **Data Quality**: Implement validation pipelines to detect corrupted embeddings, missing metadata, or stale content
+- **Source Authenticity**: Verify document provenance before ingestion - tools like [Stipple](https://github.com/Sketchjar/stipple-mcp) flag tampered or AI-generated documents (risk bands + evidence) so poisoned sources never reach the index
 - **Backup & Recovery**: Regular backups of vector indexes and metadata stores
 
 ### Security & Compliance
