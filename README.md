@@ -98,6 +98,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Dify](https://github.com/langgenius/dify): An open-source LLM app development platform.
 - [Verba](https://github.com/weaviate/Verba): Open-source application for RAG out of the box.
 - [Mastra](https://github.com/mastra-ai/mastra): Typescript framework for building AI applications.
+- [MemClaw](https://github.com/caura-ai/memclaw): Open-source governed shared memory for AI agent fleets. 
 - [Letta](https://github.com/letta-ai/letta): Open source framework for building stateful LLM applications.
 - [Flowise](https://github.com/FlowiseAI/Flowise): Drag & drop UI to build customized LLM flows.
 - [Kreuzberg](https://github.com/kreuzberg-dev/kreuzberg): Polyglot document intelligence library (Rust core with Python, TypeScript, Go bindings) that extracts text, tables, and metadata from 62+ document formats for RAG ingestion pipelines.
