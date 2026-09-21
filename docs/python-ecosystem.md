@@ -98,7 +98,7 @@ Python is a dominant language for building RAG systems, offering a rich ecosyste
 - **[MLflow](https://github.com/mlflow/mlflow)**: Platform for managing ML lifecycle including LLM experiments
 
 #### Testing & Evaluation
-
+- **[chunktuner](https://github.com/shantanu-deshmukh/chunktuner)**: Auto-tune document chunking for RAG—benchmarks multiple strategies (fixed-token, recursive, semantic, markdown, PDF structural, code AST, etc.), measures retrieval scores (e.g. recall, MRR, NDCG) and optional RAGAS generation metrics, and recommends a configuration; includes CLI (`chunk-tune`) and MCP server (`chunk-tune-mcp`) for hosts like Claude Desktop.
 - **[pytest](https://github.com/pytest-dev/pytest)**: Testing framework for Python applications
 - **[pytest-asyncio](https://github.com/pytest-dev/pytest-asyncio)**: Pytest plugin for testing async code
 - **[RAGAS](https://github.com/explodinggradients/ragas)**: Evaluation framework for RAG pipelines
