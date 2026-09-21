@@ -1,4 +1,4 @@
-# 😎 Awesome Retrieval Augmented Generation (RAG) 
+﻿# 😎 Awesome Retrieval Augmented Generation (RAG) 
 [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Danielskry/Awesome-RAG) [![Awesome-RAG Agent Plugin](https://img.shields.io/badge/Agent_Plugin-Available-blueviolet)](https://github.com/Danielskry/Awesome-RAG-Agent-Plugin)
 
 A curated resource map of tools, frameworks, techniques, and learning materials for building Retrieval-Augmented Generation (RAG) systems. This repository catalogs the RAG ecosystem and provides links to authoritative sources, tutorials, and implementations to help you explore and build RAG applications.
@@ -99,6 +99,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Verba](https://github.com/weaviate/Verba): Open-source application for RAG out of the box.
 - [Mastra](https://github.com/mastra-ai/mastra): Typescript framework for building AI applications.
 - [Letta](https://github.com/letta-ai/letta): Open source framework for building stateful LLM applications.
+- [Mem0Sharp](https://github.com/jihadkhawaja/mem0sharp): Long-term cognitive memory and hybrid retrieval engine for AI agents in .NET.
 - [Flowise](https://github.com/FlowiseAI/Flowise): Drag & drop UI to build customized LLM flows.
 - [Kreuzberg](https://github.com/kreuzberg-dev/kreuzberg): Polyglot document intelligence library (Rust core with Python, TypeScript, Go bindings) that extracts text, tables, and metadata from 62+ document formats for RAG ingestion pipelines.
 - [Swiftide](https://github.com/bosun-ai/swiftide): Rust framework for building modular, streaming LLM applications.
