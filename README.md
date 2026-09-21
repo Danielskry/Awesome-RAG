@@ -236,6 +236,8 @@ Embeddings are the foundation of semantic search in RAG systems. The choice of e
     - This combined approach improves both semantic and lexical matching, reducing retrieval failure rates when paired with reranking.
   - [Adaptive Retrieval](https://arxiv.org/abs/2403.14403)
     - Dynamically decide when and how much to retrieve during generation.
+  - [II-Commons Skills](https://github.com/Intelligent-Internet/II-Commons-Skills)
+    - Fast, daily-updated skill and CLI for deterministic retrieval across arXiv, PubMed/PMC, and supported US policy corpora.
   - [Query Reformulation and Expansion](https://haystack.deepset.ai/cookbook/query-expansion)
     - Automatically rewrites or expands the query before retrieval to boost recall.
     - Useful for long or ambiguous user queries.
