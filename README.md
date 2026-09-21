@@ -88,6 +88,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [REFRAG](https://arxiv.org/pdf/2509.01092): Optimizes RAG decoding by compressing retrieved context into embeddings before generation, reducing latency while maintaining output quality.
 - [InstructRAG](https://github.com/weizhepei/InstructRAG): Enhances RAG systems through instruction-based fine-tuning using self-synthesized rationales to improve retrieval and generation quality.
 - [PageIndex](https://github.com/VectifyAI/PageIndex): A vectorless, reasoning-based RAG framework that builds hierarchical document trees and performs retrieval through LLM-guided tree search rather than embeddings and vector similarity. Eliminates chunking and vector databases while providing explainable, context-aware retrieval for complex professional documents.
+- [HIVE](https://github.com/capybarist/hive): A decentralized, peer-to-peer (P2P) RAG architecture built on the Hypercore protocol. It eliminates centralized vector databases by distributing knowledge graphs and vector embeddings across a swarm of local nodes, utilizing hybrid semantic-lexical retrieval and local agentic orchestration for offline-first, privacy-centric enterprise knowledge bases.
 
 ## 🧰 Frameworks that Facilitate RAG
 
