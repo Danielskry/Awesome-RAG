@@ -389,6 +389,7 @@ Vector databases are critical components of RAG systems, providing efficient sto
 ### Vector Search Libraries and Tools:
 
 - [FAISS](https://github.com/facebookresearch/faiss): A library for efficient similarity search and clustering of dense vectors, designed to handle large-scale datasets and optimized for fast retrieval of nearest neighbors.
+- [altor-vec](https://github.com/Altor-lab/altor-vec): 54KB WASM HNSW vector search that runs entirely in the browser. Sub-millisecond latency, no server needed, MIT licensed. Ideal for client-side RAG retrieval.
 
 ## 🚀 Production Considerations
 
