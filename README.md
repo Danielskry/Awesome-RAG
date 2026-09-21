@@ -46,6 +46,7 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 - [Haystack RAG Pipeline](https://docs.haystack.deepset.ai/docs/retrieval-augmented-generation): Building RAG pipelines with Haystack
 - [RAG Techniques](https://github.com/NirDiamant/RAG_Techniques): A comprehensive open-source collection of advanced Retrieval-Augmented Generation techniques as runnable Jupyter notebooks.
 - [RAG Interview System](https://github.com/ather-techie/rag-interview-system): A RAG-powered interview preparation system with 418 curated Q&A pairs (Basic → Advanced) covering 29 RAG architecture patterns.
+- [AI Engineer Notebooks — RAG & Evals](https://github.com/calmrocks/ai-engineer-notebooks/tree/main/03-rag): Runnable, framework-free Colab notebooks on RAG taught retrieval-first (embeddings, hybrid + reranking, chunking, failure modes) and paired with an evals spine (golden sets, LLM-as-judge, regression) to measure the retrieval you build. Runs on the free Groq API.
 
 #### Production & Best Practices
 
