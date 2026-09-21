@@ -108,6 +108,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [LiteLLM](https://docs.litellm.ai/): Unified interface for multiple LLM providers (OpenAI, Anthropic, Hugging Face, Replicate) with logging, monitoring, and cost tracking.
 - [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
 - [OpenAgent](https://github.com/the-open-agent/openagent): Open-source personal AI assistant platform combining LLMs, RAG knowledge base, and autonomous agent loops with browser-use, shell execution, and MCP tool support.
+- [AgentsKit](https://github.com/AgentsKit-io/agentskit): Provider-neutral TypeScript toolkit for composable agents, with independently installable RAG, runtime, memory, tools, sandbox, observability, and evaluation packages built on a dependency-free core.
 - [Local Deep Research](https://github.com/LearningCircuit/local-deep-research): Local-first deep agentic research framework with multi-source retrieval (web, arXiv, PubMed, private documents) and 20+ research strategies.
 
 ## 🐍 Python Ecosystem for RAG
