@@ -342,6 +342,7 @@ These tools can assist in evaluating the performance of your RAG system, from tr
 - **[LangSmith](https://docs.smith.langchain.com/)**: A platform for building production-grade LLM applications, allows you to closely monitor and evaluate your application.
 - **[Hugging Face Evaluate](https://github.com/huggingface/evaluate)**: Tool for computing metrics like BLEU and ROUGE to assess text quality.
 - **[Weights & Biases](https://wandb.ai/wandb-japan/rag-hands-on/reports/Step-for-developing-and-evaluating-RAG-application-with-W-B--Vmlldzo1NzU4OTAx)**: Tracks experiments, logs metrics, and visualizes performance.
+- **[KB Arena](https://github.com/xmpuspus/kb-arena)**: Benchmarks 9 retrieval architectures (naive vector, contextual vector, QnA pairs, knowledge graph, hybrid RRF, RAPTOR, PageIndex, BM25, rerank) head-to-head on your own docs with statistical IR metrics (Recall/NDCG/MAP/bpref + bootstrap CIs and Wilcoxon p-values).
 
 ## 💾 Databases
 
