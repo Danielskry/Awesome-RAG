@@ -109,6 +109,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
 - [OpenAgent](https://github.com/the-open-agent/openagent): Open-source personal AI assistant platform combining LLMs, RAG knowledge base, and autonomous agent loops with browser-use, shell execution, and MCP tool support.
 - [Local Deep Research](https://github.com/LearningCircuit/local-deep-research): Local-first deep agentic research framework with multi-source retrieval (web, arXiv, PubMed, private documents) and 20+ research strategies.
+- [lilbee](https://github.com/tobocop2/lilbee): Local-first applied RAG search engine. It runs and manages local GGUF models itself (a llama-server fleet sized by gguf-parser), or uses your existing Ollama or LM Studio if you prefer, and ingests your files, code, and crawled web pages. Retrieval uses asymmetric query embeddings, vector search, and cross-encoder plus LLM rerankers; answers are grounded with a context budget, grounded refusal, and file-and-line citations.
 
 ## 🐍 Python Ecosystem for RAG
 
