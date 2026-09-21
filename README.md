@@ -38,6 +38,8 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 
 ### Implementation Resources
 
+- [RAG World](https://ragworld.org): An open registry of 69 named RAG technologies, each mapped onto a 28-dimension configuration schema and carrying a maturity level derived from collected evidence by a deterministic rule. Data published as JSON under CC BY 4.0.
+
 #### Python Tutorials & Examples
 
 - Complete basic [RAG implementation in Python](https://github.com/Danielskry/LangChain-Chroma-RAG-demo-2024): Full-stack RAG example with LangChain and Chroma
