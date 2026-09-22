@@ -47,6 +47,8 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 - [RAG Techniques](https://github.com/NirDiamant/RAG_Techniques): A comprehensive open-source collection of advanced Retrieval-Augmented Generation techniques as runnable Jupyter notebooks.
 - [RAG Interview System](https://github.com/ather-techie/rag-interview-system): A RAG-powered interview preparation system with 418 curated Q&A pairs (Basic → Advanced) covering 29 RAG architecture patterns.
 
+- [Search with Jev and Milvus](https://github.com/milvus-io/bootcamp/tree/master/bootcamp/RAG/search_with_jev): Nine runnable Python notebooks combining Gemini embeddings, Milvus retrieval, and Jev judgments for reranking, context filtering, search stopping, routing, cache reuse, curation, guardrails, and evaluation.
+
 #### Production & Best Practices
 
 - [Production RAG patterns and best practices](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Production-ready RAG optimization strategies
