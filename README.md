@@ -243,6 +243,12 @@ Embeddings are the foundation of semantic search in RAG systems. The choice of e
     - Useful for long or ambiguous user queries.
 - **[Re-ranking](https://developer.nvidia.com/blog/enhancing-rag-pipelines-with-re-ranking/)**: Enhances search results in RAG pipelines by reordering initially retrieved documents, prioritizing those most semantically relevant to the query.
 
+### Judgment & Decision Models
+
+Judgment models make bounded semantic decisions over retrieved content, queries, generated responses, or pipeline state. Unlike generative LLMs, they can be used as programmable decision points inside RAG pipelines for reranking, filtering, routing, verification, and evaluation.
+
+- **[Jev](https://typesafe.ai/)**: TypeSafe AI's System One model for fast, typed decisions. In RAG, it can support reranking, filtering, routing, verification, guardrails, and evaluation.
+
 ### Response Quality & Safety
 
 Ensuring high-quality, safe, and reliable responses is critical for production RAG systems.
