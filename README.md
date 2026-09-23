@@ -248,6 +248,7 @@ Embeddings are the foundation of semantic search in RAG systems. The choice of e
 Judgment models make bounded semantic decisions over retrieved content, queries, generated responses, or pipeline state. Unlike generative LLMs, they can be used as programmable decision points inside RAG pipelines for reranking, filtering, routing, verification, and evaluation.
 
 - **[Jev](https://typesafe.ai/)**: TypeSafe AI's System One model for fast, typed decisions. In RAG, it can support reranking, filtering, routing, verification, guardrails, and evaluation.
+- **[AnyJev](https://github.com/nokia-applied-research/AnyJev)**: Turns open LLMs into Jev-style typed decision models, with zero-label bias correction and optional calibration for thresholded decisions.
 
 ### Response Quality & Safety
 
