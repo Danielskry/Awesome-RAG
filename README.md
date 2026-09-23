@@ -369,6 +369,7 @@ Vector databases are critical components of RAG systems, providing efficient sto
 ### Search Engines with Vector Capabilities:
 
 - [Elasticsearch](https://www.elastic.co/elasticsearch): Provides vector search capabilities along with traditional search functionalities.
+- [Infino](https://github.com/infino-ai/infino): Embedded retrieval engine on Apache Parquet with BM25 full-text, vector, hybrid (RRF), and SQL search over object storage.
 - [OpenSearch](https://github.com/opensearch-project/OpenSearch): Distributed search and analytics engine, forked from Elasticsearch.
 
 ### Vector Databases:
