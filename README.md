@@ -256,6 +256,7 @@ Ensuring high-quality, safe, and reliable responses is critical for production R
 
 - **Hallucination Mitigation**
   - **[Detection Techniques](https://machinelearningmastery.com/rag-hallucination-detection-techniques/)**: Implement methods to identify when models generate unsupported information
+- **[Typed Schema Contracts](https://pastagi.com/engineering/stop-rag-hallucination-typed-schemas/)**: Replace free-text answers with typed contracts that validate field-level citations and handle strict-mode failures
   - **Grounding Verification**: Cross-reference generated claims with retrieved context
   - **Confidence Scoring**: Assign confidence scores to generated responses based on source quality
   - **Source Attribution**: Require citations for all factual claims
