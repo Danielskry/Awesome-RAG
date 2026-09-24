@@ -119,6 +119,8 @@ LLMs, embeddings, vector databases, evaluation, and production tooling.
 
 See the full guide: [Python Ecosystem for RAG](docs/python-ecosystem.md)
 
+- [Milvus Model](https://github.com/milvus-io/milvus-model): Embedding and reranker components for PyMilvus, including a Jev adapter that scores retrieved documents before top-k selection.
+
 ## 🛠️ Techniques
 
 ### Data cleaning
