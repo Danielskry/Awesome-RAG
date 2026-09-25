@@ -111,6 +111,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
 - [OpenAgent](https://github.com/the-open-agent/openagent): Open-source personal AI assistant platform combining LLMs, RAG knowledge base, and autonomous agent loops with browser-use, shell execution, and MCP tool support.
 - [Local Deep Research](https://github.com/LearningCircuit/local-deep-research): Local-first deep agentic research framework with multi-source retrieval (web, arXiv, PubMed, private documents) and 20+ research strategies.
+- [IntelAI](https://github.com/Yacine-ai-tech/IntelAI): Production GraphRAG and hybrid search engine combining vector embeddings and knowledge graph traversal for complex domain reasoning.
 
 ## 🐍 Python Ecosystem for RAG
 
@@ -347,6 +348,7 @@ These tools can assist in evaluating the performance of your RAG system, from tr
 - **[LangFuse](https://github.com/langfuse/langfuse)**: Open-source tool for tracking LLM metrics, observability, and prompt management.
 - **[Opik](https://github.com/comet-ml/opik)**: Open-source platform for LLM observability, evaluations, and prompt optimization.
 - **[Ragas](https://docs.ragas.io/en/stable/)**: Framework that helps evaluate RAG pipelines.
+- **[RAGeval](https://github.com/Yacine-ai-tech/RAGeval)**: End-to-end evaluation and hallucination detection framework for RAG systems with deterministic scoring.
 - **[WFGY Problem Map](https://github.com/onestardao/WFGY/tree/main/ProblemMap)**: 16-mode checklist for diagnosing RAG and LLM failures.
 - **[LangSmith](https://docs.smith.langchain.com/)**: A platform for building production-grade LLM applications, allows you to closely monitor and evaluate your application.
 - **[Hugging Face Evaluate](https://github.com/huggingface/evaluate)**: Tool for computing metrics like BLEU and ROUGE to assess text quality.
