@@ -101,6 +101,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Verba](https://github.com/weaviate/Verba): Open-source application for RAG out of the box.
 - [Mastra](https://github.com/mastra-ai/mastra): Typescript framework for building AI applications.
 - [Letta](https://github.com/letta-ai/letta): Open source framework for building stateful LLM applications.
+- [GoodMem](https://docs.goodmem.ai/): Self-hostable memory and retrieval service for AI agents, with server-side chunking and embeddings, semantic search, and LangChain and LlamaIndex integrations.
 - [Flowise](https://github.com/FlowiseAI/Flowise): Drag & drop UI to build customized LLM flows.
 - [Kreuzberg](https://github.com/kreuzberg-dev/kreuzberg): Polyglot document intelligence library (Rust core with Python, TypeScript, Go bindings) that extracts text, tables, and metadata from 62+ document formats for RAG ingestion pipelines.
 - [Swiftide](https://github.com/bosun-ai/swiftide): Rust framework for building modular, streaming LLM applications.
