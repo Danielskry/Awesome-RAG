@@ -90,6 +90,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [REFRAG](https://arxiv.org/pdf/2509.01092): Optimizes RAG decoding by compressing retrieved context into embeddings before generation, reducing latency while maintaining output quality.
 - [InstructRAG](https://github.com/weizhepei/InstructRAG): Enhances RAG systems through instruction-based fine-tuning using self-synthesized rationales to improve retrieval and generation quality.
 - [PageIndex](https://github.com/VectifyAI/PageIndex): A vectorless, reasoning-based RAG framework that builds hierarchical document trees and performs retrieval through LLM-guided tree search rather than embeddings and vector similarity. Eliminates chunking and vector databases while providing explainable, context-aware retrieval for complex professional documents.
+- [lora-kernel](https://github.com/EvolvingAgentsLabs/lora-kernel): A LoRA trained on the habit of navigating a markdown knowledge base (search, open, follow links, cite the statement used) rather than on its facts, so a fact changes by editing a note, not retraining.
 
 ## 🧰 Frameworks that Facilitate RAG
 
