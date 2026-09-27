@@ -347,6 +347,7 @@ These tools can assist in evaluating the performance of your RAG system, from tr
 - **[LangFuse](https://github.com/langfuse/langfuse)**: Open-source tool for tracking LLM metrics, observability, and prompt management.
 - **[Opik](https://github.com/comet-ml/opik)**: Open-source platform for LLM observability, evaluations, and prompt optimization.
 - **[Ragas](https://docs.ragas.io/en/stable/)**: Framework that helps evaluate RAG pipelines.
+- **[RAG Citation Coverage Auditor](https://github.com/edilec/rag-citation-coverage-auditor)**: Local Node.js CLI that checks whether exported RAG claims have usable citations and explicit support relations, keeping missing and unknown evidence separate.
 - **[WFGY Problem Map](https://github.com/onestardao/WFGY/tree/main/ProblemMap)**: 16-mode checklist for diagnosing RAG and LLM failures.
 - **[LangSmith](https://docs.smith.langchain.com/)**: A platform for building production-grade LLM applications, allows you to closely monitor and evaluate your application.
 - **[Hugging Face Evaluate](https://github.com/huggingface/evaluate)**: Tool for computing metrics like BLEU and ROUGE to assess text quality.
