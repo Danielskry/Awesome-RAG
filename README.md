@@ -111,6 +111,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
 - [OpenAgent](https://github.com/the-open-agent/openagent): Open-source personal AI assistant platform combining LLMs, RAG knowledge base, and autonomous agent loops with browser-use, shell execution, and MCP tool support.
 - [Local Deep Research](https://github.com/LearningCircuit/local-deep-research): Local-first deep agentic research framework with multi-source retrieval (web, arXiv, PubMed, private documents) and 20+ research strategies.
+- [NobodyWho](https://github.com/nobodywho-ooo/nobodywho): On-device LLM inference engine (Rust core) for building fully-local RAG — text generation, embeddings, tool calling, and GBNF-structured output — with bindings for Godot, Flutter, React Native and Swift. Runs GGUF models offline with no server or API keys.
 
 ## 🐍 Python Ecosystem for RAG
 
