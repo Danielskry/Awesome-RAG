@@ -124,6 +124,7 @@ See the full guide: [Python Ecosystem for RAG](docs/python-ecosystem.md)
 ### Data cleaning
 
 - [Data cleaning techniques](https://medium.com/intel-tech/four-data-cleaning-techniques-to-improve-large-language-model-llm-performance-77bee9003625): Pre-processing steps to refine input data and improve model performance.
+- [ChromeRAG](https://github.com/pedapudibhargav/ChromeRAG): HTML to RAG-ready Markdown for ingestion. A 150 KB learned block filter (NumPy-only, CPU, about 36 ms per page) removes navigation, footers, cookie banners, related links and comments; optional site-template learning, Schema.org front-matter, LangChain and LlamaIndex loaders. Benchmarked on the human-reviewed WCXB test split (F1 0.902 vs Trafilatura 0.860). ([Results](https://pedapudibhargav.github.io/ChromeRAG/))
 
 ### Prompting
 
