@@ -3,7 +3,8 @@
 
 A curated resource map of tools, frameworks, techniques, and learning materials for building Retrieval-Augmented Generation (RAG) systems. This repository catalogs the RAG ecosystem and provides links to authoritative sources, tutorials, and implementations to help you explore and build RAG applications.
 
-Also [available as an Agent Plugin](https://github.com/Danielskry/Awesome-RAG-Agent-Plugin) for VS Code, GitHub Copilot CLI, and Claude Code. You may also [Ask DeepWiki](https:/deepwiki.com/Danielskry/Awesome-RAG) over this repository.
+Also [available as an Agent Plugin](https://github.com/Danielskry/Awesome-RAG-Agent-Plugin) for VS Code, GitHub Copilot CLI, and Claude Code. 
+You may also [Ask DeepWiki](https:/deepwiki.com/Danielskry/Awesome-RAG) over this repository.
 
 ## Overview
 
