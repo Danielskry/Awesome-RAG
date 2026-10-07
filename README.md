@@ -47,6 +47,7 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 - [LlamaIndex RAG Tutorial](https://docs.llamaindex.ai/en/stable/getting_started/starter_example/): Getting started with LlamaIndex for RAG
 - [Haystack RAG Pipeline](https://docs.haystack.deepset.ai/docs/retrieval-augmented-generation): Building RAG pipelines with Haystack
 - [RAG Techniques](https://github.com/NirDiamant/RAG_Techniques): A comprehensive open-source collection of advanced Retrieval-Augmented Generation techniques as runnable Jupyter notebooks.
+- [RAG + Knowledge Graph Master Course](https://www.thequery.in/books/rag-kg-master-course): Free online book covering retrieval, knowledge graphs, hybrid RAG, and production projects, with HTML and EPUB editions available without registration.
 - [RAG Interview System](https://github.com/ather-techie/rag-interview-system): A RAG-powered interview preparation system with 418 curated Q&A pairs (Basic → Advanced) covering 29 RAG architecture patterns.
 
 - [Search with Jev and Milvus](https://github.com/milvus-io/bootcamp/tree/master/bootcamp/RAG/search_with_jev): Nine runnable Python notebooks combining Gemini embeddings, Milvus retrieval, and Jev judgments for reranking, context filtering, search stopping, routing, cache reuse, curation, guardrails, and evaluation.
