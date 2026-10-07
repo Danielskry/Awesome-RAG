@@ -1,0 +1,6 @@
+
+# Local credentials — never commit these.
+# The Hetzner token lives in ../.secrets/ (outside every repo); this is the
+# second barrier, in case a copy ever lands inside one.
+.secrets/
+*.token
