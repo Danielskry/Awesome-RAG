@@ -251,6 +251,7 @@ Judgment models make bounded semantic decisions over retrieved content, queries,
 
 - **[Jev](https://typesafe.ai/)**: TypeSafe AI's System One model for fast, typed decisions. In RAG, it can support reranking, filtering, routing, verification, guardrails, and evaluation.
 - **[AnyJev](https://github.com/nokia-applied-research/AnyJev)**: Turns open LLMs into Jev-style typed decision models, with zero-label bias correction and optional calibration for thresholded decisions.
+- **[jev-judge](https://github.com/00200200/jev-judge)**: Vitest-style test runner and CI/CD evaluator for LLM & RAG outputs powered by TypeSafe Jev (sub-100ms deterministic evaluations for faithfulness, hallucinations, and safety).
 
 ### Response Quality & Safety
 
