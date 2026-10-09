@@ -73,6 +73,7 @@ RAG systems can be architected using various patterns depending on requirements:
 
 RAG implementations vary in complexity, from simple document retrieval to advanced techniques integrating iterative feedback loops, multi-agent systems, and domain-specific enhancements. Modern approaches include:
 
+- [Vector Graph RAG](https://github.com/zilliztech/vector-graph-rag): Multi-hop retrieval using Milvus and two-stage Jev relation selection and passage reranking, with [full MuSiQue/2Wiki evaluations](https://github.com/zilliztech/vector-graph-rag/blob/main/evaluation/jev/two-stage/README.md) reporting 86.07% average Recall@5 across 1,000 queries per dataset.
 - [Vision-RAG](https://www.youtube.com/watch?v=npkp4mSweEg): Embeds entire pages as images, allowing vision models to handle reasoning directly without parsing text-RAG.
 - [Cache-Augmented Generation (CAG)](https://medium.com/@ronantech/cache-augmented-generation-cag-in-llms-a-step-by-step-tutorial-6ac35d415eec): Preloads relevant documents into a model’s context and stores the inference state (Key-Value (KV) cache).
 - [Agentic RAG](https://langchain-ai.github.io/langgraph/tutorials/rag/langgraph_agentic_rag/): Also known as retrieval agents, can make decisions on retrieval processes.
