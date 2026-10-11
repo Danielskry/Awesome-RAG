@@ -243,6 +243,9 @@ Embeddings are the foundation of semantic search in RAG systems. The choice of e
   - [Query Reformulation and Expansion](https://haystack.deepset.ai/cookbook/query-expansion)
     - Automatically rewrites or expands the query before retrieval to boost recall.
     - Useful for long or ambiguous user queries.
+  - [Evidence-Gated Result Sets (glossdex)](https://github.com/miranpoor/glossdex)
+    - Decides how many retrieved chunks to pass to the LLM, including none, instead of a fixed top-k.
+    - Thresholds derive from the best score anchored to the embedding model's noise floor; no training data.
 - **[Re-ranking](https://developer.nvidia.com/blog/enhancing-rag-pipelines-with-re-ranking/)**: Enhances search results in RAG pipelines by reordering initially retrieved documents, prioritizing those most semantically relevant to the query.
 
 ### Judgment & Decision Models
