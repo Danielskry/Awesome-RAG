@@ -215,6 +215,8 @@ Embeddings are the foundation of semantic search in RAG systems. The choice of e
 ### Retrieval
 
 - **Search Methods**
+  - [FreeRet: MLLMs as Training-Free Retrievers](https://arxiv.org/abs/2509.24621) ([Code](https://github.com/MCG-NJU/FreeRet))
+    - Training-free multimodal retrieval using MLLM embeddings followed by multiple-choice reasoning for reranking; a retrieval component rather than a complete RAG pipeline.
   - [Vector Store Flat Index](https://weaviate.io/developers/academy/py/vector_index/flat)
     - Simple and efficient form of retrieval.
     - Content is vectorized and stored as flat content vectors.
