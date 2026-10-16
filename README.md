@@ -5,7 +5,7 @@ A curated resource map of tools, frameworks, techniques, and learning materials 
 
 Also [available as an Agent Plugin](https://github.com/Danielskry/Awesome-RAG-Agent-Plugin) for VS Code, GitHub Copilot CLI, and Claude Code. 
 
-You may also [Ask DeepWiki](https:/deepwiki.com/Danielskry/Awesome-RAG) over this repository.
+You may also [Ask DeepWiki](https://deepwiki.com/Danielskry/Awesome-RAG) over this repository.
 
 ## Overview
 
@@ -27,7 +27,7 @@ You may also [Ask DeepWiki](https:/deepwiki.com/Danielskry/Awesome-RAG) over thi
 - [🎯 Advanced Approaches](#-advanced-approaches)
 - [🧰 Frameworks that Facilitate RAG](#-frameworks-that-facilitate-rag)
 - [🐍 Python Ecosystem for RAG](#-python-ecosystem-for-rag)
-- [🛠️ Techniques](#-techniques)
+- [🛠️ Techniques](#%EF%B8%8F-techniques)
 - [📊 Metrics & Evaluation](#-metrics--evaluation)
 - [💾 Databases](#-databases)
 - [🔌 Platform-Specific RAG Implementations](#-platform-specific-rag-implementations)
@@ -54,7 +54,7 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 #### Production & Best Practices
 
 - [Production RAG patterns and best practices](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Production-ready RAG optimization strategies
-- [LangChain Production Guide](https://python.langchain.com/docs/production/): Deploying LangChain applications to production
+- [LangChain Production Guide](https://docs.langchain.com/oss/python/langchain/deploy): Deploying LangChain applications to production
 - [Python Async Best Practices](https://docs.python.org/3/library/asyncio-dev.html): Writing efficient async Python code for AI applications
 
 ## 🏗️ Architecture Patterns
@@ -130,12 +130,12 @@ See the full guide: [Python Ecosystem for RAG](docs/python-ecosystem.md)
 ### Prompting
 
 - **Strategies**
-  - [Tagging and Labeling](https://python.langchain.com/v0.1/docs/use_cases/tagging/): Adding semantic tags or labels to retrieved data to enhance relevance.
+  - [Tagging and Labeling](https://github.com/langchain-ai/langchain/blob/5c07a96de1f594c6748ab81ae03c3e7fa88d2b71/docs/docs/use_cases/tagging.ipynb): Adding semantic tags or labels to retrieved data to enhance relevance.
   - [Chain of Thought (CoT)](https://www.promptingguide.ai/techniques/cot): Encouraging the model to think through problems step by step before providing an answer.
   - [Chain of Verification (CoVe)](https://sourajit16-02-93.medium.com/chain-of-verification-cove-understanding-implementation-e7338c7f4cb5): Prompting the model to verify each step of its reasoning for accuracy.
   - [Self-Consistency](https://www.promptingguide.ai/techniques/consistency): Generating multiple reasoning paths and selecting the most consistent answer.
   - [Zero-Shot Prompting](https://www.promptingguide.ai/techniques/zeroshot): Designing prompts that guide the model without any examples.
-  - [Few-Shot Prompting](https://python.langchain.com/docs/how_to/few_shot_examples/): Providing a few examples in the prompt to demonstrate the desired response format.
+  - [Few-Shot Prompting (LangChain 0.1 example)](https://github.com/langchain-ai/langchain/blob/5c07a96de1f594c6748ab81ae03c3e7fa88d2b71/docs/docs/modules/model_io/prompts/few_shot_examples.ipynb): Providing a few examples in the prompt to demonstrate the desired response format.
   - [Reason & Act (ReAct) prompting](https://www.promptingguide.ai/techniques/react): Combines reasoning (e.g. CoT) with acting (e.g. tool calling).
 - **Caching**
   - [Prompt Caching](https://medium.com/@1kg/prompt-cache-what-is-prompt-caching-a-comprehensive-guide-e6cbae48e6a3): Optimizes LLMs by storing and reusing precomputed attention states.
@@ -151,21 +151,21 @@ Chunking strategy is one of the most critical decisions in RAG system design, di
   - **Characteristics**: Divides text into consistent-sized segments (typically 256-512 tokens) with configurable overlap (10-20%)
   - **Pros**: Simple to implement, predictable chunk sizes, efficient processing
   - **Cons**: May split sentences/paragraphs, loses document structure, can fragment semantic units
-  - **Implementation**: [CharacterTextSplitter](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/character_text_splitter/) (LangChain), [SentenceSplitter](https://docs.llamaindex.ai/en/stable/api_reference/node_parsers/sentence_splitter/) (LlamaIndex)
+  - **Implementation**: [CharacterTextSplitter](https://github.com/langchain-ai/langchain/blob/5c07a96de1f594c6748ab81ae03c3e7fa88d2b71/docs/docs/modules/data_connection/document_transformers/character_text_splitter.ipynb) (LangChain), [SentenceSplitter](https://docs.llamaindex.ai/en/stable/api_reference/node_parsers/sentence_splitter/) (LlamaIndex)
 
 - **[Recursive Chunking](https://medium.com/@AbhiramiVS/chunking-methods-all-to-know-about-it-65c10aa7b24e)**
   - **Use Case**: Documents with hierarchical structure (markdown, HTML, code)
   - **Characteristics**: Recursively splits by separators (paragraphs → sentences → words) until desired chunk size
   - **Pros**: Preserves natural boundaries, respects document hierarchy, better semantic coherence
   - **Cons**: More complex, variable chunk sizes, requires careful separator configuration
-  - **Implementation**: [RecursiveCharacterTextSplitter](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/recursive_text_splitter/) (LangChain)
+  - **Implementation**: [RecursiveCharacterTextSplitter](https://github.com/langchain-ai/langchain/blob/5c07a96de1f594c6748ab81ae03c3e7fa88d2b71/docs/docs/modules/data_connection/document_transformers/recursive_text_splitter.ipynb) (LangChain)
 
 - **[Document-Based Chunking](https://medium.com/@david.richards.tech/document-chunking-for-rag-ai-applications-04363d48fbf7)**
   - **Use Case**: Structured documents with clear sections (markdown headers, PDF sections, database records)
   - **Characteristics**: Segments based on document metadata, formatting cues, or structural elements
   - **Pros**: Maintains document structure, preserves context, enables metadata-rich retrieval
   - **Cons**: Requires structured input, may create very large or very small chunks
-  - **Implementation**: [MarkdownHeaderTextSplitter](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/markdown_header_metadata/) (LangChain)
+  - **Implementation**: [MarkdownHeaderTextSplitter](https://github.com/langchain-ai/langchain/blob/5c07a96de1f594c6748ab81ae03c3e7fa88d2b71/docs/docs/modules/data_connection/document_transformers/markdown_header_metadata.ipynb) (LangChain)
   - **Multimodal**: Handle images and text with models like [OpenCLIP](https://github.com/mlfoundations/open_clip)
 
 - **[Semantic Chunking](https://www.youtube.com/watch?v=8OJC21T2SL4&t=1933s)**
@@ -231,7 +231,7 @@ Embeddings are the foundation of semantic search in RAG systems. The choice of e
     - LLM is used to generate a hypothetical response based on the query.
     - Converts this response into a vector embedding.
     - Compares the query vector with the hypothetical response vector.
-  - [Small to Big Retrieval](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/gemini/use-cases/retrieval-augmented-generation/small_to_big_rag/small_to_big_rag.ipynb)
+  - [Small to Big Retrieval (archived example)](https://github.com/GoogleCloudPlatform/generative-ai/blob/8a720501392c0f8e5757ea2a926c8537f4429c47/gemini/use-cases/retrieval-augmented-generation/small_to_big_rag/small_to_big_rag.ipynb)
     - Improves retrieval by using smaller chunks for search and larger chunks for context.
     - Smaller child chunks refers to bigger parent chunks
   - [Contextual Retrieval](https://www.anthropic.com/engineering/contextual-retrieval)
@@ -389,10 +389,10 @@ Vector databases are critical components of RAG systems, providing efficient sto
 
 - [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/vector-database): Globally distributed, multi-model database service with integrated vector search.
 - [Couchbase](https://www.couchbase.com/products/vector-search/): A distributed NoSQL cloud database.
-- [Lantern](https://lantern.dev/): A privacy-aware personal search engine.
+- [Lantern](https://lantern.dev/): An open-source PostgreSQL extension for storing vectors, generating embeddings, and vector search.
 - [LlamaIndex](https://docs.llamaindex.ai/en/stable/module_guides/storing/vector_stores/): Employs a straightforward in-memory vector store for rapid experimentation.
 - [Neo4j](https://neo4j.com/docs/cypher-manual/current/indexes/semantic-indexes/vector-indexes/): Graph database management system.
-- [Qdrant](https://github.com/neo4j/neo4j): An open-source vector database designed for similarity search.
+- [Qdrant](https://github.com/qdrant/qdrant): An open-source vector database designed for similarity search.
 - [Redis Stack](https://redis.io/docs/latest/develop/interact/search-and-query/): An in-memory data structure store used as a database, cache, and message broker.
 - [SurrealDB](https://github.com/surrealdb/surrealdb): A scalable multi-model database optimized for time-series data.
 - [Weaviate](https://github.com/weaviate/weaviate): A open-source cloud-native vector search engine.

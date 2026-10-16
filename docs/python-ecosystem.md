@@ -13,7 +13,7 @@ Python is a dominant language for building RAG systems, offering a rich ecosyste
 - **[Hugging Face Sentence Transformers](https://github.com/UKPLab/sentence-transformers)**: Framework for state-of-the-art sentence, text, and image embeddings
 - **[Cohere Python SDK](https://github.com/cohere-ai/cohere-python)**: Python client for Cohere's language models and embeddings
 - **[Replicate Python Client](https://github.com/replicate/replicate-python)**: Python client for running AI models on Replicate's platform
-- **[Google AI Python SDK](https://github.com/google/generative-ai-python)**: Official Python client for Google's Gemini models and AI services
+- **[Google Gen AI Python SDK](https://github.com/googleapis/python-genai)**: Official Python client for Google's generative AI models, including Gemini
 
 #### Embedding & Vector Operations
 
