@@ -141,6 +141,8 @@ See the full guide: [Python Ecosystem for RAG](docs/python-ecosystem.md)
   - [Prompt Caching](https://medium.com/@1kg/prompt-cache-what-is-prompt-caching-a-comprehensive-guide-e6cbae48e6a3): Optimizes LLMs by storing and reusing precomputed attention states.
 - **Structuring**
   -  [Token-Oriented Object Notation](https://github.com/toon-format/toon): A compact, deterministic JSON format for LLM prompts.
+- **Compression**
+  - [TekMyra](https://github.com/laconiq-ai/tekmyra): Open-source compression for retrieved context that checks every protected span (identifiers, amounts, citations) survives before it emits, refuses when it cannot, and counts refusals against its published numbers.
 
 ### Chunking
 
