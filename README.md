@@ -126,7 +126,7 @@ See the full guide: [Python Ecosystem for RAG](docs/python-ecosystem.md)
 ### Data cleaning
 
 - [Data cleaning techniques](https://medium.com/intel-tech/four-data-cleaning-techniques-to-improve-large-language-model-llm-performance-77bee9003625): Pre-processing steps to refine input data and improve model performance.
-- [YouTube Channel Transcripts for RAG](https://apify.com/prospect_antechamber/youtube-transcript-bulk): Free Apify actor that bulk-exports caption transcripts from whole YouTube channels/playlists as chunk-ready JSON for RAG ingestion.
+- [YouTube Channel Transcripts for RAG](https://apify.com/prospect_antechamber/youtube-transcript-bulk): Apify actor ($2 per 1,000 transcripts + Apify usage) that bulk-exports caption transcripts from whole YouTube channels/playlists as chunk-ready JSON for RAG ingestion.
 
 ### Prompting
 
