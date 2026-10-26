@@ -376,6 +376,7 @@ Vector databases are critical components of RAG systems, providing efficient sto
 ### Vector Databases:
 
 - [Chroma DB](https://github.com/chroma-core/chroma): An AI-native open-source embedding database.
+- [pgchroma](https://github.com/TheJustas228/pgchroma): A Chroma-compatible server that stores collections in PostgreSQL with pgvector, including sparse (BM25) and hybrid search.
 - [Milvus](https://github.com/milvus-io/milvus): An open-source vector database for AI-powered applications.
 - [Pinecone](https://www.pinecone.io/): A serverless vector database, optimized for machine learning workflows.
 - [Oracle AI Vector Search](https://www.oracle.com/database/ai-vector-search/#retrieval-augmented-generation): Integrates vector search capabilities within Oracle Database for semantic querying based on vector embeddings.
