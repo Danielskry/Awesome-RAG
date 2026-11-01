@@ -100,6 +100,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel): An SDK from Microsoft for developing Generative AI applications.
 - [LlamaIndex](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Framework for connecting custom data sources to LLMs.
 - [Dify](https://github.com/langgenius/dify): An open-source LLM app development platform.
+- [bilibili-rag](https://github.com/via007/bilibili-rag): Turn Bilibili video favorites into a RAG knowledge base via ASR transcription, vector search, and Q&A ([demo](https://bilimind.xyz)).
 - [Verba](https://github.com/weaviate/Verba): Open-source application for RAG out of the box.
 - [Mastra](https://github.com/mastra-ai/mastra): Typescript framework for building AI applications.
 - [Letta](https://github.com/letta-ai/letta): Open source framework for building stateful LLM applications.
