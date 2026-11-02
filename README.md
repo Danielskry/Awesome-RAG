@@ -400,6 +400,7 @@ Vector databases are critical components of RAG systems, providing efficient sto
 ### Vector Search Libraries and Tools:
 
 - [FAISS](https://github.com/facebookresearch/faiss): A library for efficient similarity search and clustering of dense vectors, designed to handle large-scale datasets and optimized for fast retrieval of nearest neighbors.
+- [Drivine](https://github.com/liberation-data/drivine): Graph database client for TypeScript, Python and the JVM for graph RAG on Neo4j, Memgraph, FalkorDB, Oracle, Postgres (with pgvector) or SQLite, combining vector search with graph traversal.
 
 ## 🚀 Production Considerations
 
