@@ -333,6 +333,7 @@ Response evaluation in RAG solutions involves assessing the quality of language 
   Leverages pre-trained evaluators to benchmark outputs against diverse criteria:
 
   - **[TuringBench](https://turingbench.ist.psu.edu/):** Offers comprehensive evaluations across language benchmarks.
+  - **[RAGTruth++](https://blueguardrails.com/en/blog/ragtruth-plus-plus-enhanced-hallucination-detection-benchmark):** Enhanced hallucination detection benchmark with human-reviewed span-level annotations for 408 RAGTruth responses.
   - **[Hugging Face Evaluate](https://huggingface.co/docs/evaluate/en/index):** Calculates alignment with human preferences.
 
 - **Key Dimensions for Evaluation**
