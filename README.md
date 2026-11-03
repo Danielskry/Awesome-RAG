@@ -400,6 +400,7 @@ Vector databases are critical components of RAG systems, providing efficient sto
 ### Vector Search Libraries and Tools:
 
 - [FAISS](https://github.com/facebookresearch/faiss): A library for efficient similarity search and clustering of dense vectors, designed to handle large-scale datasets and optimized for fast retrieval of nearest neighbors.
+- [HyperCache AI](https://github.com/WalWal1977/HyperCache-AI): A dual-engine runtime acceleration SDK (`pip install hypercache-ai`) that compresses 1536-D RAG vector embeddings down to 656-D (-57.3% Vector DB RAM, 2.34x faster similarity search, 100% Top-1 match) and cuts PyTorch LLM KV-Cache VRAM by 58.2% with zero retraining.
 
 ## 🚀 Production Considerations
 
