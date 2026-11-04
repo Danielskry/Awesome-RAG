@@ -126,6 +126,7 @@ See the full guide: [Python Ecosystem for RAG](docs/python-ecosystem.md)
 ### Data cleaning
 
 - [Data cleaning techniques](https://medium.com/intel-tech/four-data-cleaning-techniques-to-improve-large-language-model-llm-performance-77bee9003625): Pre-processing steps to refine input data and improve model performance.
+- [Sugo](https://github.com/Muralnick/sugo): Local, offline tool that cleans PDFs, Office files and screenshots for RAG ingestion — strips repeated headers/footers, page numbers and tracking noise while recording every removal, and converts to compact Markdown.
 
 ### Prompting
 
