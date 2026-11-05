@@ -372,6 +372,7 @@ Vector databases are critical components of RAG systems, providing efficient sto
 
 - [Elasticsearch](https://www.elastic.co/elasticsearch): Provides vector search capabilities along with traditional search functionalities.
 - [OpenSearch](https://github.com/opensearch-project/OpenSearch): Distributed search and analytics engine, forked from Elasticsearch.
+- [XERJ](https://github.com/xerj-org/xerj): Local search engine in one Rust binary with BM25, vector and hybrid retrieval over an Elasticsearch-compatible API; indexes code, docs and logs and returns cited passages.
 
 ### Vector Databases:
 
