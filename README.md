@@ -389,6 +389,7 @@ Vector databases are critical components of RAG systems, providing efficient sto
 
 - [Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/vector-database): Globally distributed, multi-model database service with integrated vector search.
 - [Couchbase](https://www.couchbase.com/products/vector-search/): A distributed NoSQL cloud database.
+- [HelixDB](https://github.com/HelixDB/helix-db): An open-source graph-vector database in Rust with graph traversal, vector search and BM25 full-text search in one engine.
 - [Lantern](https://lantern.dev/): A privacy-aware personal search engine.
 - [LlamaIndex](https://docs.llamaindex.ai/en/stable/module_guides/storing/vector_stores/): Employs a straightforward in-memory vector store for rapid experimentation.
 - [Neo4j](https://neo4j.com/docs/cypher-manual/current/indexes/semantic-indexes/vector-indexes/): Graph database management system.
