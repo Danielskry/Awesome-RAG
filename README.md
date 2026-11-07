@@ -48,6 +48,7 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 - [Haystack RAG Pipeline](https://docs.haystack.deepset.ai/docs/retrieval-augmented-generation): Building RAG pipelines with Haystack
 - [RAG Techniques](https://github.com/NirDiamant/RAG_Techniques): A comprehensive open-source collection of advanced Retrieval-Augmented Generation techniques as runnable Jupyter notebooks.
 - [RAG Interview System](https://github.com/ather-techie/rag-interview-system): A RAG-powered interview preparation system with 418 curated Q&A pairs (Basic → Advanced) covering 29 RAG architecture patterns.
+- [AI Engineer Roadmap](https://github.com/techsaurabh-394/ai-engineer-roadmap): Beginner-friendly learning path with 113 topics on RAG, advanced RAG, LLMs, agents and MCP, with offline runnable Python demos, diagrams and interview questions.
 
 - [Search with Jev and Milvus](https://github.com/milvus-io/bootcamp/tree/master/bootcamp/RAG/search_with_jev): Nine runnable Python notebooks combining Gemini embeddings, Milvus retrieval, and Jev judgments for reranking, context filtering, search stopping, routing, cache reuse, curation, guardrails, and evaluation.
 
