@@ -39,6 +39,7 @@ Python is a dominant language for building RAG systems, offering a rich ecosyste
 
 - **[Chroma](https://github.com/chroma-core/chroma)**: AI-native open-source embedding database with Python client
 - **[FAISS](https://github.com/facebookresearch/faiss)**: Facebook AI Similarity Search library for efficient similarity search and clustering
+- **[NanoVector](https://github.com/eminsk/nanovector)**: Lightweight, SIMD-accelerated C99/Python vector search and episodic memory engine for local RAG
 - **[Qdrant Client](https://github.com/qdrant/qdrant-client)**: Python client for Qdrant vector database
 - **[Weaviate Python Client](https://github.com/weaviate/weaviate-python-client)**: Python client for Weaviate vector search engine
 - **[Milvus Python SDK](https://github.com/milvus-io/pymilvus)**: Python SDK for Milvus vector database
