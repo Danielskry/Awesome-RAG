@@ -56,6 +56,7 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 - [Production RAG patterns and best practices](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Production-ready RAG optimization strategies
 - [LangChain Production Guide](https://python.langchain.com/docs/production/): Deploying LangChain applications to production
 - [Python Async Best Practices](https://docs.python.org/3/library/asyncio-dev.html): Writing efficient async Python code for AI applications
+-  [Botmartz – Building a Scalable Enterprise RAG System](https://www.botmartz.com/insights/building-a-scalable-enterprise-rag-system-architecture-components-best-practices): A practical guide to production-ready Enterprise RAG architecture, covering document ingestion, semantic chunking, embeddings, vector databases, hybrid retrieval, reranking, and generation.
 
 ## 🏗️ Architecture Patterns
 
