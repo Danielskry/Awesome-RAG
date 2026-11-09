@@ -166,6 +166,7 @@ Chunking strategy is one of the most critical decisions in RAG system design, di
   - **Pros**: Maintains document structure, preserves context, enables metadata-rich retrieval
   - **Cons**: Requires structured input, may create very large or very small chunks
   - **Implementation**: [MarkdownHeaderTextSplitter](https://python.langchain.com/v0.1/docs/modules/data_connection/document_transformers/markdown_header_metadata/) (LangChain)
+  - **Tools**: [md-chunk-lite](https://github.com/tidybytetools/md-chunk-lite) — free local CLI/MCP that splits Markdown by heading and keeps heading path + line numbers (MIT, PyPI)
   - **Multimodal**: Handle images and text with models like [OpenCLIP](https://github.com/mlfoundations/open_clip)
 
 - **[Semantic Chunking](https://www.youtube.com/watch?v=8OJC21T2SL4&t=1933s)**
