@@ -56,6 +56,7 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 - [Production RAG patterns and best practices](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Production-ready RAG optimization strategies
 - [LangChain Production Guide](https://python.langchain.com/docs/production/): Deploying LangChain applications to production
 - [Python Async Best Practices](https://docs.python.org/3/library/asyncio-dev.html): Writing efficient async Python code for AI applications
+- [Enterprise RAG Engine](https://github.com/CyberAli-eng/enterprise-rag-engine): Runnable multi-tenant RAG service (FastAPI + LangChain): per-tenant filtering at the retrieval layer, API-key auth, rate limiting, upload validation and cited sources; runs locally with Ollama
 
 ## 🏗️ Architecture Patterns
 
