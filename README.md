@@ -126,6 +126,7 @@ See the full guide: [Python Ecosystem for RAG](docs/python-ecosystem.md)
 ### Data cleaning
 
 - [Data cleaning techniques](https://medium.com/intel-tech/four-data-cleaning-techniques-to-improve-large-language-model-llm-performance-77bee9003625): Pre-processing steps to refine input data and improve model performance.
+- [complydoc](https://github.com/complydoc/complydoc): Get document loading right before indexing: compare loaders, trace each ingestion step, and catch hidden text and personal data before they are embedded.
 
 ### Prompting
 
