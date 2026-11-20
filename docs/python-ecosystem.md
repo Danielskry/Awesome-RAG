@@ -28,6 +28,7 @@ Python is a dominant language for building RAG systems, offering a rich ecosyste
 
 - **[PyPDF2](https://github.com/py-pdf/PyPDF2)**: PDF manipulation library for extracting text and metadata
 - **[pdfplumber](https://github.com/jsvine/pdfplumber)**: Advanced PDF parsing with table extraction capabilities
+- **[pdfmuse](https://github.com/casperkwok/pdfmuse)**: Deterministic PDF/DOCX parser for RAG with exact coordinates, tables and section metadata; no ML in the core path; byte-identical Python/Node/WASM output.
 - **[python-docx](https://github.com/python-openxml/python-docx)**: Library for reading and writing Microsoft Word documents
 - **[BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)**: HTML/XML parsing for web content extraction
 - **[Unstructured](https://github.com/Unstructured-IO/unstructured)**: Open-source library for extracting structured data from documents (PDFs, Word, HTML, etc.)
