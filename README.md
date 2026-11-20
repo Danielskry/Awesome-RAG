@@ -265,6 +265,7 @@ Ensuring high-quality, safe, and reliable responses is critical for production R
 
 - **Guardrails & Safety**
   - **[Implementation Guide](https://developer.ibm.com/tutorials/awb-how-to-implement-llm-guardrails-for-rag-applications/)**: Comprehensive approach to implementing safety mechanisms
+  - **[RAGDefender](https://github.com/SecAI-Lab/RAGDefender)**: Post-retrieval filter that removes poisoned passages (PoisonedRAG-style knowledge corruption) before generation, with no LLM calls or retraining (ACSAC 2025)
   - **Content Moderation**: Filter harmful, biased, or inappropriate content at input and output stages
   - **Bias Mitigation**: Detect and mitigate biases in retrieved content and generated responses
   - **Fact-Checking**: Verify claims against authoritative sources or knowledge bases
