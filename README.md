@@ -113,6 +113,7 @@ RAG implementations vary in complexity, from simple document retrieval to advanc
 - [Agentset](https://github.com/agentset-ai/agentset): Open-source production-ready RAG platform with built-in agentic reasoning, hybrid search, and multimodal support.
 - [OpenAgent](https://github.com/the-open-agent/openagent): Open-source personal AI assistant platform combining LLMs, RAG knowledge base, and autonomous agent loops with browser-use, shell execution, and MCP tool support.
 - [Local Deep Research](https://github.com/LearningCircuit/local-deep-research): Local-first deep agentic research framework with multi-source retrieval (web, arXiv, PubMed, private documents) and 20+ research strategies.
+- [FlashData](https://flashdata.dev): Managed real-time Google Search (web, news, images, shopping, videos, places), YouTube Data (search, metadata, transcripts, captions, channels), and cloud-delivered YouTube Download API with a hosted MCP server (`https://data.flashdata.dev/mcp`), open-source [MCP server](https://github.com/flashdatadev/flashdata-mcp), and official [Python SDK](https://github.com/flashdatadev/flashdata-python) for RAG grounding and research pipelines. Pay-as-you-go ($0/mo base) with a free trial (no credit card required).
 
 ## 🐍 Python Ecosystem for RAG
 
