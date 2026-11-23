@@ -5,7 +5,7 @@ A curated resource map of tools, frameworks, techniques, and learning materials 
 
 Also [available as an Agent Plugin](https://github.com/Danielskry/Awesome-RAG-Agent-Plugin) for VS Code, GitHub Copilot CLI, and Claude Code. 
 
-You may also [Ask DeepWiki](https:/deepwiki.com/Danielskry/Awesome-RAG) over this repository.
+You may also [Ask DeepWiki](https://deepwiki.com/Danielskry/Awesome-RAG) over this repository.
 
 ## Overview
 
