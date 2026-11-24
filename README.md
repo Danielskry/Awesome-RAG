@@ -440,6 +440,10 @@ Building production-grade RAG systems requires addressing several critical aspec
 - **Model Selection**: Balance cost and performance when choosing embedding and LLM models
 - **Resource Right-sizing**: Optimize infrastructure based on actual usage patterns
 
+### Further Reading
+
+- [Enterprise RAG Implementation Checklist](https://srishtigenai.com/enterprise-rag-implementation-checklist): Sixteen checks for taking enterprise RAG from pilot to production, covering data readiness, retrieval quality, security and governance, and rollout and monitoring.
+
 ## 🔌 Platform-Specific RAG Implementations
 
 For detailed implementation guides for specific platforms, see the documentation:
