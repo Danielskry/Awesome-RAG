@@ -384,6 +384,7 @@ Vector databases are critical components of RAG systems, providing efficient sto
 
 - [Pgvector](https://github.com/pgvector/pgvector): An open-source extension for vector similarity search in PostgreSQL.
 - [psql_bm25s](https://github.com/Intelligent-Internet/psql_bm25s): A PostgreSQL extension for BM25-family lexical retrieval, useful for keyword and hybrid retrieval pipelines.
+- [sqlite-sparse](https://github.com/arbazsiddiqui/sqlite-sparse): A SQLite extension for semantic search with learned sparse retrieval; documents are encoded at insert and queries run without a model or server.
 
 ### Other Database Systems:
 
