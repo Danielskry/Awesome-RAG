@@ -56,6 +56,7 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 - [Production RAG patterns and best practices](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Production-ready RAG optimization strategies
 - [LangChain Production Guide](https://python.langchain.com/docs/production/): Deploying LangChain applications to production
 - [Python Async Best Practices](https://docs.python.org/3/library/asyncio-dev.html): Writing efficient async Python code for AI applications
+- [Pagekin](https://github.com/EthanYoQ/Pagekin): Open-source desktop RAG example for long-form fiction. The [embedding-space design record](https://github.com/EthanYoQ/Pagekin/blob/v1.5.3/docs/adr/0004-versioned-project-embedding-space.md) shows how to validate and switch to a new vector index while preserving full-text search.
 
 ## 🏗️ Architecture Patterns
 
