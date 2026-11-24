@@ -72,6 +72,7 @@ Python is a dominant language for building RAG systems, offering a rich ecosyste
   - [Haystack Python Documentation](https://docs.haystack.deepset.ai/)
 
 - **[RAGatouille](https://github.com/bclavie/RAGatouille)**: RAG framework built on top of ColBERT for efficient retrieval
+- **[NanoRecall](https://github.com/eminsk/nanorecall)**: High-performance hybrid episodic memory and context retrieval engine combining dense vector search, sparse BM25, and recency ranking for AI agents and RAG
 - **[RAGFlow](https://github.com/infiniflow/ragflow)**: Open-source RAG engine with document parsing and knowledge extraction
 - **[RAGAS](https://github.com/explodinggradients/ragas)**: Framework for evaluating RAG pipelines with metrics
 
