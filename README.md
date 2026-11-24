@@ -56,6 +56,7 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 - [Production RAG patterns and best practices](https://docs.llamaindex.ai/en/stable/optimizing/production_rag/): Production-ready RAG optimization strategies
 - [LangChain Production Guide](https://python.langchain.com/docs/production/): Deploying LangChain applications to production
 - [Python Async Best Practices](https://docs.python.org/3/library/asyncio-dev.html): Writing efficient async Python code for AI applications
+- [No Stairs Please MCP](https://nostairsplease.com/mcp): Live-music venue directory and hosted MCP server (OAuth 2.1) for querying venue accessibility and tour routing
 
 ## 🏗️ Architecture Patterns
 
