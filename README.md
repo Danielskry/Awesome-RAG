@@ -50,6 +50,7 @@ RAG addresses a fundamental limitation of LLMs: their static knowledge cutoff an
 - [RAG Interview System](https://github.com/ather-techie/rag-interview-system): A RAG-powered interview preparation system with 418 curated Q&A pairs (Basic → Advanced) covering 29 RAG architecture patterns.
 
 - [Search with Jev and Milvus](https://github.com/milvus-io/bootcamp/tree/master/bootcamp/RAG/search_with_jev): Nine runnable Python notebooks combining Gemini embeddings, Milvus retrieval, and Jev judgments for reranking, context filtering, search stopping, routing, cache reuse, curation, guardrails, and evaluation.
+- [Minimal RAG](https://github.com/hxli2005/minimal-rag): Minimal Python agent using SQLite FTS5 BM25 and model-directed search/read tools, with inspectable traces and a no-API offline demo.
 
 #### Production & Best Practices
 
