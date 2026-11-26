@@ -126,6 +126,7 @@ See the full guide: [Python Ecosystem for RAG](docs/python-ecosystem.md)
 ### Data cleaning
 
 - [Data cleaning techniques](https://medium.com/intel-tech/four-data-cleaning-techniques-to-improve-large-language-model-llm-performance-77bee9003625): Pre-processing steps to refine input data and improve model performance.
+- [doc-to-markdown-benchmark](https://github.com/ibrtokmecheng/doc-to-markdown-benchmark): Benchmark of document-to-Markdown conversion before RAG ingestion (text, reading order, headings, table cells, page clutter, tokens): 54 blind held-out documents, answer files and raw outputs.
 
 ### Prompting
 
