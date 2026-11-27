@@ -194,6 +194,10 @@ Chunking strategy is one of the most critical decisions in RAG system design, di
 - **Metadata Preservation**: Retain document structure, headers, and formatting in chunk metadata
 - **Multi-Granularity**: Consider hierarchical approaches (small chunks for retrieval, larger for context)
 
+- **[RAG Chunk Preview](https://devcfg.com/tools/rag-chunk-preview/)**
+  - **Use Case**: Interactive browser tool for previewing chunk boundaries before building the pipeline; supports configurable chunk size and overlap, with dedicated support for Chinese text
+  - **Pros**: Free and instant, no signup; visualizes how chunking parameters affect segment quality in real time
+
 ### Embeddings
 
 Embeddings are the foundation of semantic search in RAG systems. The choice of embedding model significantly impacts retrieval quality.
